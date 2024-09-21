@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --primary: #de0a0a;
+  --primary-muted: #dd5656;
+  --secondary: #e0b90c;
+  --background: #fff;
+  --background-muted: #aaa;
+  --foreground: #000;
+  --foreground-muted: #1F1F1F;
+  ;
+}
+
+.cover-bg {
+  background-image: url('images/security.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

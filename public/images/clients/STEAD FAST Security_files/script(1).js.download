@@ -1,0 +1,49 @@
+// sclider
+$(document).ready(function(){
+    $('.client-slider').slick({
+        infinite: true, // Infinite scrolling
+        slidesToShow: 5, // Number of slides to show at once
+        slidesToScroll: 1, // Number of slides to scroll at a time
+        autoplay: true, // Enable autoplay
+        autoplaySpeed: 1000, // Duration between slides (in milliseconds)
+        arrows: true, // Show navigation arrows
+        dots: true, // Show dots for navigation
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2, // Number of slides to show on medium screens
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1, // Number of slides to show on small screens
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
+
+// Services
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const serviceItems = document.querySelectorAll('.service-item');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    serviceItems.forEach(item => {
+        observer.observe(item);
+    });
+});
