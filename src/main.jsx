@@ -4,7 +4,16 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout.jsx";
 import "@fontsource/archivo"; // Defaults to 400 weight
-import { Home } from "./pages";
+import {
+  ApproachPage,
+  CareerPage,
+  ContactPage,
+  Home,
+  NewsPage,
+  WhatPage,
+  WhoPage,
+  WhyPage,
+} from "./pages";
 
 const router = createBrowserRouter([
   {
@@ -12,8 +21,36 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
+      },
+      {
+        path: "who-we-are",
+        element: <WhoPage />,
+      },
+      {
+        path: "why-stand-fast",
+        element: <WhyPage />,
+      },
+      {
+        path: "hedonistic-approach",
+        element: <ApproachPage />,
+      },
+      {
+        path: "what-we-do",
+        element: <WhatPage />,
+      },
+      {
+        path: "contact-us",
+        element: <ContactPage />,
+      },
+      {
+        path: "news",
+        element: <NewsPage />,
+      },
+      {
+        path: "career",
+        element: <CareerPage />,
       },
     ],
   },

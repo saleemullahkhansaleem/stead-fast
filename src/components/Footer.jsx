@@ -24,8 +24,8 @@ export default function Footer() {
 
   return (
     <footer className="bg-foregroundMuted text-backgroundMuted">
-      <Container className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="p-4 md:p-16">
+      <Container className="grid grid-cols-1 lg:grid-cols-3 gap-4 py-12">
+        <div className="p-4 xl:px-12">
           <h4 className="text-2xl text-background font-bold pb-4">
             STEAD FAST Security
           </h4>
@@ -36,7 +36,7 @@ export default function Footer() {
             Punjab and KP.
           </p>
         </div>
-        <div className="p-4 md:p-16">
+        <div className="p-4">
           <h4 className="text-2xl text-background font-bold pb-4">Menu</h4>
           <div className="grid grid-cols-2">
             {footerNavLinks.map((column, colIndex) => (
@@ -55,7 +55,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <div className="p-4 md:p-16">
+        <div className="p-4">
           <h4 className="text-2xl text-background font-bold pb-4">Contact</h4>
           <p>office#5 Al-Malik Centre (Third Floor)</p>
           <p> 70 West Jinnah Avenue</p>
@@ -83,7 +83,7 @@ export default function Footer() {
         </div>
       </Container>
       <div className="bg-foreground py-2">
-        <Container className="flex justify-between items-center flex-wrap">
+        <Container className="flex flex-col md:flex-row gap-4 justify-between items-center flex-wrap">
           <div className="row footer-copyright">
             <div className="col-md-12 text-center">
               <p>

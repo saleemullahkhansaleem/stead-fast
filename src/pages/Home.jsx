@@ -1,11 +1,19 @@
-import { CoverSection, MainSection, Services } from "../components";
+import {
+  CoverSection,
+  EmergencyNumbers,
+  LogoCarousel,
+  MainSection,
+  Services,
+} from "../components";
 
 export default function Home() {
   return (
     <>
-      <CoverSection />
+      <CoverSection title="highest standards of Security Services" />
       <MainSection />
       <Services />
+      <LogoCarousel />
+      <EmergencyNumbers />
     </>
   );
 }

@@ -8,14 +8,14 @@
   --primary-muted: #dd5656;
   --secondary: #e0b90c;
   --background: #fff;
-  --background-muted: #aaa;
+  --background-muted: #ccc;
   --foreground: #000;
   --foreground-muted: #1F1F1F;
   ;
 }
 
 .cover-bg {
-  background-image: url('images/security.jpeg');
+  background-image: url('images/img5.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
