@@ -7,6 +7,7 @@ export default {
         primary: "var(--primary)",
         primaryMuted: "var(--primary-muted)",
         secondary: "var(--secondary)",
+        muted: "var(--muted)",
         background: "var(--background)",
         backgroundMuted: "var(--background-muted)",
         foreground: "var(--foreground)",

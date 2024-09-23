@@ -7,10 +7,11 @@
   --primary: #de0a0a;
   --primary-muted: #dd5656;
   --secondary: #e0b90c;
+  --muted: #eee;
   --background: #fff;
   --background-muted: #ccc;
   --foreground: #000;
-  --foreground-muted: #1F1F1F;
+  --foreground-muted: #333;
   ;
 }
 

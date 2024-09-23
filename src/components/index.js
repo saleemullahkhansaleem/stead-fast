@@ -6,6 +6,7 @@ import Header from "./Header";
 import CoverSection from "./CoverSection";
 import Footer from "./Footer";
 import DetailPage from "./DetailPage";
+import Input from "./Input";
 
 // Home components
 
@@ -22,6 +23,7 @@ export {
   CoverSection,
   Footer,
   DetailPage,
+  Input,
   MainSection,
   Services,
   LogoCarousel,

@@ -4,9 +4,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Container from "../Container";
 
 const logos = [
-  "images/clients/hbl.jpeg",
-  "images/clients/mcb.jpg",
-  "images/clients/pakfoods.jpg",
+  "images/clients/hbl.png",
+  "images/clients/mcb.png",
+  "images/clients/pakfoods.png",
   "images/clients/pycl.png",
   "images/clients/soneri.png",
   "images/clients/suzuki.png",

@@ -1,6 +1,7 @@
 import Button from "./Button";
 import Container from "./Container";
 import CoverSection from "./CoverSection";
+import Services from "./home/Services";
 
 export default function DetailPage({
   children,
@@ -41,6 +42,7 @@ export default function DetailPage({
           </div>
         </div>
       </Container>
+      <Services />
     </>
   );
 }

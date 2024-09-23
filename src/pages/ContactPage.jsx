@@ -1,53 +1,81 @@
-import { MdSecurity } from "react-icons/md";
-import { DetailPage } from "../components";
+import { Button, Container, CoverSection, Input } from "../components";
 
 export default function ContactPage() {
   return (
-    <DetailPage
-      title="Security Escort"
-      imageUrl="s5.jpg"
-      icon={<MdSecurity className="text-secondary text-5xl" />}
-      reverse
-    >
-      <p>
-        Static guarding and access control is one of our expert fields. We can
-        provide round the clock security for your premises, office buildings,
-        industrial estates/factories, hospitals, educational institutions,
-        embassies, and private residences.
-      </p>
-      <p>
-        Providing security to high-profile special events through manned
-        security, access control, electronic checking, and rapid response in
-        case of any security breach is another area of our expertise in security
-        services.
-      </p>
-      <p>
-        We also provide mobile escorts to cater to the security needs of our
-        customers during the transportation of materials and VIP escorts.
-      </p>
+    <>
+      {/* Cover Section */}
+      <CoverSection
+        title="Get in Touch"
+        description="We'd love to hear from you. Whether you have questions or need support, feel free to reach out!"
+      />
 
-      <h6 className="text-primary text-2xl font-bold">Additional Details:</h6>
-      <p>
-        Our security staff are trained professionals, equipped with the latest
-        technology and well-versed in protocols designed to handle various
-        security risks and incidents. We prioritize the safety of both people
-        and property, and we customize our services based on the specific
-        requirements of each client.
-      </p>
-      <p>
-        Our physical security measures are supported by a responsive monitoring
-        and control system, ensuring timely detection and intervention to
-        safeguard against unauthorized access or threats.
-      </p>
+      <div className="">
+        <Container className="px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+          {/* Contact Form */}
+          <div className="bg-background p-8 rounded-lg shadow-md">
+            <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
+            <form className="space-y-4">
+              <Input label="Name" placeholder="Your Name" />
+              <Input label="Email" placeholder="Your Email" type="email" />
+              <Input label="Subject" placeholder="Message Subject" />
+              <div>
+                <label className="block text-sm font-medium text-foregroundMuted">
+                  Message
+                </label>
+                <textarea
+                  className="mt-1 p-2 block w-full border border-muted rounded-md shadow-sm focus:ring-secondary focus:border-secondary sm:text-sm"
+                  placeholder="Your Message"
+                  rows={4}
+                ></textarea>
+              </div>
+              <Button type="submit" className="w-full">
+                Send Message
+              </Button>
+            </form>
+          </div>
 
-      <h4 className="text-primary text-2xl font-bold">Key Features:</h4>
-      <ul>
-        <li>24/7 security for various facilities</li>
-        <li>Specialized security for high-profile events</li>
-        <li>Mobile escort and VIP protection services</li>
-        <li>Rapid response to any security breaches</li>
-        <li>Electronic checking and monitoring systems</li>
-      </ul>
-    </DetailPage>
+          {/* Contact Information */}
+          <div className="space-y-6">
+            <div>
+              <h2 className="text-3xl font-bold mb-4">Contact Information</h2>
+              <p className="text-foregroundMuted leading-relaxed">
+                We're here to help! You can reach us using the form, or via the
+                details below.
+              </p>
+            </div>
+            <div className="bg-background p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+              <h3 className="text-xl font-semibold text-primary">Our Office</h3>
+              <p className="text-foregroundMuted">
+                office#5 Al-Malik Centre (Third Floor) 70 West Jinnah Avenue
+                Blue Area Islamabad
+              </p>
+            </div>
+            <div className="bg-background p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+              <h3 className="text-xl font-semibold text-primary">Phone</h3>
+              <p className="text-foregroundMuted">051-2803190-91</p>
+            </div>
+            <div className="bg-background p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+              <h3 className="text-xl font-semibold text-primary">Email</h3>
+              <p className="text-foregroundMuted">
+                contact@steadfastsecurity.com.pk
+              </p>
+            </div>
+          </div>
+        </Container>
+      </div>
+
+      {/* Map Section (You can replace this with an actual map embed later) */}
+      <section className="bg-background py-12">
+        <Container className="px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">Visit Us</h2>
+          <div className="w-full h-64 bg-gray-400 rounded-lg">
+            {/* Placeholder for Map */}
+            <p className="text-gray-600 leading-loose">
+              Map will be displayed here (Google Maps or similar)
+            </p>
+          </div>
+        </Container>
+      </section>
+    </>
   );
 }

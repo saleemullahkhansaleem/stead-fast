@@ -1,5 +1,5 @@
-export default function Container({ children, className = "" }) {
+export default function Container({ children, className = "", ...props }) {
   return (
-    <div className={`container mx-auto ${className}`}>{children}</div>
+    <div {...props} className={`container mx-auto ${className}`}>{children}</div>
   );
 }

@@ -37,7 +37,7 @@ const EmergencyNumbers = () => {
         {emergencyGroups.map((group, index) => (
           <div
             key={index}
-            className="table bg-backgroundMuted p-6 rounded-md shadow-md"
+            className="table bg-background p-6 rounded-md shadow-md"
           >
             {group.map((item, idx) => (
               <div key={idx} className="grid-item py-2 flex justify-between">
