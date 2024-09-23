@@ -19,14 +19,17 @@ export default function Header() {
   return (
     <header className="bg-background p-2 shadow sticky top-0 z-10">
       <Container className="flex justify-between items-center">
-        <Link href="/" className="flex items-center gap-4">
+        {/* <Link href="/" className="flex items-center gap-4">
           <img
             src="images/logo.png"
             alt="SteadFast Logo"
             title="Home"
             className="h-12 md:h-16"
           />
-        </Link>
+        </Link> */}
+
+        <NavbarBrand />
+
         <nav className="xl:flex items-center h-full hidden">
           {navLinks.map((link, index) => (
             <NavLink
@@ -89,5 +92,20 @@ export default function Header() {
         </div>
       </div>
     </header>
+  );
+}
+
+function NavbarBrand() {
+  return (
+    <Link href="/" className="flex items-center gap-2">
+      <img src="/images/logo-small.png" alt="SteadFast Logo" className="h-16" />
+
+      <div>
+        <h2 className="block text-primary text-2xl leading-none">STEAD FAST</h2>
+        <p className="block text-foregroundMuted text-sm tracking-[10px] text-center">
+          SECURITY
+        </p>
+      </div>
+    </Link>
   );
 }

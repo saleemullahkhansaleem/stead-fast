@@ -1,53 +1,63 @@
 import { MdSecurity } from "react-icons/md";
 import { DetailPage } from "../components";
 
-export default function WhoPage() {
+export default function AboutPage() {
   return (
     <DetailPage
-      title="Security Escort"
+      title="ABOUT US"
+      description="Discover who we are and what drives us to deliver exceptional security services."
       imageUrl="s5.jpg"
       icon={<MdSecurity className="text-secondary text-5xl" />}
       reverse
     >
-      <p>
-        Static guarding and access control is one of our expert fields. We can
-        provide round the clock security for your premises, office buildings,
-        industrial estates/factories, hospitals, educational institutions,
-        embassies, and private residences.
-      </p>
-      <p>
-        Providing security to high-profile special events through manned
-        security, access control, electronic checking, and rapid response in
-        case of any security breach is another area of our expertise in security
-        services.
-      </p>
-      <p>
-        We also provide mobile escorts to cater to the security needs of our
-        customers during the transportation of materials and VIP escorts.
+      <h2 className="text-4xl font-bold mb-6 text-primary">
+        Stead Fast Security
+      </h2>
+      <p className="text-lg text-gray-600 leading-relaxed mb-8">
+        Stead Fast Security Company (Private) Limited was established in 2007
+        with a vision to provide exceptional security services in Pakistan. Our
+        leadership team comprises experienced security professionals committed
+        to delivering top-notch solutions.
       </p>
 
-      <h6 className="text-primary text-2xl font-bold">Additional Details:</h6>
-      <p>
-        Our security staff are trained professionals, equipped with the latest
-        technology and well-versed in protocols designed to handle various
-        security risks and incidents. We prioritize the safety of both people
-        and property, and we customize our services based on the specific
-        requirements of each client.
-      </p>
-      <p>
-        Our physical security measures are supported by a responsive monitoring
-        and control system, ensuring timely detection and intervention to
-        safeguard against unauthorized access or threats.
-      </p>
+      <div className="space-y-8">
+        <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <h6 className="text-primary text-xl font-bold">VISION:</h6>
+          <p className="text-gray-700">
+            Protecting Lives, Securing Futures. At Stead Fast Security, our
+            vision is to become the leading private security provider in
+            Pakistan, delivering top-notch services that ensure the safety and
+            security of our clients, their assets, and the community. We strive
+            to set the standard for excellence in the security industry,
+            fostering trust and peace of mind through our unwavering commitment
+            to exceptional service.
+          </p>
+        </div>
 
-      <h4 className="text-primary text-2xl font-bold">Key Features:</h4>
-      <ul>
-        <li>24/7 security for various facilities</li>
-        <li>Specialized security for high-profile events</li>
-        <li>Mobile escort and VIP protection services</li>
-        <li>Rapid response to any security breaches</li>
-        <li>Electronic checking and monitoring systems</li>
-      </ul>
+        <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <h6 className="text-primary text-xl font-bold">MISSION:</h6>
+          <p className="text-gray-700">
+            Delivering Excellence in Security. Our mission is to provide expert
+            security solutions tailored to meet the unique needs of our clients,
+            fostering trust and peace of mind through our unwavering commitment
+            to excellence.
+          </p>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <h4 className="text-primary text-2xl font-bold">
+            We are dedicated to:
+          </h4>
+          <ul className="list-disc list-inside space-y-2 mt-4 text-gray-700">
+            <li>Delivering reliable and responsive security services</li>
+            <li>
+              Empowering our teams through continuous training and development
+            </li>
+            <li>Building long-term relationships with our clients</li>
+            <li>Investing in cutting-edge technology and equipment</li>
+          </ul>
+        </div>
+      </div>
     </DetailPage>
   );
 }

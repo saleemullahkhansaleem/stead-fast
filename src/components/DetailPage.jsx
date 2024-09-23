@@ -6,13 +6,14 @@ import Services from "./home/Services";
 export default function DetailPage({
   children,
   title = "",
+  description="",
   icon,
   imageUrl = "",
   reverse = false,
 }) {
   return (
     <>
-      <CoverSection title={title} />
+      <CoverSection title={title} description={description} />
       <Container className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-8">
         <div
           className={`${
@@ -32,10 +33,10 @@ export default function DetailPage({
           </div>
         </div>
         <div className={`flex flex-col gap-8 justify-center `}>
-          <div className="flex items-center gap-4 font-bold">
+          {/* <div className="flex items-center gap-4 font-bold">
             {icon}
             <h2 className="text-primary text-3xl">{title}</h2>
-          </div>
+          </div> */}
           {children}
           <div>
             <Button href="/">Back to Home</Button>
