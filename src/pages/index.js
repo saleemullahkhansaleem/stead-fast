@@ -6,6 +6,7 @@ import WhatPage from "./WhatPage";
 import ContactPage from "./ContactPage";
 import NewsPage from "./NewsPage";
 import CareerPage from "./CareerPage";
+import CareerApplyPage from "./CareerApplyPage";
 
 export {
   Home,
@@ -16,4 +17,5 @@ export {
   ContactPage,
   NewsPage,
   CareerPage,
+  CareerApplyPage,
 };

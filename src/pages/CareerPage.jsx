@@ -86,7 +86,7 @@ export default function CareerPage() {
                 </p>
                 <p className="text-foreground mb-6">{job.description}</p>
                 <Link
-                  to="#apply"
+                  to="/career-apply"
                   className="text-primary font-bold hover:text-secondary transition-colors"
                 >
                   Apply Now &rarr;
@@ -107,7 +107,7 @@ export default function CareerPage() {
             If you're excited about making a meaningful impact and working in an
             environment where your ideas are valued, we'd love to hear from you.
           </p>
-          <Button href="#apply">Apply Now</Button>
+          <Button href="/career-apply">Apply Now</Button>
         </Container>
       </div>
     </>

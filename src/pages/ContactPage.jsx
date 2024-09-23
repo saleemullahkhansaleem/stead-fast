@@ -1,6 +1,39 @@
+import { useState } from "react";
 import { Button, Container, CoverSection, Input } from "../components";
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const contactInfo = [
+    {
+      title: "Our Office",
+      content:
+        "office#5 Al-Malik Centre (Third Floor) 70 West Jinnah Avenue Blue Area Islamabad",
+    },
+    {
+      title: "Phone",
+      content: "051-2803190-91",
+    },
+    {
+      title: "Email",
+      content: "contact@steadfastsecurity.com.pk",
+    },
+  ];
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prv) => ({ ...prv, [name]: value }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Form data", formData);
+  };
+
   return (
     <>
       {/* Cover Section */}
@@ -14,20 +47,35 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="bg-background p-8 rounded-lg shadow-md">
             <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
-            <form className="space-y-4">
-              <Input label="Name" placeholder="Your Name" />
-              <Input label="Email" placeholder="Your Email" type="email" />
-              <Input label="Subject" placeholder="Message Subject" />
-              <div>
-                <label className="block text-sm font-medium text-foregroundMuted">
-                  Message
-                </label>
-                <textarea
-                  className="mt-1 p-2 block w-full border border-muted rounded-md shadow-sm focus:ring-secondary focus:border-secondary sm:text-sm"
-                  placeholder="Your Message"
-                  rows={4}
-                ></textarea>
-              </div>
+            <form className="space-y-4" onSubmit={handleSubmit}>
+              <Input
+                required
+                onChange={handleChange}
+                name="name"
+                placeholder="Enter Your Name"
+              />
+              <Input
+                required
+                onChange={handleChange}
+                name="email"
+                placeholder="Enter Your Email"
+                type="email"
+              />
+              <Input
+                required
+                onChange={handleChange}
+                name="subject"
+                placeholder="Enter Message Subject"
+              />
+              <Input
+                required
+                onChange={handleChange}
+                name="message"
+                field="textarea"
+                placeholder="Enter Your Message"
+                rows={4}
+                resize="false"
+              />
               <Button type="submit" className="w-full">
                 Send Message
               </Button>
@@ -43,36 +91,36 @@ export default function ContactPage() {
                 details below.
               </p>
             </div>
-            <div className="bg-background p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
-              <h3 className="text-xl font-semibold text-primary">Our Office</h3>
-              <p className="text-foregroundMuted">
-                office#5 Al-Malik Centre (Third Floor) 70 West Jinnah Avenue
-                Blue Area Islamabad
-              </p>
-            </div>
-            <div className="bg-background p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
-              <h3 className="text-xl font-semibold text-primary">Phone</h3>
-              <p className="text-foregroundMuted">051-2803190-91</p>
-            </div>
-            <div className="bg-background p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
-              <h3 className="text-xl font-semibold text-primary">Email</h3>
-              <p className="text-foregroundMuted">
-                contact@steadfastsecurity.com.pk
-              </p>
-            </div>
+
+            {contactInfo.map((info, index) => (
+              <div
+                key={index}
+                className="bg-background p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+              >
+                <h3 className="text-xl font-semibold text-primary">
+                  {info.title}
+                </h3>
+                <p className="text-foregroundMuted">{info.content}</p>
+              </div>
+            ))}
           </div>
         </Container>
       </div>
 
-      {/* Map Section (You can replace this with an actual map embed later) */}
+      {/* Map Section */}
       <section className="bg-background py-12">
         <Container className="px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Visit Us</h2>
-          <div className="w-full h-64 bg-gray-400 rounded-lg">
-            {/* Placeholder for Map */}
-            <p className="text-gray-600 leading-loose">
-              Map will be displayed here (Google Maps or similar)
-            </p>
+          <div className="w-full h-64 bg-gray-400 rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1173.3912196140043!2d73.0619942462728!3d33.71279700874007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfa2b4a3278d%3A0x34a59e63033052c2!2sAl-Malik%20Centre!5e0!3m2!1sen!2s!4v1727083773051!5m2!1sen!2s"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </Container>
       </section>

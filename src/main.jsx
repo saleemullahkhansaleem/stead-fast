@@ -6,6 +6,7 @@ import Layout from "./Layout.jsx";
 import "@fontsource/archivo"; // Defaults to 400 weight
 import {
   ApproachPage,
+  CareerApplyPage,
   CareerPage,
   ContactPage,
   Home,
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "who-we-are",
+        path: "about-us",
         element: <WhoPage />,
       },
       {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "career",
         element: <CareerPage />,
+      },
+      {
+        path: "career-apply",
+        element: <CareerApplyPage />,
       },
     ],
   },

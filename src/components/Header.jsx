@@ -7,7 +7,7 @@ export default function Header() {
   const [menueToggle, setMenueToggle] = useState(false);
   const navLinks = [
     { name: "HOME", url: "/" },
-    { name: "WHO WE ARE", url: "/who-we-are" },
+    { name: "WHO WE ARE", url: "/about-us" },
     { name: "WHY STEAD FAST", url: "/why-stand-fast" },
     { name: "HEDONISTIC APPROACH", url: "/hedonistic-approach" },
     { name: "WHAT WE DO", url: "/what-we-do" },
