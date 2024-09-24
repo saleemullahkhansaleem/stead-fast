@@ -5,14 +5,14 @@ import Button from "./Button";
 export default function CoverSection({
   title,
   buttons = null,
-  description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quasi voluptatibus architecto nihil dicta.",
+  description = "",
 }) {
   return (
     <section className="cover-bg">
       <div className="w-full h-full bg-black/70">
         <Container
           className={`flex flex-col items-center justify-center gap-8 ${
-            buttons ? "min-h-64" : "min-h-52"
+            buttons ? "min-h-96" : "min-h-52"
           } p-4 text-background`}
         >
           <div className="text-center max-w-3xl">
@@ -20,7 +20,7 @@ export default function CoverSection({
             <p className="text-backgroundMuted text-lg">{description}</p>
           </div>
           {buttons && (
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap items-center gap-4">
               {buttons.map((button, index) => (
                 <Button href={button?.url} key={index}>
                   {button.label}

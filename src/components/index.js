@@ -7,6 +7,8 @@ import CoverSection from "./CoverSection";
 import Footer from "./Footer";
 import DetailPage from "./DetailPage";
 import Input from "./Input";
+import BackToTopButton from "./BackToTopButton";
+import ScrollToTop from "./ScrollToTop";
 
 // Home components
 
@@ -14,6 +16,7 @@ import MainSection from "./home/MainSection";
 import Services from "./home/Services";
 import LogoCarousel from "./home/LogoCarousel";
 import EmergencyNumbers from "./home/EmergencyNumbers";
+import AboutSection from "./home/AboutSection";
 export {
   Container,
   Button,
@@ -24,8 +27,11 @@ export {
   Footer,
   DetailPage,
   Input,
+  BackToTopButton,
+  ScrollToTop,
   MainSection,
   Services,
   LogoCarousel,
   EmergencyNumbers,
+  AboutSection,
 };

@@ -6,11 +6,17 @@ import Layout from "./Layout.jsx";
 import "@fontsource/archivo"; // Defaults to 400 weight
 import {
   ApproachPage,
+  BulletProofVehicles,
   CareerApplyPage,
   CareerPage,
   ContactPage,
+  HighProfileEvents,
   Home,
   NewsPage,
+  PhysicalSecurity,
+  SecurityEscort,
+  ServicesLayout,
+  TrainingCourses,
   WhatPage,
   WhoPage,
   WhyPage,
@@ -56,6 +62,32 @@ const router = createBrowserRouter([
       {
         path: "career-apply",
         element: <CareerApplyPage />,
+      },
+      {
+        path: "services/",
+        element: <ServicesLayout />,
+        children: [
+          {
+            path: "physical-security",
+            element: <PhysicalSecurity />,
+          },
+          {
+            path: "high-profile-events",
+            element: <HighProfileEvents />,
+          },
+          {
+            path: "security-escort",
+            element: <SecurityEscort />,
+          },
+          {
+            path: "training-courses",
+            element: <TrainingCourses />,
+          },
+          {
+            path: "bullet-proof-vehicles",
+            element: <BulletProofVehicles />,
+          },
+        ],
       },
     ],
   },

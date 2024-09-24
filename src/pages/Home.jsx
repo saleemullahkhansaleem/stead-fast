@@ -1,4 +1,6 @@
 import {
+  AboutSection,
+  Container,
   CoverSection,
   EmergencyNumbers,
   LogoCarousel,
@@ -10,32 +12,35 @@ export default function Home() {
   const buttons = [
     {
       label: "Physical Security",
-      url: "/physical-security",
+      url: "/services/physical-security",
     },
     {
       label: "High Profile Special Events",
-      url: "/high-profile-events",
+      url: "/services/high-profile-events",
     },
     {
       label: "Security Escort",
-      url: "/security-escort",
+      url: "/services/security-escort",
     },
     {
       label: "Training & Courses",
-      url: "/training-courses",
+      url: "/services/training-courses",
     },
     {
       label: "Bullet Proof Vehicles",
-      url: "/bullet-proof-vehicles",
+      url: "/services/bullet-proof-vehicles",
     },
   ];
 
   return (
     <>
       <CoverSection
-        title="highest standards of Security Services"
+        title="Comprehensive Security Solutions"
+        description="With over a decade of experience, Stead Fast Security offers tailored services for individuals, businesses, and events. We prioritize safety, professionalism, and the latest technology to provide reliable protection and peace of mind."
         buttons={buttons}
       />
+
+      <AboutSection />
       <MainSection />
       <Services />
       <LogoCarousel />

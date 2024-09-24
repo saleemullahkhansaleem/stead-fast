@@ -6,34 +6,34 @@ const newsArticles = [
   {
     title: "New Security Guard Training Program Launched",
     content:
-      "Our company has launched a comprehensive training program to enhance the skills of our security personnel, focusing on emergency response and customer service.",
+      "Our company has introduced a new, comprehensive training program designed to strengthen our security personnel's skills, with a focus on emergency response, customer service, and conflict resolution.",
     date: "September 21, 2024",
     author: "John Doe",
     category: "Training",
     imageUrl: "/images/security/s6.jpg",
   },
   {
-    title: "Successful Partnership with Local Businesses",
+    title: "Successful Collaboration with Local Businesses",
     content:
-      "We are proud to announce our new partnership with several local businesses to enhance security measures and provide a safer environment for their customers.",
+      "We are pleased to announce a new collaboration with local businesses to enhance security measures and create safer environments for their employees and customers.",
     date: "September 20, 2024",
     author: "Jane Smith",
     category: "Business",
     imageUrl: "/images/security/s6.jpg",
   },
   {
-    title: "Implementing Advanced Surveillance Technology",
+    title: "Advanced Surveillance Technology Now in Use",
     content:
-      "Our security company is integrating advanced surveillance technology, including AI-based monitoring systems, to improve security effectiveness.",
+      "Our security team is now equipped with cutting-edge surveillance technology, including AI-based monitoring systems, to provide more efficient and effective protection services.",
     date: "September 19, 2024",
     author: "Michael Johnson",
     category: "Technology",
     imageUrl: "/images/security/s6.jpg",
   },
   {
-    title: "Community Safety Awareness Campaign",
+    title: "Community Safety Awareness Campaign Launched",
     content:
-      "We are launching a community safety awareness campaign aimed at educating residents on security measures and crime prevention strategies.",
+      "We are launching a community-wide safety awareness campaign to educate residents on the importance of security measures and provide practical crime prevention strategies.",
     date: "September 18, 2024",
     author: "Sarah Connor",
     category: "Community",
@@ -44,7 +44,11 @@ const newsArticles = [
 export default function NewsPage() {
   return (
     <>
-      <CoverSection title="Latest News" />
+      <CoverSection
+        title="Latest News"
+        description="Stay updated with the latest developments in the security industry. From new technology and training programs to community safety initiatives, explore how we are committed to keeping you safe and secure."
+      />
+
       <Container className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 py-12">
         {newsArticles.map((article, index) => (
           <div

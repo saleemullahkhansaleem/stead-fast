@@ -1,24 +1,20 @@
 import { Link } from "react-router-dom";
 import Container from "./Container";
 import SocialBar from "./SocialBar";
+import BackToTopButton from "./BackToTopButton";
 
 export default function Footer() {
   const footerNavLinks = [
     [
-      { name: "Home", url: "/home" },
+      { name: "Home", url: "/" },
       { name: "About Us", url: "/about-us" },
-      { name: "Jobs", url: "/jobs" },
-      { name: "Security Services", url: "/security-services" },
-      { name: "Technical Security", url: "/technical-security" },
-      { name: "Cash in Transit", url: "/cash-in-transit" },
+      { name: "Why Choose Us", url: "/why-stand-fast" },
+      { name: "Security Services", url: "/what-we-do" },
     ],
     [
-      { name: "Training School", url: "/training-school" },
-      { name: "Canine", url: "/canine" },
-      { name: "Bulletin", url: "/bulletin" },
+      { name: "Latest News", url: "/news" },
+      { name: "Jobs", url: "/career" },
       { name: "Contact Us", url: "/contact-us" },
-      { name: "Privacy Policy", url: "/privacy-policy" },
-      { name: "Site Map", url: "/site-map" },
     ],
   ];
 
@@ -57,7 +53,7 @@ export default function Footer() {
         </div>
         <div className="p-4">
           <h4 className="text-2xl text-background font-bold pb-4">Contact</h4>
-          <p>office#5 Al-Malik Centre (Third Floor)</p>
+          <p>Office No: 5 Al-Malik Centre (Third Floor)</p>
           <p> 70 West Jinnah Avenue</p>
           <p> Blue Area Islamabad</p>
           <br />
@@ -71,14 +67,25 @@ export default function Footer() {
             </Link>
           </p>
           <br />
-          <p>
-            <Link
-              className="text-lg hover:text-background"
-              title="Call us"
-              to="tel:+92512803190"
-            >
-              Phone: 051-2803190-91
-            </Link>
+          <p className="text-lg flex gap-2">
+            <span>Phone:</span>{" "}
+            <span>
+              <Link
+                className="hover:text-background"
+                title="Call us"
+                to="tel:+92518739888"
+              >
+                051-8739888
+              </Link>
+              <br />
+              <Link
+                className="hover:text-background"
+                title="Call us"
+                to="tel:+92518736789"
+              >
+                051-8736789
+              </Link>
+            </span>
           </p>
         </div>
       </Container>
@@ -95,6 +102,7 @@ export default function Footer() {
           <SocialBar />
         </Container>
       </div>
+      <BackToTopButton />
     </footer>
   );
 }

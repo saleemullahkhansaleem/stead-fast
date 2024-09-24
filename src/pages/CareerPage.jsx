@@ -37,30 +37,33 @@ export default function CareerPage() {
       <Container className="px-4 my-12 text-center">
         <h2 className="text-4xl font-bold mb-6">Why Work With Us?</h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-8">
-          We are a team of passionate innovators who love solving complex
-          problems. Our mission is to foster a culture of collaboration,
-          creativity, and personal growth.
+          We are a team of passionate innovators committed to providing a
+          supportive and rewarding work environment. Join us and enjoy a career
+          that offers growth, stability, and security.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold mb-4">Remote Flexibility</h3>
+            <h3 className="text-2xl font-bold mb-4">Life Insurance</h3>
             <p className="text-gray-700">
-              Work from anywhere with flexible hours, so you can manage your
-              work-life balance effectively.
+              We offer comprehensive life insurance coverage to give you and
+              your family peace of mind in the face of life’s uncertainties,
+              ensuring financial stability during tough times.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold mb-4">Growth Opportunities</h3>
+            <h3 className="text-2xl font-bold mb-4">EOBI Registered</h3>
             <p className="text-gray-700">
-              We invest in your professional development with training programs,
-              mentorship, and career advancement opportunities.
+              As an EOBI (Employees' Old-Age Benefits Institution) registered
+              company, we ensure that all our employees are entitled to pension
+              and retirement benefits, offering long-term financial security.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold mb-4">Innovative Culture</h3>
+            <h3 className="text-2xl font-bold mb-4">ESSI Registered</h3>
             <p className="text-gray-700">
-              Be part of a team that values creativity, innovation, and
-              collaboration. We thrive on building impactful solutions.
+              We are registered with the Employees Social Security Institution
+              (ESSI), providing our team with health insurance, disability
+              benefits, and maternity leave to safeguard your well-being.
             </p>
           </div>
         </div>
@@ -101,11 +104,13 @@ export default function CareerPage() {
       <div id="apply" className="bg-secondary text-background">
         <Container className="py-16 text-center">
           <h2 className="text-4xl font-bold mb-6">
-            Ready to Take the Next Step?
+            Join Our Team of Dedicated Professionals
           </h2>
-          <p className="text-lg mb-8">
-            If you're excited about making a meaningful impact and working in an
-            environment where your ideas are valued, we'd love to hear from you.
+          <p className="text-lg mb-8 max-w-2xl mx-auto">
+            Are you ready to take on the challenge of providing safety and
+            protection in a dynamic environment? If you’re passionate about
+            security and want to be part of a trusted team, we’d love to have
+            you on board.
           </p>
           <Button href="/career-apply">Apply Now</Button>
         </Container>

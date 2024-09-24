@@ -12,7 +12,7 @@ export default function ContactPage() {
     {
       title: "Our Office",
       content:
-        "office#5 Al-Malik Centre (Third Floor) 70 West Jinnah Avenue Blue Area Islamabad",
+        "Office No: 5 Al-Malik Centre (Third Floor) 70 West Jinnah Avenue Blue Area Islamabad",
     },
     {
       title: "Phone",
@@ -113,7 +113,7 @@ export default function ContactPage() {
           <h2 className="text-3xl font-bold mb-6">Visit Us</h2>
           <div className="w-full h-64 bg-gray-400 rounded-lg overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1173.3912196140043!2d73.0619942462728!3d33.71279700874007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfa2b4a3278d%3A0x34a59e63033052c2!2sAl-Malik%20Centre!5e0!3m2!1sen!2s!4v1727083773051!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.8518850242463!2d73.06003167616632!3d33.712781335577745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfa2cab19deb%3A0xfc0b014ecba12e3c!2sSteadfast%20Security%20Company!5e0!3m2!1sen!2s!4v1727176932110!5m2!1sen!2s"
               width="100%"
               height="100%"
               style={{ border: 0 }}
