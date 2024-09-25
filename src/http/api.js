@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const SERVER_URL = "https://api.github.com";
+const SERVER_URL = "https://admin.steadfastsecurity.com.pk/api/";
 
 const apiRequest = async (endpoint, method = "GET", data = {}, config = {}) => {
   try {

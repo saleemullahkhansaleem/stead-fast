@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Button, Container, CoverSection, Input } from "../components";
 import api from "../http/api";
+import { toast } from "react-toastify";
 
 export default function ContactPage() {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -32,11 +34,26 @@ export default function ContactPage() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Form data", formData);
-    // api
-    //   .post("/users", formData)
-    //   .then((data) => console.log(data))
-    //   .catch((error) => console.error(error));
+    setLoading(true);
+    api
+      .post("contact-us", formData)
+      .then((response) => {
+        if (response.success) {
+          toast.success(response.message);
+          setFormData({ name: "", email: "", subject: "", message: "" });
+        } else {
+          toast.error(
+            "There was an issue with your submission. Please try again."
+          );
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        toast.error("An error occurred. Please try again.");
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   return (
@@ -56,12 +73,14 @@ export default function ContactPage() {
               <Input
                 required
                 onChange={handleChange}
+                value={formData.name}
                 name="name"
                 placeholder="Enter Your Name"
               />
               <Input
                 required
                 onChange={handleChange}
+                value={formData.email}
                 name="email"
                 placeholder="Enter Your Email"
                 type="email"
@@ -69,20 +88,22 @@ export default function ContactPage() {
               <Input
                 required
                 onChange={handleChange}
+                value={formData.subject}
                 name="subject"
                 placeholder="Enter Message Subject"
               />
               <Input
                 required
                 onChange={handleChange}
+                value={formData.message}
                 name="message"
                 field="textarea"
                 placeholder="Enter Your Message"
                 rows={4}
                 resize="false"
               />
-              <Button type="submit" className="w-full">
-                Send Message
+              <Button type="submit" className="w-full" disabled={loading}>
+                {loading ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </div>

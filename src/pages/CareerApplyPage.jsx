@@ -2,40 +2,82 @@ import { useState } from "react";
 import { Button, Container, CoverSection, Input } from "../components";
 import api from "../http/api";
 import { benefits } from "./CareerPage";
+import { toast } from "react-toastify";
 
 export default function CareerApplyPage() {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
-    position: "",
+    contact: "",
+    job_position: "",
     resume: null,
     message: "",
   });
 
   const positionOptions = [
     { label: "Please Select Position", value: "" },
-    { label: "Security Guard", value: "security-guard" },
+    {
+      label: "Senior Security Supervisor",
+      value: "senior-security-supervisor",
+    },
     { label: "Security Supervisor", value: "security-supervisor" },
+    { label: "Security Guard", value: "security-guard" },
+    { label: "Driver", value: "driver" },
+    { label: "Cook", value: "cook" },
   ];
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
+  // Handle change for input fields other than file
+  const handleChange = ({ target: { name, value } }) => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleFileChange = (event) => {
-    const file = event.target.files[0];
-    setFormData((prev) => ({ ...prev, resume: file }));
+  // Handle file change
+  const handleFileChange = ({ target: { files } }) => {
+    setFormData((prev) => ({ ...prev, resume: files[0] }));
   };
 
-  const handleSubmit = (event) => {
+  // Handle form submission
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log("Form data", formData);
-    // api
-    //   .post("/users", formData)
-    //   .then((data) => console.log(data))
-    //   .catch((error) => console.error(error));
+    setLoading(true);
+
+    const formDataToSend = new FormData();
+    Object.keys(formData).forEach((key) => {
+      formDataToSend.append(key, formData[key]);
+    });
+
+    try {
+      const response = await api.post("job-request", formDataToSend, {
+        headers: { "Content-Type": "multipart/form-data" },
+      });
+
+      if (response.success) {
+        toast.success(response.message);
+        resetForm();
+      } else {
+        toast.error(
+          "There was an issue with your submission. Please try again."
+        );
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("An error occurred. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Reset form after submission
+  const resetForm = () => {
+    setFormData({
+      name: "",
+      email: "",
+      contact: "",
+      job_position: "",
+      resume: null,
+      message: "",
+    });
   };
 
   return (
@@ -46,7 +88,7 @@ export default function CareerApplyPage() {
         description="We're looking for talented individuals to join our growing team. Apply now and take the next step in your career!"
       />
 
-      <div className="">
+      <div>
         <Container className="px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Career Application Form */}
           <div className="bg-background p-8 rounded-lg shadow-md">
@@ -55,12 +97,14 @@ export default function CareerApplyPage() {
               <Input
                 required
                 onChange={handleChange}
+                value={formData.name}
                 name="name"
                 placeholder="Enter Your Name"
               />
               <Input
                 required
                 onChange={handleChange}
+                value={formData.email}
                 name="email"
                 placeholder="Enter Your Email"
                 type="email"
@@ -68,7 +112,8 @@ export default function CareerApplyPage() {
               <Input
                 required
                 onChange={handleChange}
-                name="phone"
+                value={formData.contact}
+                name="contact"
                 placeholder="Enter Your Phone Number"
                 type="tel"
               />
@@ -76,7 +121,8 @@ export default function CareerApplyPage() {
                 required
                 field="select"
                 onChange={handleChange}
-                name="position"
+                value={formData.job_position}
+                name="job_position"
                 placeholder="Position You're Applying For"
                 options={positionOptions}
               />
@@ -91,12 +137,13 @@ export default function CareerApplyPage() {
                 name="message"
                 field="textarea"
                 onChange={handleChange}
+                value={formData.message}
                 placeholder="Additional Message (Optional)"
                 rows={4}
                 resize="false"
               />
-              <Button type="submit" className="w-full">
-                Submit Application
+              <Button type="submit" className="w-full" disabled={loading}>
+                {loading ? "Submitting..." : "Submit Application"}
               </Button>
             </form>
           </div>

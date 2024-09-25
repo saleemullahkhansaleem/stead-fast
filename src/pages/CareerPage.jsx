@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button, Container, CoverSection } from "../components";
 import api from "../http/api";
+import { useEffect, useState } from "react";
+import { PuffLoader } from "react-spinners";
 
 export const benefits = [
   {
@@ -20,35 +22,57 @@ export const benefits = [
   },
 ];
 
+const jobListings = [
+  {
+    title: "Senior React Developer",
+    location: "Remote",
+    type: "Full-Time",
+    description:
+      "We are looking for a Senior React Developer to join our dynamic team and build cutting-edge web applications using modern technologies.",
+  },
+  {
+    title: "UI/UX Designer",
+    location: "New York, NY",
+    type: "Full-Time",
+    description:
+      "Seeking a creative UI/UX Designer to craft intuitive and visually appealing user interfaces for our applications.",
+  },
+  {
+    title: "Backend Engineer",
+    location: "San Francisco, CA",
+    type: "Full-Time",
+    description:
+      "Join us as a Backend Engineer to design and develop highly scalable backend services and APIs.",
+  },
+];
 export default function CareerPage() {
-  const jobListings = [
-    {
-      title: "Senior React Developer",
-      location: "Remote",
-      type: "Full-Time",
-      description:
-        "We are looking for a Senior React Developer to join our dynamic team and build cutting-edge web applications using modern technologies.",
-    },
-    {
-      title: "UI/UX Designer",
-      location: "New York, NY",
-      type: "Full-Time",
-      description:
-        "Seeking a creative UI/UX Designer to craft intuitive and visually appealing user interfaces for our applications.",
-    },
-    {
-      title: "Backend Engineer",
-      location: "San Francisco, CA",
-      type: "Full-Time",
-      description:
-        "Join us as a Backend Engineer to design and develop highly scalable backend services and APIs.",
-    },
-  ];
+  const [jobs, setJobs] = useState([]);
+  const [loading, setLoading] = useState(false);
 
-  // api
-  // .get("/users/saleemullahkhansaleem")
-  // .then((data) => console.log(data))
-  // .catch((error) => console.error(error));
+  useEffect(() => {
+    fetch();
+  }, []);
+
+  const fetch = () => {
+    setLoading(true);
+    api
+      .get("jobs")
+      .then((response) => {
+        if (response.success) {
+          setJobs(response.data);
+          console.log("jobs ", response.data);
+        } else {
+          toast.error("");
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        toast.error("An error occurred. Please try again.");
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
 
   return (
     <>
@@ -80,26 +104,38 @@ export default function CareerPage() {
             Current Openings
           </h2>
           <div className="space-y-8">
-            {jobListings.map((job, index) => (
-              <div
-                key={index}
-                className="bg-muted p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-              >
-                <h3 className="text-2xl font-bold text-primary mb-2">
-                  {job.title}
-                </h3>
-                <p className="text-sm text-foregroundMuted mb-4">
-                  {job.location} | {job.type}
-                </p>
-                <p className="text-foreground mb-6">{job.description}</p>
-                <Link
-                  to="/career-apply"
-                  className="text-primary font-bold hover:text-secondary transition-colors"
-                >
-                  Apply Now &rarr;
-                </Link>
+            {loading ? (
+              <div className="flex justify-center">
+                <PuffLoader size={200} color={"#de0a0a"} />
               </div>
-            ))}
+            ) : jobs.length === 0 ? (
+              <div className="flex justify-center">No Jobs Found</div>
+            ) : (
+              jobs.map((job, index) => (
+                <div
+                  key={index}
+                  className="bg-muted p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                >
+                  <h3 className="text-2xl font-bold text-primary mb-2">
+                    {job.title}
+                  </h3>
+                  <p className="text-sm text-foregroundMuted mb-4">
+                    location: {job.location} | {job.no_of_vacancies} positions |
+                    Age limit: {job.min_age} - {job.max_age}
+                  </p>
+                  <p className="text-sm text-primary mb-4">
+                    Deadline: {job.expired_date}
+                  </p>
+                  <p className="text-foreground mb-6">{job.description}</p>
+                  <Link
+                    to="/career-apply"
+                    className="text-primary font-bold hover:text-secondary transition-colors"
+                  >
+                    Apply Now &rarr;
+                  </Link>
+                </div>
+              ))
+            )}
           </div>
         </Container>
       </div>

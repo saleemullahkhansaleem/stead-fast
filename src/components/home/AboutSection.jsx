@@ -15,14 +15,8 @@ export default function AboutSection() {
           Stead Fast Security Company (Private) Limited was established in 2007
           with a vision to provide exceptional security services in Pakistan.
           Our leadership team comprises experienced security professionals
-          committed to delivering top-notch solutions. SSC secured NOC from
-          Ministry of Interior (MOI) in 2007, followed by incorporation in
-          Securities and Exchange Commission of Pakistan in 2008. Subsequent
-          permissions to operate in the limits of Islamabad Capital Territory,
-          Punjab, and Khyber Pakhtunkhwa were obtained from concerned Home
-          Departments. SSC is also registered with FBR, All Pakistan Securities
-          Agencies Association, and Banking Council of Pakistan.
-        </p>
+          committed to delivering top-notch solutions.
+        </p>{" "}
         <div className="py-2">
           <Button href="/about-us">Read More</Button>
         </div>
