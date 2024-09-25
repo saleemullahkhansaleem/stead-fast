@@ -6,53 +6,51 @@ export default function TrainingCourses() {
     <DetailPage
       title="Training Courses"
       description="Discover who we are and what drives us to deliver exceptional security services."
-      imageUrl="s5.jpg"
+      imageUrl="placeholder.jpg"
       icon={<MdSecurity className="text-secondary text-5xl" />}
       reverse
     >
       <h2 className="text-4xl font-bold mb-6 text-primary">Training Courses</h2>
-      <p className="text-lg text-gray-600 leading-relaxed mb-8">
-        Stead Fast Security Company (Private) Limited was established in 2007
-        with a vision to provide exceptional security services in Pakistan. Our
-        leadership team comprises experienced security professionals committed
-        to delivering top-notch solutions.
+      <p className="text-lg text-foregroundMuted leading-relaxed mb-8">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+        excepturi debitis aliquam fuga vel velit eos magni mollitia nemo atque
+        consectetur dolores veritatis molestiae, sequi possimus ea? Accusamus
+        sed optio odio maxime accusantium, alias at mollitia deleniti officia
+        modi id facilis voluptatem earum dicta illum illo ut enim nam non!
       </p>
 
       <div className="space-y-8">
-        <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div className="bg-background p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
           <h6 className="text-primary text-xl font-bold">VISION:</h6>
-          <p className="text-gray-700">
-            Protecting Lives, Securing Futures. At Stead Fast Security, our
-            vision is to become the leading private security provider in
-            Pakistan, delivering top-notch services that ensure the safety and
-            security of our clients, their assets, and the community. We strive
-            to set the standard for excellence in the security industry,
-            fostering trust and peace of mind through our unwavering commitment
-            to exceptional service.
+          <p className="text-foregroundMuted">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, fuga!
+            Corporis soluta unde incidunt alias ab expedita maiores, illum
+            accusantium nihil animi tempora asperiores recusandae voluptate,
+            dignissimos odit beatae quod quos est libero! Nulla perferendis vero
+            magni, harum adipisci laboriosam nisi debitis dolores cumque
+            praesentium id quas ipsam maxime ut!
           </p>
         </div>
 
-        <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div className="bg-background p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
           <h6 className="text-primary text-xl font-bold">MISSION:</h6>
-          <p className="text-gray-700">
-            Delivering Excellence in Security. Our mission is to provide expert
-            security solutions tailored to meet the unique needs of our clients,
-            fostering trust and peace of mind through our unwavering commitment
-            to excellence.
+          <p className="text-foregroundMuted">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, fuga!
+            Corporis soluta unde incidunt alias ab expedita maiores, illum
+            accusantium nihil animi tempora asperiores recusandae voluptate,
+            dignissimos odit beatae quod quos est libero! Nulla perferendis vero
+            magni, harum adipisci laboriosam nisi debitis dolores cumque
+            praesentium id quas ipsam maxime ut!
           </p>
         </div>
 
-        <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <h4 className="text-primary text-2xl font-bold">
-            We are dedicated to:
-          </h4>
-          <ul className="list-disc list-inside space-y-2 mt-4 text-gray-700">
-            <li>Delivering reliable and responsive security services</li>
-            <li>
-              Empowering our teams through continuous training and development
-            </li>
-            <li>Building long-term relationships with our clients</li>
-            <li>Investing in cutting-edge technology and equipment</li>
+        <div className="bg-background p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <h4 className="text-primary text-2xl font-bold">Key Features:</h4>
+          <ul className="list-disc list-inside space-y-2 mt-4 text-foregroundMuted">
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
           </ul>
         </div>
       </div>

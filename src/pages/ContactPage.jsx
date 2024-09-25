@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button, Container, CoverSection, Input } from "../components";
+import api from "../http/api";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -32,6 +33,10 @@ export default function ContactPage() {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log("Form data", formData);
+    // api
+    //   .post("/users", formData)
+    //   .then((data) => console.log(data))
+    //   .catch((error) => console.error(error));
   };
 
   return (

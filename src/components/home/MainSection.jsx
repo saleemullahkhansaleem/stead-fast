@@ -32,7 +32,7 @@ export default function MainSection() {
       </MainSectionBoxes>
       <MainSectionBoxes
         title="High Profile Special Events"
-        imageUrl="s3.jpg"
+        imageUrl="placeholder.jpg"
         icon={<MdSecurity className="text-secondary text-5xl" />}
         url="services/high-profile-events"
         sideImages={["s8.jpg", "s9.jpg"]}
@@ -48,8 +48,7 @@ export default function MainSection() {
           professionals ensure safety with discretion and professionalism.
           <br />
           <br />
-          We also provide mobile escorts to cater for security needs of our
-          customer during transportation of materials and VIP escorts.
+          Comming soon
         </p>
       </MainSectionBoxes>
       <MainSectionBoxes
@@ -60,44 +59,48 @@ export default function MainSection() {
         reverse
       >
         <p>
-          Static guarding and access control is one of our expert fields. We can
-          provide round the clock security for your premises, office buildings,
-          industrial estates/factories, hospitals, educational institutions,
-          embassies, and private residences.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          optio, modi, nobis aliquid delectus dolorem voluptates est vel
+          recusandae commodi accusantium voluptatum at atque laudantium nam
+          quos, eum a! Atque!
           <br />
           <br />
-          Providing security to high profile special events through manned
-          security, access control, electronic checking and rapid response in
-          case of any security breach is another area of our expertise in
-          security services.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          porro eveniet ad, exercitationem modi, odit hic officia illo soluta
+          dignissimos esse unde et tenetur nemo praesentium placeat suscipit
+          itaque reiciendis?
           <br />
           <br />
-          We also provide mobile escorts to cater for security needs of our
-          customer during transportation of materials and VIP escorts.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+          blanditiis reiciendis quisquam. Non, quos. Corporis nesciunt possimus
+          dicta iste dolorem facere atque delectus illum repellendus hic velit,
+          earum odit pariatur.
         </p>
       </MainSectionBoxes>
       <MainSectionBoxes
         title="Training & Courses"
-        imageUrl="s1.jpg"
+        imageUrl="placeholder.jpg"
         icon={<MdSecurity className="text-secondary text-5xl" />}
         url="services/training-courses"
-        sideImages={["s8.jpg", "s9.jpg", "s7.jpg"]}
+        sideImages={["placeholder.jpg", "placeholder.jpg", "placeholder.jpg"]}
       >
         <p>
-          Static guarding and access control is one of our expert fields. We can
-          provide round the clock security for your premises, office buildings,
-          industrial estates/factories, hospitals, educational institutions,
-          embassies, and private residences.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          voluptatum provident, et, eligendi deleniti voluptates impedit
+          voluptate, dolorem iure nemo ad consequatur! Error incidunt ea, totam
+          quisquam labore enim mollitia.
           <br />
           <br />
-          Providing security to high profile special events through manned
-          security, access control, electronic checking and rapid response in
-          case of any security breach is another area of our expertise in
-          security services.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+          nihil rerum accusantium quas doloremque blanditiis deserunt iste
+          consectetur nam modi, accusamus quos quam laborum beatae ea,
+          reprehenderit earum mollitia aliquid.
           <br />
           <br />
-          We also provide mobile escorts to cater for security needs of our
-          customer during transportation of materials and VIP escorts.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+          nihil rerum accusantium quas doloremque blanditiis deserunt iste
+          consectetur nam modi, accusamus quos quam laborum beatae ea,
+          reprehenderit earum mollitia aliquid.
         </p>
       </MainSectionBoxes>
     </section>

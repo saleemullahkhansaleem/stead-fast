@@ -9,7 +9,7 @@ export default function CoverSection({
 }) {
   return (
     <section className="cover-bg">
-      <div className="w-full h-full bg-black/70">
+      <div className="w-full h-full bg-black/80">
         <Container
           className={`flex flex-col items-center justify-center gap-8 ${
             buttons ? "min-h-96" : "min-h-52"

@@ -1,6 +1,5 @@
 import {
   AboutSection,
-  Container,
   CoverSection,
   EmergencyNumbers,
   LogoCarousel,
@@ -39,7 +38,6 @@ export default function Home() {
         description="With over a decade of experience, Stead Fast Security offers tailored services for individuals, businesses, and events. We prioritize safety, professionalism, and the latest technology to provide reliable protection and peace of mind."
         buttons={buttons}
       />
-
       <AboutSection />
       <MainSection />
       <Services />

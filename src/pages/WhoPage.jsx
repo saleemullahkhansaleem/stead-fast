@@ -11,7 +11,7 @@ export default function AboutPage() {
       <Container className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 py-8">
         <div className="lg:order-2">
           <img
-            src="/images/security/s5.jpg"
+            src="/images/security/placeholder.jpg"
             alt="About Us"
             className="w-full rounded-lg shadow-lg"
           />
@@ -20,7 +20,7 @@ export default function AboutPage() {
           <h2 className="text-4xl font-bold mb-6 text-primary">
             Stead Fast Security
           </h2>
-          <p className="text-lg text-gray-600 leading-relaxed mb-8">
+          <p className="text-lg text-foregroundMuted leading-relaxed mb-8">
             Stead Fast Security Company (Private) Limited was established in
             2007 with a vision to provide exceptional security services in
             Pakistan. Our leadership team comprises experienced security
@@ -77,13 +77,13 @@ export default function AboutPage() {
 function CeoMessage() {
   return (
     <Container className="px-4 py-8">
-      <div className="bg-background p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex">
+      <div className="bg-background p-6 rounded-lg shadow hover:shadow-xl transition-shadow duration-300 flex flex-wrap flex-col lg:flex-row gap-4">
         {/* Left side: Image */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mx-auto">
           <img
             src="/images/profile.png"
             alt="CEO"
-            className="w-96 h-96 object-cover"
+            className="w-96 object-cover"
           />
         </div>
 

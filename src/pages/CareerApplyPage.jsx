@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Button, Container, CoverSection, Input } from "../components";
+import api from "../http/api";
+import { benefits } from "./CareerPage";
 
 export default function CareerApplyPage() {
   const [formData, setFormData] = useState({
@@ -10,6 +12,12 @@ export default function CareerApplyPage() {
     resume: null,
     message: "",
   });
+
+  const positionOptions = [
+    { label: "Please Select Position", value: "" },
+    { label: "Security Guard", value: "security-guard" },
+    { label: "Security Supervisor", value: "security-supervisor" },
+  ];
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -24,6 +32,10 @@ export default function CareerApplyPage() {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log("Form data", formData);
+    // api
+    //   .post("/users", formData)
+    //   .then((data) => console.log(data))
+    //   .catch((error) => console.error(error));
   };
 
   return (
@@ -66,12 +78,7 @@ export default function CareerApplyPage() {
                 onChange={handleChange}
                 name="position"
                 placeholder="Position You're Applying For"
-                options={[
-                  { label: "Select Position", value: "" },
-                  { label: "Not Specified", value: "not-spacified" },
-                  { label: "Frontend Developer", value: "frontend" },
-                  { label: "Backend Developer", value: "backend" },
-                ]}
+                options={positionOptions}
               />
               <Input
                 required
@@ -94,7 +101,6 @@ export default function CareerApplyPage() {
             </form>
           </div>
 
-          {/* Company Information */}
           <div className="space-y-6">
             <div>
               <h2 className="text-3xl font-bold mb-4">Why Join Us?</h2>
@@ -105,25 +111,17 @@ export default function CareerApplyPage() {
               </p>
             </div>
 
-            <div className="bg-background p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
-              <h3 className="text-xl font-semibold text-primary">
-                Our Culture
-              </h3>
-              <p className="text-foregroundMuted">
-                We believe in fostering creativity and providing opportunities
-                for growth. Join a diverse team that values new ideas and
-                collaboration.
-              </p>
-            </div>
-
-            <div className="bg-background p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
-              <h3 className="text-xl font-semibold text-primary">Benefits</h3>
-              <p className="text-foregroundMuted">
-                Competitive salaries, health benefits, career development, and
-                more. We provide a comprehensive benefits package to support
-                your well-being.
-              </p>
-            </div>
+            {benefits.map((benefit, index) => (
+              <div
+                key={index}
+                className="bg-background p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+              >
+                <h3 className="text-xl font-semibold text-primary">
+                  {benefit.title}
+                </h3>
+                <p className="text-foregroundMuted">{benefit.description}</p>
+              </div>
+            ))}
           </div>
         </Container>
       </div>

@@ -1,5 +1,24 @@
 import { Link } from "react-router-dom";
 import { Button, Container, CoverSection } from "../components";
+import api from "../http/api";
+
+export const benefits = [
+  {
+    title: "Life Insurance",
+    description:
+      "We offer comprehensive life insurance coverage to give you and your family peace of mind in the face of life’s uncertainties, ensuring financial stability during tough times.",
+  },
+  {
+    title: "EOBI Registered",
+    description:
+      "As an EOBI (Employees' Old-Age Benefits Institution) registered company, we ensure that all our employees are entitled to pension and retirement benefits, offering long-term financial security.",
+  },
+  {
+    title: "ESSI Registered",
+    description:
+      "We are registered with the Employees Social Security Institution (ESSI), providing our team with health insurance, disability benefits, and maternity leave to safeguard your well-being.",
+  },
+];
 
 export default function CareerPage() {
   const jobListings = [
@@ -26,6 +45,11 @@ export default function CareerPage() {
     },
   ];
 
+  // api
+  // .get("/users/saleemullahkhansaleem")
+  // .then((data) => console.log(data))
+  // .catch((error) => console.error(error));
+
   return (
     <>
       <CoverSection
@@ -33,43 +57,23 @@ export default function CareerPage() {
         description="We're on a mission to build innovative products. Come make an impact!"
       />
 
-      {/* About Company Section */}
       <Container className="px-4 my-12 text-center">
         <h2 className="text-4xl font-bold mb-6">Why Work With Us?</h2>
-        <p className="text-lg text-gray-600 leading-relaxed mb-8">
+        <p className="text-lg text-foregroundMuted leading-relaxed mb-8">
           We are a team of passionate innovators committed to providing a
           supportive and rewarding work environment. Join us and enjoy a career
           that offers growth, stability, and security.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold mb-4">Life Insurance</h3>
-            <p className="text-gray-700">
-              We offer comprehensive life insurance coverage to give you and
-              your family peace of mind in the face of life’s uncertainties,
-              ensuring financial stability during tough times.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold mb-4">EOBI Registered</h3>
-            <p className="text-gray-700">
-              As an EOBI (Employees' Old-Age Benefits Institution) registered
-              company, we ensure that all our employees are entitled to pension
-              and retirement benefits, offering long-term financial security.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold mb-4">ESSI Registered</h3>
-            <p className="text-gray-700">
-              We are registered with the Employees Social Security Institution
-              (ESSI), providing our team with health insurance, disability
-              benefits, and maternity leave to safeguard your well-being.
-            </p>
-          </div>
+          {benefits.map((benefit, index) => (
+            <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+              <h3 className="text-2xl font-bold mb-4">{benefit.title}</h3>
+              <p className="text-foregroundMuted">{benefit.description}</p>
+            </div>
+          ))}
         </div>
       </Container>
 
-      {/* Job Listings Section */}
       <div id="jobs" className="bg-background">
         <Container className=" px-4 py-12">
           <h2 className="text-4xl font-bold text-center mb-12">

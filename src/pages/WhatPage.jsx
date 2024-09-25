@@ -7,14 +7,14 @@ const services = [
     title: "Physical Security",
     description: "Secure Environments. We provide:",
     details: [
+      { text: "Access control systems", img: "/images/placeholder.jpg" },
+      { text: "CCTV surveillance", img: "/images/placeholder.jpg" },
+      { text: "Alarm systems", img: "/images/placeholder.jpg" },
+      { text: "Patrol services", img: "/images/placeholder.jpg" },
       {
-        text: "Access control systems",
-        img: "images/approach/human-rights.webp",
+        text: "Risk assessment and mitigation",
+        img: "/images/placeholder.jpg",
       },
-      { text: "CCTV surveillance", img: "physical_cctv.jpg" },
-      { text: "Alarm systems", img: "physical_alarm.jpg" },
-      { text: "Patrol services", img: "physical_patrol.jpg" },
-      { text: "Risk assessment and mitigation", img: "physical_risk.jpg" },
     ],
   },
   {
@@ -22,15 +22,15 @@ const services = [
     description:
       "Discreet Protection for High-Profile Clients. Our high-profile security services include:",
     details: [
-      { text: "Personal protection officers", img: "high_profile_officer.jpg" },
-      { text: "Event security management", img: "high_profile_event.jpg" },
+      { text: "Personal protection officers", img: "/images/placeholder.jpg" },
+      { text: "Event security management", img: "/images/placeholder.jpg" },
       {
         text: "Threat assessment and risk mitigation",
-        img: "high_profile_threat.jpg",
+        img: "/images/placeholder.jpg",
       },
       {
         text: "Confidentiality and discretion",
-        img: "high_profile_confidentiality.jpg",
+        img: "/images/placeholder.jpg",
       },
     ],
   },
@@ -38,14 +38,14 @@ const services = [
     title: "Special Events Security",
     description: "Expert Event Security Solutions. We offer:",
     details: [
-      { text: "Event risk assessment", img: "events_risk.jpg" },
+      { text: "Event risk assessment", img: "/images/placeholder.jpg" },
       {
         text: "Security planning and coordination",
-        img: "events_planning.jpg",
+        img: "/images/placeholder.jpg",
       },
-      { text: "Crowd management", img: "events_crowd.jpg" },
-      { text: "Access control and screening", img: "events_access.jpg" },
-      { text: "Emergency response planning", img: "events_emergency.jpg" },
+      { text: "Crowd management", img: "/images/placeholder.jpg" },
+      { text: "Access control and screening", img: "/images/placeholder.jpg" },
+      { text: "Emergency response planning", img: "/images/placeholder.jpg" },
     ],
   },
   {
@@ -53,9 +53,18 @@ const services = [
     description:
       "Safe and Secure Transportation. Our security escort services provide:",
     details: [
-      { text: "Armed and unarmed escort options", img: "escorts_armed.jpg" },
-      { text: "Secure transportation vehicles", img: "escorts_transport.jpg" },
-      { text: "Route planning and risk assessment", img: "escorts_route.jpg" },
+      {
+        text: "Armed and unarmed escort options",
+        img: "/images/placeholder.jpg",
+      },
+      {
+        text: "Secure transportation vehicles",
+        img: "/images/placeholder.jpg",
+      },
+      {
+        text: "Route planning and risk assessment",
+        img: "/images/placeholder.jpg",
+      },
     ],
   },
 ];
