@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-import { Button, Container, CoverSection } from "../components";
+import { Button, Container, CoverSection, Spinner } from "../components";
 import api from "../http/api";
 import { useEffect, useState } from "react";
-import { PuffLoader } from "react-spinners";
 
 export const benefits = [
   {
@@ -88,11 +87,16 @@ export default function CareerPage() {
           supportive and rewarding work environment. Join us and enjoy a career
           that offers growth, stability, and security.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+            <div
+              key={index}
+              className={`"bg-background p-6 shadow-lg w-full max-w-96 m-auto aspect-square flex flex-col gap-2 items-center justify-center rounded-full border-4 border-secondary transition-transform transform hover:scale-105 hover:shadow-xl ${
+                index === 0 && "md:col-span-2 xl:col-span-1"
+              }`}
+            >
               <h3 className="text-2xl font-bold mb-4">{benefit.title}</h3>
-              <p className="text-foregroundMuted">{benefit.description}</p>
+              <p className="text-foregroundMuted px-8">{benefit.description}</p>
             </div>
           ))}
         </div>
@@ -105,9 +109,7 @@ export default function CareerPage() {
           </h2>
           <div className="space-y-8">
             {loading ? (
-              <div className="flex justify-center">
-                <PuffLoader size={200} color={"#de0a0a"} />
-              </div>
+              <Spinner />
             ) : jobs.length === 0 ? (
               <div className="flex justify-center">No Jobs Found</div>
             ) : (

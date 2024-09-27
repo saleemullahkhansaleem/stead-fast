@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Container, CoverSection } from "../components";
+import { Container, CoverSection, Spinner } from "../components";
 import api from "../http/api";
 
 // const newsArticles = [
@@ -76,19 +76,25 @@ export default function NewsPage() {
         description="Stay updated with the latest developments in the security industry. From new technology and training programs to community safety initiatives, explore how we are committed to keeping you safe and secure."
       />
 
-      <Container className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 py-12">
-        {news.map((article, index) => (
-          <div
-            key={index}
-            className="bg-background rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
-          >
-            <div className="relative">
-              <img
-                src={article?.imageUrl}
-                alt={article?.title}
-                className="w-full h-80 object-cover"
-              />
-              <div className="absolute bottom-0 left-0 bg-gradient-to-t from-black via-black/60 to-transparent w-full h-full px-6 py-2 flex flex-col justify-end">
+      {loading ? (
+        <Spinner />
+      ) : news.length === 0 ? (
+        <div className="flex justify-center">No News Found</div>
+      ) : (
+        <Container className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 py-12">
+          {news.map((article, index) => (
+            <div
+              key={index}
+              className="bg-background rounded-t-[300px] rounded-b-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+            >
+              <div className="relative bg-primary p-4">
+                <img
+                  src={article?.imageUrl}
+                  alt={article?.title}
+                  className="w-full aspect-square object-cover rounded-full border-4 border-background"
+                />
+              </div>
+              <div className="bg-gradient-to-t bg-primary px-6 py-2 flex flex-col justify-end">
                 <h2 className="text-2xl font-bold text-background mb-1">
                   {article?.title}
                 </h2>
@@ -96,20 +102,20 @@ export default function NewsPage() {
                   {article?.published_date || "--"} | {article?.author || "--"}
                 </p>
               </div>
-            </div>
-            <div className="p-8">
-              <div className="flex justify-between items-center mb-4">
-                <span className="text-sm font-medium text-secondary uppercase">
-                  {article?.category || "--"}
-                </span>
+              <div className="p-8">
+                <div className="flex justify-between items-center mb-4">
+                  <span className="text-sm font-medium text-secondary uppercase">
+                    {article?.category || "--"}
+                  </span>
+                </div>
+                <p className="text-foregroundMuted text-lg leading-relaxed">
+                  {article?.content}
+                </p>
               </div>
-              <p className="text-foregroundMuted text-lg leading-relaxed">
-                {article?.content}
-              </p>
             </div>
-          </div>
-        ))}
-      </Container>
+          ))}
+        </Container>
+      )}
     </>
   );
 }

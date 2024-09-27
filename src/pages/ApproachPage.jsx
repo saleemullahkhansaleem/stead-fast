@@ -48,31 +48,30 @@ export default function ApproachPage() {
         description="AGS Security Services is committed to maintaining high standards of health, safety, and corporate responsibility through various policies and training programs."
       />
       {/* Grid Section */}
-      import {FaSearchPlus} from "react-icons/fa"; // Make sure to import the
-      zoom icon
-      <Container className="py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <Container className="py-16 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {approachContent.map((item, index) => (
             <div
               key={index}
               className="group bg-background rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform transform hover:scale-105 hover:shadow-xl cursor-pointer relative"
               onClick={() => openModal(item)}
             >
-              <div className="relative">
+              <div className="relative p-6">
                 <img
                   src={item.imageUrl}
                   alt={item.title}
-                  className="w-full h-48 object-cover transition-opacity duration-300 shadow-lg" // Add shadow to the image
+                  className="w-full aspect-[1/1] object-cover rounded-full mx-auto transition-opacity duration-300 shadow-lg border-4 border-secondary"
                 />
+
                 {/* Zoom icon in the center of the image */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/40 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <FaSearchPlus className="text-background text-3xl hover:text-secondary" />
                 </div>
               </div>
-              <div className="p-6 flex flex-col justify-between flex-grow">
+              <div className="p-6 flex flex-col justify-between flex-grow text-center">
                 <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
                 <p className="text-foregroundMuted">
-                  Learn more about our commitment to security standards.
+                  Click to learn more about {item.title}
                 </p>
               </div>
             </div>

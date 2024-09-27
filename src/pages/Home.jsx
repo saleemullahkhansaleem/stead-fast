@@ -10,6 +10,10 @@ import {
 export default function Home() {
   const buttons = [
     {
+      label: "Burglar Alarm",
+      url: "/services/burglar-alarm",
+    },
+    {
       label: "Physical Security",
       url: "/services/physical-security",
     },
@@ -28,6 +32,10 @@ export default function Home() {
     {
       label: "Bullet Proof Vehicles",
       url: "/services/bullet-proof-vehicles",
+    },
+    {
+      label: "Organogram",
+      url: "/services/organogram",
     },
   ];
 

@@ -134,7 +134,7 @@ function Accordion({ title, img, serviceIndex }) {
       </div>
       {openIndex === title && (
         <div className="flex mt-4 border p-4">
-          <div className="text-foregroundMuted w-3/4">
+          <div className="text-foregroundMuted w-3/4 flex items-center p-8">
             <p>
               A short description about {title} can go here. This can include
               key features or benefits of the service.
@@ -143,7 +143,7 @@ function Accordion({ title, img, serviceIndex }) {
           <img
             src={img}
             alt={title}
-            className="w-1/4 h-auto object-cover rounded-md ml-4"
+            className="w-1/4 aspect-square object-cover rounded-full ml-4"
           />
         </div>
       )}

@@ -16,13 +16,17 @@ export default function CoverSection({
           } p-4 text-background`}
         >
           <div className="text-center max-w-3xl">
-            <h1 className="text-4xl font-bold mb-2"> {title}</h1>
-            <p className="text-backgroundMuted text-lg">{description}</p>
+            <h1 className="text-3xl font-bold mb-2"> {title}</h1>
+            <p className="text-backgroundMuted">{description}</p>
           </div>
           {buttons && (
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-wrap justify-center items-center">
               {buttons.map((button, index) => (
-                <Button href={button?.url} key={index}>
+                <Button
+                  className="w-1/2 sm:w-auto max-w-[45%] m-2 text-center"
+                  href={button?.url}
+                  key={index}
+                >
                   {button.label}
                 </Button>
               ))}

@@ -9,6 +9,8 @@ import DetailPage from "./DetailPage";
 import Input from "./Input";
 import BackToTopButton from "./BackToTopButton";
 import ScrollToTop from "./ScrollToTop";
+import CircleImage from "./CircleImage";
+import Spinner from "./Spinner";
 
 // Home components
 
@@ -29,6 +31,10 @@ export {
   Input,
   BackToTopButton,
   ScrollToTop,
+  CircleImage,
+  Spinner,
+
+  //home components
   MainSection,
   Services,
   LogoCarousel,

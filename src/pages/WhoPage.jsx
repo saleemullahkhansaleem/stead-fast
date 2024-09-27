@@ -1,4 +1,4 @@
-import { Container, CoverSection, Services } from "../components";
+import { CircleImage, Container, CoverSection, Services } from "../components";
 
 export default function AboutPage() {
   return (
@@ -9,13 +9,20 @@ export default function AboutPage() {
       />
 
       <Container className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 py-8">
-        <div className="lg:order-2">
+        {/* <div className="lg:order-2">
           <img
             src="/images/security/placeholder.jpg"
             alt="About Us"
             className="w-full rounded-lg shadow-lg"
           />
-        </div>
+        </div> */}
+        <CircleImage
+          imageUrl="/images/security/placeholder.jpg"
+          sideImages={[
+            "/images/security/placeholder.jpg",
+            "/images/security/placeholder.jpg",
+          ]}
+        />
         <div className={`flex flex-col gap-8 justify-center `}>
           <h2 className="text-4xl font-bold mb-6 text-primary">
             Stead Fast Security
@@ -29,7 +36,9 @@ export default function AboutPage() {
 
           <div className="space-y-8">
             <div className="bg-background p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h6 className="text-primary text-xl font-bold">VISION:</h6>
+              <h6 className="text-primary text-xl font-bold">
+                VISION / MISSION :
+              </h6>
               <p className="text-foregroundMuted">
                 Protecting Lives, Securing Futures. At Stead Fast Security, our
                 vision is to become the leading private security provider in
@@ -37,13 +46,7 @@ export default function AboutPage() {
                 and security of our clients, their assets, and the community. We
                 strive to set the standard for excellence in the security
                 industry, fostering trust and peace of mind through our
-                unwavering commitment to exceptional service.
-              </p>
-            </div>
-
-            <div className="bg-background p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h6 className="text-primary text-xl font-bold">MISSION:</h6>
-              <p className="text-foregroundMuted">
+                unwavering commitment to exceptional service. <br />
                 Delivering Excellence in Security. Our mission is to provide
                 expert security solutions tailored to meet the unique needs of
                 our clients, fostering trust and peace of mind through our
