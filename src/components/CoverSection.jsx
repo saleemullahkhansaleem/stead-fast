@@ -18,7 +18,7 @@ export default function CoverSection({
           <div className="text-center max-w-3xl">
             {buttons && (
               <h1 className="text-5xl font-bold uppercase text-background py-4 px-8 inline-block bg-primary rounded-full mb-8 border-4 border-secondary">
-                 Stead Fast
+                 Stead Fast Security
               </h1>
             )}
             <h1 className="text-2xl font-bold mb-2 text-secondary"> {title}</h1>
