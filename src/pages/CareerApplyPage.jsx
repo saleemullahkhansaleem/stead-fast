@@ -85,7 +85,7 @@ export default function CareerApplyPage() {
       {/* Cover Section */}
       <CoverSection
         title="Join Our Team"
-        description="We're looking for talented individuals to join our growing team. Apply now and take the next step in your career!"
+        description="We're on a mission to build innovative products and deliver top-tier security services. If you're passionate, driven, and ready to make a real impact, we'd love to have you on board. Come grow with us and help shape the future of security!"
       />
 
       <div>

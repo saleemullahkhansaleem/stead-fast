@@ -1,14 +1,15 @@
 import { DetailPage } from "../../components";
-import { MdSecurity } from "react-icons/md";
 
 export default function BulletProofVehicles() {
   return (
     <DetailPage
       title="Bullet Proof Vehicles"
-      description="Discover who we are and what drives us to deliver exceptional security services."
-      imageUrl="placeholder.jpg"
-      icon={<MdSecurity className="text-secondary text-5xl" />}
-      reverse
+      description="Our bulletproof vehicles offer unparalleled protection, ensuring safe transportation in high-risk environments. Equipped with state-of-the-art security features, these vehicles provide a secure and reliable solution for VIPs, executives, and sensitive cargo in potentially dangerous situations."
+      imageUrl="/images/security/placeholder.jpg"
+      sideImages={[
+        "/images/security/placeholder.jpg",
+        "/images/security/placeholder.jpg",
+      ]}
     >
       <h2 className="text-4xl font-bold mb-6 text-primary">
         Bullet Proof Vehicles

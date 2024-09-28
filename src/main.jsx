@@ -7,12 +7,15 @@ import "@fontsource/archivo"; // Defaults to 400 weight
 import {
   ApproachPage,
   BulletProofVehicles,
+  BurglarAlarm,
   CareerApplyPage,
   CareerPage,
   ContactPage,
   HighProfileEvents,
   Home,
   NewsPage,
+  NotFound,
+  Organogram,
   PhysicalSecurity,
   SecurityEscort,
   ServicesLayout,
@@ -64,6 +67,10 @@ const router = createBrowserRouter([
         element: <CareerApplyPage />,
       },
       {
+        path: "organogram",
+        element: <Organogram />,
+      },
+      {
         path: "services/",
         element: <ServicesLayout />,
         children: [
@@ -87,7 +94,15 @@ const router = createBrowserRouter([
             path: "bullet-proof-vehicles",
             element: <BulletProofVehicles />,
           },
+          {
+            path: "burglar-alarm",
+            element: <BurglarAlarm />,
+          },
         ],
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },

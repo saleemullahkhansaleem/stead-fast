@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, CoverSection } from "../components";
+import { CircleImage, Container, CoverSection } from "../components";
 import { FaSearchPlus } from "react-icons/fa";
 
 const approachContent = [
@@ -42,12 +42,10 @@ export default function ApproachPage() {
 
   return (
     <>
-      {/* Cover Section */}
       <CoverSection
         title="Hedonistic Approach"
         description="AGS Security Services is committed to maintaining high standards of health, safety, and corporate responsibility through various policies and training programs."
       />
-      {/* Grid Section */}
       <Container className="py-16 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {approachContent.map((item, index) => (
@@ -57,13 +55,14 @@ export default function ApproachPage() {
               onClick={() => openModal(item)}
             >
               <div className="relative p-6">
-                <img
+                {/* <img
                   src={item.imageUrl}
                   alt={item.title}
                   className="w-full aspect-[1/1] object-cover rounded-full mx-auto transition-opacity duration-300 shadow-lg border-4 border-secondary"
-                />
+                /> */}
 
-                {/* Zoom icon in the center of the image */}
+                <CircleImage imageUrl={item.imageUrl} />
+
                 <div className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <FaSearchPlus className="text-background text-3xl hover:text-secondary" />
                 </div>
@@ -87,7 +86,7 @@ export default function ApproachPage() {
               className="absolute top-0 right-3 text-4xl text-foregroundMuted hover:text-primary"
               onClick={closeModal}
             >
-              &times; {/* Close icon */}
+              &times;
             </button>
             <div className="max-h-[calc(90vh-50px)] overflow-y-auto">
               <img

@@ -74,8 +74,9 @@ export default function WhatPage() {
     <>
       <CoverSection
         title="WHAT WE DO"
-        description="Explore our range of security services tailored to meet your needs."
+        description="Explore our wide range of security services, meticulously tailored to meet the unique needs of our clients. From site surveillance and risk assessment to personalized security strategies, we ensure comprehensive protection for your business and assets."
       />
+
       <Container className="py-12 px-4">
         <h2 className="text-4xl font-bold mb-6 text-primary">Our Services</h2>
         <p className="text-lg text-foregroundMuted leading-relaxed mb-8">

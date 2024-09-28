@@ -1,8 +1,16 @@
-export default function CircleImage({ imageUrl = "", sideImages = [] }) {
+export default function CircleImage({
+  imageUrl = "",
+  sideImages = [],
+  className = "",
+}) {
   return (
-    <div className="lg:order-2 pl-[10%]">
+    <div
+      className={`lg:order-2 ${
+        sideImages.length !== 0 && "pl-[10%] my-8"
+      } ${className}`}
+    >
       <div
-        className={`relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] my-8 mx-auto shadow-2xl rounded-full`}
+        className={`relative w-full aspect-square mx-auto shadow-2xl rounded-full`}
       >
         <div
           className={`flex items-center justify-center w-full h-full bg-primary rounded-full overflow-hidden`}

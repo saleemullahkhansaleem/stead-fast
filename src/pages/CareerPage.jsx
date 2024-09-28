@@ -77,7 +77,7 @@ export default function CareerPage() {
     <>
       <CoverSection
         title="Join Our Team"
-        description="We're on a mission to build innovative products. Come make an impact!"
+        description="We're on a mission to build innovative products and deliver top-tier security services. If you're passionate, driven, and ready to make a real impact, we'd love to have you on board. Come grow with us and help shape the future of security!"
       />
 
       <Container className="px-4 my-12 text-center">
@@ -111,7 +111,12 @@ export default function CareerPage() {
             {loading ? (
               <Spinner />
             ) : jobs.length === 0 ? (
-              <div className="flex justify-center">No Jobs Found</div>
+              <div className="flex flex-col justify-center items-center gap-4 text-4xl px-4 py-12 font-bold text-primary">
+                <p>No Jpbs Found!</p>
+                <div className="mt-4">
+                  <Button href="/">Back to Home</Button>
+                </div>
+              </div>
             ) : (
               jobs.map((job, index) => (
                 <div

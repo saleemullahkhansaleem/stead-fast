@@ -1,14 +1,15 @@
 import { DetailPage } from "../../components";
-import { MdSecurity } from "react-icons/md";
 
 export default function HighProfileEvents() {
   return (
     <DetailPage
       title="High Profile Events"
-      description="Discover who we are and what drives us to deliver exceptional security services."
-      imageUrl="placeholder.jpg"
-      icon={<MdSecurity className="text-secondary text-5xl" />}
-      reverse
+      description="Our specialized security services for high-profile events are tailored to manage large crowds, VIP guests, and potential risks. With expert planning and execution, we ensure seamless protection for all attendees, allowing your event to proceed without any security concerns."
+      imageUrl="/images/security/placeholder.jpg"
+      sideImages={[
+        "/images/security/placeholder.jpg",
+        "/images/security/placeholder.jpg",
+      ]}
     >
       <h2 className="text-4xl font-bold mb-6 text-primary">
         High Profile Events

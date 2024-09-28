@@ -77,7 +77,7 @@ export default function WhyPage() {
   return (
     <DetailPage
       title="WHY CHOOSE US"
-      description="Your Trusted Security Partner."
+      description="Your Trusted Security Partner, providing reliable and professional services to ensure your safety. We are committed to delivering peace of mind, making us your ideal choice for comprehensive security solutions."
       imageUrl="/images/security/placeholder.jpg"
       sideImages={[
         "/images/security/placeholder.jpg",

@@ -1,13 +1,15 @@
-import { Container, CoverSection, DetailPage } from "../../components";
-import { MdSecurity } from "react-icons/md";
+import { DetailPage } from "../../components";
 
 export default function PhysicalSecurity() {
   return (
     <DetailPage
       title="Physical Security"
-      description="Discover who we are and what drives us to deliver exceptional security services."
-      imageUrl="s5.jpg"
-      reverse
+      description="Our comprehensive physical security services are designed to protect your assets, property, and personnel. We combine cutting-edge technology with highly trained personnel to ensure safety, reliability, and peace of mind for our clients, no matter the size or complexity of the task."
+      imageUrl="/images/security/s5.jpg"
+      sideImages={[
+        "/images/security/placeholder.jpg",
+        "/images/security/placeholder.jpg",
+      ]}
     >
       <h2 className="text-4xl font-bold mb-6 text-primary">
         Physical Security

@@ -1,17 +1,17 @@
 import { DetailPage } from "../../components";
 
-export default function SecurityEscort() {
+export default function BurglarAlarm() {
   return (
     <DetailPage
-      title="Security Escort"
-      description="Our professional security escort services ensure safe and secure transportation for individuals, high-value assets, and sensitive information. Whether it's VIPs, executives, or valuable goods, our highly trained personnel guarantee protection throughout the journey, mitigating any potential risks."
-      imageUrl="/images/security/s5.jpg"
+      title="Burglar Alarm"
+      description="Our advanced burglar alarm systems are designed to provide robust security for your home or business. With features like real-time alerts, remote monitoring, and customizable settings, these systems deter intruders and ensure your peace of mind. Trust us to safeguard your property with cutting-edge technology and 24/7 support."
+      imageUrl="/images/security/placeholder.jpg"
       sideImages={[
         "/images/security/placeholder.jpg",
         "/images/security/placeholder.jpg",
       ]}
     >
-      <h2 className="text-4xl font-bold mb-6 text-primary">Security Escort</h2>
+      <h2 className="text-4xl font-bold mb-6 text-primary">Burglar Alarm</h2>
       <p className="text-lg text-foregroundMuted leading-relaxed mb-8">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
         excepturi debitis aliquam fuga vel velit eos magni mollitia nemo atque

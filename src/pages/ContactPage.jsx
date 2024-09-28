@@ -61,7 +61,7 @@ export default function ContactPage() {
       {/* Cover Section */}
       <CoverSection
         title="Get in Touch"
-        description="We'd love to hear from you. Whether you have questions or need support, feel free to reach out!"
+        description="We'd love to hear from you. Whether you have questions, need support, or want to learn more about our security solutions, feel free to reach out. Our team is ready to assist you with personalized service and prompt responses."
       />
 
       <div className="">

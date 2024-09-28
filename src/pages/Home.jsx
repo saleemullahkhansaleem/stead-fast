@@ -35,7 +35,7 @@ export default function Home() {
     },
     {
       label: "Organogram",
-      url: "/services/organogram",
+      url: "/organogram",
     },
   ];
 

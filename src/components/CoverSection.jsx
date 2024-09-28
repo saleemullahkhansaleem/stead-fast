@@ -12,11 +12,16 @@ export default function CoverSection({
       <div className="w-full h-full bg-black/80">
         <Container
           className={`flex flex-col items-center justify-center gap-8 ${
-            buttons ? "min-h-96" : "min-h-52"
+            buttons ? "min-h-[450px]" : "min-h-52"
           } p-4 text-background`}
         >
           <div className="text-center max-w-3xl">
-            <h1 className="text-3xl font-bold mb-2"> {title}</h1>
+            {buttons && (
+              <h1 className="text-5xl font-bold uppercase text-background py-4 px-8 inline-block bg-primary rounded-full mb-8 border-4 border-secondary">
+                 Stead Fast
+              </h1>
+            )}
+            <h1 className="text-2xl font-bold mb-2 text-secondary"> {title}</h1>
             <p className="text-backgroundMuted">{description}</p>
           </div>
           {buttons && (
