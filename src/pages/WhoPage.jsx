@@ -22,7 +22,7 @@ export default function AboutPage() {
           </h2>
           <p className="text-lg text-foregroundMuted leading-relaxed mb-8">
             Stead Fast Security Company (Private) Limited was established in
-            2007 with a vision to provide exceptional security services in
+            2008 with a vision to provide exceptional security services in
             Pakistan. Our leadership team comprises experienced security
             professionals committed to delivering top-notch solutions.
           </p>
