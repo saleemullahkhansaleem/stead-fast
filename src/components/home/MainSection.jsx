@@ -31,10 +31,10 @@ export default function MainSection() {
         </p>
       </MainSectionBoxes>
       <MainSectionBoxes
-        title="High Profile Special Events"
+        title="System Security"
         imageUrl="placeholder.jpg"
         icon={<MdSecurity className="text-secondary text-5xl" />}
-        url="services/high-profile-events"
+        url="services/burglar-alarm"
         sideImages={["s8.jpg", "s9.jpg"]}
       >
         <p>
@@ -101,6 +101,27 @@ export default function MainSection() {
           nihil rerum accusantium quas doloremque blanditiis deserunt iste
           consectetur nam modi, accusamus quos quam laborum beatae ea,
           reprehenderit earum mollitia aliquid.
+        </p>
+      </MainSectionBoxes>
+      <MainSectionBoxes
+        title="High Profile Special Events"
+        imageUrl="placeholder.jpg"
+        icon={<MdSecurity className="text-secondary text-5xl" />}
+        url="services/high-profile-events"
+        reverse
+      >
+        <p>
+          Providing security to High Profile Special Events through Manned
+          Security, Access Control, Electronic Checking and Rapid Response in
+          case of any Security Breach is another area of our expertise in the
+          security services
+          <br />
+          <br />
+          SSC provide reliable protection for individuals and events. Trained
+          professionals ensure safety with discretion and professionalism.
+          <br />
+          <br />
+          Comming soon
         </p>
       </MainSectionBoxes>
     </section>
