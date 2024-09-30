@@ -108,7 +108,7 @@ export default function WhyPage() {
   );
 }
 
-const Accordion = ({ title, content }) => {
+export const Accordion = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
