@@ -38,17 +38,23 @@ export default function MainSection() {
         sideImages={["s8.jpg", "s9.jpg"]}
       >
         <p>
-          Providing security to High Profile Special Events through Manned
-          Security, Access Control, Electronic Checking and Rapid Response in
-          case of any Security Breach is another area of our expertise in the
-          security services
+          A Burglar Alarm, also known as a Security System or Intrusion
+          Detection System, is an electronic network that works together to
+          shield your property from unauthorized entry.It typically comprises
+          three key elements:
           <br />
           <br />
-          SSC provide reliable protection for individuals and events. Trained
-          professionals ensure safety with discretion and professionalism.
+           The brain of the system, receiving signals from
+          sensors and triggering alarms upon detecting a breach.  <br /><br />
+          These electronic sentinels detect various disturbances, including motion
+          within a designated area, the opening of doors or windows, and the
+          shattering of glass. <br />
+          These act as deterrents and alerts,
+          consisting of loud sirens, flashing lights, or a combination of both.
+          Some systems can also send notifications to smartphones or security
+          companies.
           <br />
           <br />
-          Comming soon
         </p>
       </MainSectionBoxes>
       <MainSectionBoxes
@@ -164,7 +170,7 @@ function MainSectionBoxes({
             <div className="absolute -right-[10%] bottom-[42%] w-[45%] h-[45%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background">
               <img
                 className="w-full h-full object-cover"
-                src={"images/security/" + sideImages[0]}
+                src={"images/security/  " + sideImages[0]}
                 alt="security photo"
               />
             </div>
