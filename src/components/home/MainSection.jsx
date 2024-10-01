@@ -44,15 +44,15 @@ export default function MainSection() {
           three key elements:
           <br />
           <br />
-           The brain of the system, receiving signals from
-          sensors and triggering alarms upon detecting a breach.  <br /><br />
-          These electronic sentinels detect various disturbances, including motion
-          within a designated area, the opening of doors or windows, and the
-          shattering of glass. <br />
-          These act as deterrents and alerts,
-          consisting of loud sirens, flashing lights, or a combination of both.
-          Some systems can also send notifications to smartphones or security
-          companies.
+          The brain of the system, receiving signals from sensors and triggering
+          alarms upon detecting a breach. <br />
+          <br />
+          These electronic sentinels detect various disturbances, including
+          motion within a designated area, the opening of doors or windows, and
+          the shattering of glass. <br />
+          These act as deterrents and alerts, consisting of loud sirens,
+          flashing lights, or a combination of both. Some systems can also send
+          notifications to smartphones or security companies.
           <br />
           <br />
         </p>
@@ -84,12 +84,34 @@ export default function MainSection() {
         </p>
       </MainSectionBoxes>
       <MainSectionBoxes
+        title="High Profile Special Events"
+        imageUrl="placeholder.jpg"
+        icon={<MdSecurity className="text-secondary text-5xl" />}
+        url="services/high-profile-events"
+        sideImages={["placeholder.jpg", "placeholder.jpg", "placeholder.jpg"]}
+      >
+         <p>
+          Providing security to High Profile Special Events through Manned
+          Security, Access Control, Electronic Checking and Rapid Response in
+          case of any Security Breach is another area of our expertise in the
+          security services
+          <br />
+          <br />
+          SSC provide reliable protection for individuals and events. Trained
+          professionals ensure safety with discretion and professionalism.
+          <br />
+          <br />
+          Comming soon
+        </p>
+      </MainSectionBoxes>
+      <MainSectionBoxes
         title="Training & Courses"
         imageUrl="placeholder.jpg"
         icon={<MdSecurity className="text-secondary text-5xl" />}
         url="services/training-courses"
-        sideImages={["placeholder.jpg", "placeholder.jpg", "placeholder.jpg"]}
+        reverse
       >
+
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
           voluptatum provident, et, eligendi deleniti voluptates impedit
@@ -107,27 +129,6 @@ export default function MainSection() {
           nihil rerum accusantium quas doloremque blanditiis deserunt iste
           consectetur nam modi, accusamus quos quam laborum beatae ea,
           reprehenderit earum mollitia aliquid.
-        </p>
-      </MainSectionBoxes>
-      <MainSectionBoxes
-        title="High Profile Special Events"
-        imageUrl="placeholder.jpg"
-        icon={<MdSecurity className="text-secondary text-5xl" />}
-        url="services/high-profile-events"
-        reverse
-      >
-        <p>
-          Providing security to High Profile Special Events through Manned
-          Security, Access Control, Electronic Checking and Rapid Response in
-          case of any Security Breach is another area of our expertise in the
-          security services
-          <br />
-          <br />
-          SSC provide reliable protection for individuals and events. Trained
-          professionals ensure safety with discretion and professionalism.
-          <br />
-          <br />
-          Comming soon
         </p>
       </MainSectionBoxes>
     </section>
