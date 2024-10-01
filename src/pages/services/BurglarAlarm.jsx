@@ -46,7 +46,18 @@ const sections = [
     title: "ALARMS DEVICES",
     content: {
       description: "",
-      items: ["Panel","magenetic Contact","Vibration Sensor","Fix Panic","Keypad","Power Supply","Siren","Smoke Detector","PIR","GSM Device"],
+      items: [
+        "Panel",
+        "magenetic Contact",
+        "Vibration Sensor",
+        "Fix Panic",
+        "Keypad",
+        "Power Supply",
+        "Siren",
+        "Smoke Detector",
+        "PIR",
+        "GSM Device",
+      ],
     },
   },
   {
@@ -96,12 +107,9 @@ export default function BurglarAlarm() {
       title="Burglar Alarm"
       description="Our advanced burglar alarm systems are designed to provide robust security for your home or business. With features like real-time alerts, remote monitoring, and customizable settings, these systems deter intruders and ensure your peace of mind. Trust us to safeguard your property with cutting-edge technology and 24/7 support."
       imageUrl="/images/alarm/control1.webp"
-      sideImages={[
-        "/images/alarm/alarm1.jpg",
-        "/images/alarm/alarm2.jpg",
-      ]}
+      sideImages={["/images/alarm/alarm1.jpg", "/images/alarm/alarm2.jpg"]}
     >
-      <h2 className="text-4xl font-bold mb-6 text-primary">Burgular Alarm</h2>
+      <h2 className="text-4xl font-bold mb-6 text-primary">Burglar Alarm</h2>
       <p className="text-lg text-foregroundMuted leading-relaxed mb-8">
         At Stead Fast Security, we offer Burgular Alarm services to ensure the
         safety and protection of our clients, their assets, and the community.
