@@ -90,7 +90,7 @@ export default function MainSection() {
         url="services/high-profile-events"
         sideImages={["placeholder.jpg", "placeholder.jpg", "placeholder.jpg"]}
       >
-         <p>
+        <p>
           Providing security to High Profile Special Events through Manned
           Security, Access Control, Electronic Checking and Rapid Response in
           case of any Security Breach is another area of our expertise in the
@@ -111,7 +111,6 @@ export default function MainSection() {
         url="services/training-courses"
         reverse
       >
-
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
           voluptatum provident, et, eligendi deleniti voluptates impedit
@@ -171,7 +170,7 @@ function MainSectionBoxes({
             <div className="absolute -right-[10%] bottom-[42%] w-[45%] h-[45%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background">
               <img
                 className="w-full h-full object-cover"
-                src={"images/security/  " + sideImages[0]}
+                src={"images/security/" + sideImages[0]}
                 alt="security photo"
               />
             </div>
