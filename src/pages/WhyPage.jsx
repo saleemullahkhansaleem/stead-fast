@@ -121,7 +121,7 @@ export const Accordion = ({ title, content }) => {
       className="group cursor-cell bg-background p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
     >
       <div className="flex justify-between items-center">
-        <h4 className="text-primary text-xl font-bold">{title}</h4>
+        <h4 className="text-primary text-xl font-bold uppercase">{title}</h4>
         <span
           className={`transform transition-transform duration-300 text-2xl font-bold group-hover:text-primary ${
             isOpen ? "rotate-180" : ""

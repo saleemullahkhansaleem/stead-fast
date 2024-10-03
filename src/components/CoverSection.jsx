@@ -17,12 +17,16 @@ export default function CoverSection({
         >
           <div className="text-center max-w-3xl">
             {buttons && (
-              <h1 className="text-5xl font-bold uppercase text-background py-4 px-8 inline-block bg-primary rounded-full mb-8 border-4 border-secondary">
+              <h1 className="text-xl sm:text-3xl md:text-5xl font-bold uppercase text-background py-2 px-4 md:py-4 md:px-8 inline-block bg-primary rounded-full mb-8 border-4 border-secondary">
                  Stead Fast Security
               </h1>
             )}
-            <h1 className="text-2xl font-bold mb-2 text-secondary"> {title}</h1>
-            <p className="text-backgroundMuted">{description}</p>
+            <h1 className="text-lg md:text-2xl font-bold mb-2 text-secondary">
+               {title}
+            </h1>
+            <p className="text-backgroundMuted text-sm md:text-base">
+              {description}
+            </p>
           </div>
           {buttons && (
             <div className="flex flex-wrap justify-center items-center">

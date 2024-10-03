@@ -59,7 +59,6 @@ export default function CareerPage() {
       .then((response) => {
         if (response.success) {
           setJobs(response.data);
-          console.log("jobs ", response.data);
         } else {
           toast.error("");
         }
