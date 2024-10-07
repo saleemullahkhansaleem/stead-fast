@@ -97,7 +97,7 @@ export default function Header() {
 
 function NavbarBrand() {
   return (
-    <Link href="/" className="flex items-center gap-2">
+    <Link to="/" className="flex items-center gap-2">
       <img src="/images/logo-small.png" alt="SteadFast Logo" className="h-16" />
 
       <div>
