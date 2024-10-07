@@ -5,10 +5,10 @@ export default function HighProfileEvents() {
     <DetailPage
       title="High Profile Events"
       description="Our specialized security services for high-profile events are tailored to manage large crowds, VIP guests, and potential risks. With expert planning and execution, we ensure seamless protection for all attendees, allowing your event to proceed without any security concerns."
-      imageUrl="/images/security/placeholder.jpg"
+      imageUrl="/images/security/special-events-1.webp"
       sideImages={[
-        "/images/security/placeholder.jpg",
-        "/images/security/placeholder.jpg",
+        "/images/security/special-events-2.webp",
+        "/images/security/special-events-3.webp",
       ]}
     >
       <h2 className="text-4xl font-bold mb-6 text-primary">

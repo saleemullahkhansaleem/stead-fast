@@ -5,10 +5,10 @@ export default function TrainingCourses() {
     <DetailPage
       title="Training Courses"
       description="Our comprehensive training courses equip security personnel with the knowledge and skills needed to handle various challenges in the field. From basic security protocols to advanced crisis management and specialized tactics, we ensure our teams are prepared for any situation."
-      imageUrl="/images/security/placeholder.jpg"
+      imageUrl="/images/security/training-courses-1.webp"
       sideImages={[
-        "/images/security/placeholder.jpg",
-        "/images/security/placeholder.jpg",
+        "/images/security/training-courses-2.webp",
+        "/images/security/training-courses-3.webp",
       ]}
     >
       <h2 className="text-4xl font-bold mb-6 text-primary">Training Courses</h2>

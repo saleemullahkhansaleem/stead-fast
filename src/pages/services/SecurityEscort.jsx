@@ -5,10 +5,10 @@ export default function SecurityEscort() {
     <DetailPage
       title="Security Escort"
       description="Our professional security escort services ensure safe and secure transportation for individuals, high-value assets, and sensitive information. Whether it's VIPs, executives, or valuable goods, our highly trained personnel guarantee protection throughout the journey, mitigating any potential risks."
-      imageUrl="/images/security/s5.jpg"
+      imageUrl="/images/security/security-escort.webp"
       sideImages={[
-        "/images/security/placeholder.jpg",
-        "/images/security/placeholder.jpg",
+        "/images/security/security-escort-1.webp",
+        "/images/security/security-escort-2.webp",
       ]}
     >
       <h2 className="text-4xl font-bold mb-6 text-primary">Security Escort</h2>

@@ -7,7 +7,7 @@ export default function MainSection() {
     <section className="py-4 lg:pb-12">
       <MainSectionBoxes
         title="Physical Security"
-        imageUrl="s1.jpg"
+        imageUrl="physical-security.webp"
         icon={<MdSecurity className="text-secondary text-5xl" />}
         url="services/physical-security"
         reverse
@@ -32,10 +32,10 @@ export default function MainSection() {
       </MainSectionBoxes>
       <MainSectionBoxes
         title="System Security"
-        imageUrl="system-home-1.png"
+        imageUrl="security-system.webp"
         icon={<MdSecurity className="text-secondary text-5xl" />}
         url="services/burglar-alarm"
-        sideImages={["s8.jpg", "s9.jpg",]}
+        sideImages={["s8.webp", "s9.webp"]}
       >
         <p>
           A Burglar Alarm, also known as a Security System or Intrusion
@@ -59,7 +59,7 @@ export default function MainSection() {
       </MainSectionBoxes>
       <MainSectionBoxes
         title="Security Escort"
-        imageUrl="s5.jpg"
+        imageUrl="security-escort.webp"
         icon={<MdSecurity className="text-secondary text-5xl" />}
         url="services/security-escort"
         reverse
@@ -81,10 +81,14 @@ export default function MainSection() {
       </MainSectionBoxes>
       <MainSectionBoxes
         title="High Profile Special Events"
-        imageUrl="placeholder.jpg"
+        imageUrl="special-events-1.webp"
         icon={<MdSecurity className="text-secondary text-5xl" />}
         url="services/high-profile-events"
-        sideImages={["placeholder.jpg", "placeholder.jpg", "placeholder.jpg"]}
+        sideImages={[
+          "special-events-2.webp",
+          "special-events-3.webp",
+          "special-events-4.webp",
+        ]}
       >
         <p>
           Providing security to High Profile Special Events through Manned
@@ -104,7 +108,7 @@ export default function MainSection() {
       </MainSectionBoxes>
       <MainSectionBoxes
         title="Training & Courses"
-        imageUrl="placeholder.jpg"
+        imageUrl="training-courses-1.webp"
         icon={<MdSecurity className="text-secondary text-5xl" />}
         url="services/training-courses"
         reverse
@@ -113,13 +117,14 @@ export default function MainSection() {
           At Sted Fast Security, we offer comprehensive training programs
           designed to equip individuals and organizations with the skills
           necessary to ensure safety and security in a wide range of
-          environments. <br /><br />
-           Our courses are tailored for aspiring security
-          professionals, businesses, and anyone looking to enhance their
-          knowledge of modern security techniques. <br /><br />
-           Enhance your security skills
-          with our comprehensive training programs. From basic security
-          awareness to advanced tactical training.
+          environments. <br />
+          <br />
+          Our courses are tailored for aspiring security professionals,
+          businesses, and anyone looking to enhance their knowledge of modern
+          security techniques. <br />
+          <br />
+          Enhance your security skills with our comprehensive training programs.
+          From basic security awareness to advanced tactical training.
           <br />
         </p>
       </MainSectionBoxes>

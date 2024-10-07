@@ -9,19 +9,19 @@ const services = [
     details: [
       {
         text: "Access control systems",
-        img: "/images/placeholder.jpg",
+        img: "/images/what-we-do/access-control-system.webp",
         description:
           "Access control systems enhance physical security by regulating who can enter or exit a facility using methods such as key cards, biometric scans, or PIN codes. They ensure only authorized personnel gain access, reducing risks of unauthorized entry.",
       },
       {
         text: "Patrol services",
-        img: "/images/placeholder.jpg",
+        img: "/images/what-we-do/patrol-services.webp",
         description:
           "Patrol Services provide regular monitoring of properties, ensuring safety and security through routine checks and immediate response to incidents. Trained security personnel patrol designated areas to deter crime, identify potential threats, and maintain order.",
       },
       {
         text: "Risk assessment and mitigation",
-        img: "/images/placeholder.jpg",
+        img: "/images/what-we-do/risk-assessment-mitigation.webp",
         description:
           "Risk Assessment and Mitigation is the process of identifying, analyzing, and addressing potential security threats to minimize vulnerabilities. Through comprehensive evaluations, security professionals assess risks such as theft, vandalism, cyber-attacks, and natural disasters.",
       },
@@ -34,25 +34,25 @@ const services = [
     details: [
       {
         text: "Personal protection officers",
-        img: "/images/placeholder.jpg",
+        img: "/images/what-we-do/personal-protection-officers.webp",
         description:
-          "Personal Protection Officers (PPOs) are highly trained security professionals responsible for safeguarding individuals, especially high-profile clients such as executives, celebrities, or political figures. ",
+          "Personal Protection Officers (PPOs) are highly trained security professionals responsible for safeguarding individuals, especially high-profile clients such as executives, celebrities, or political figures.",
       },
       {
         text: "Event security management",
-        img: "/images/placeholder.jpg",
+        img: "/images/what-we-do/event-security-management.webp",
         description:
           "Event Security Management involves planning, coordinating, and executing security measures to ensure the safety of attendees, staff, and assets during events such as concerts, conferences, and festivals.",
       },
       {
         text: "Threat assessment and risk mitigation",
-        img: "/images/placeholder.jpg",
+        img: "/images/what-we-do/threat-assessment-risk-mitigation.webp",
         description:
           "Threat Assessment and Risk Mitigation is a systematic approach to identifying potential security threats and evaluating the associated risks to an organization or individual. This process begins with a thorough analysis of vulnerabilities, which includes evaluating internal and external factors that may pose a threat.",
       },
       {
         text: "Confidentiality and discretion",
-        img: "/images/placeholder.jpg",
+        img: "/images/what-we-do/confidentiality-discretion.webp",
         description:
           "Confidentiality and Discretion are essential principles in security and personal protection services, ensuring that sensitive information and client privacy are maintained at all times. Security professionals are trained to handle confidential data responsibly, safeguarding personal details and operational information from unauthorized access or disclosure.",
       },
@@ -64,31 +64,31 @@ const services = [
     details: [
       {
         text: "Event risk assessment",
-        img: "/images/placeholder.jpg",
+        img: "/images/what-we-do/event-risk-assessment.webp",
         description:
           "Event Risk Assessment is a critical process that involves identifying and evaluating potential risks associated with an event, such as concerts, conferences, or sporting events. This assessment aims to understand various threats that could disrupt the event or compromise the safety of attendees and staff.",
       },
       {
         text: "Security planning and coordination",
-        img: "/images/placeholder.jpg",
+        img: "/images/what-we-do/security-planning-coordination.webp",
         description:
           "Security Planning and Coordination involves developing and implementing comprehensive strategies to protect people, property, and assets during various operations or events. This process includes assessing potential risks, identifying security needs, and establishing protocols to address vulnerabilities effectively.",
       },
       {
         text: "Crowd management",
-        img: "/images/placeholder.jpg",
+        img: "/images/what-we-do/crowd-management.webp",
         description:
           "Crowd Management involves strategies and techniques to control and direct large groups of people in various environments, such as concerts, sporting events, festivals, and public gatherings. The primary goal is to ensure safety, minimize risks, and enhance the overall experience for attendees.",
       },
       {
         text: "Access control and screening",
-        img: "/images/placeholder.jpg",
+        img: "/images/what-we-do/access-control-screening.webp",
         description:
           "Access Control and Screening are critical components of security management designed to prevent unauthorized entry and ensure the safety of individuals and assets within a facility or during an event.",
       },
       {
         text: "Emergency response planning",
-        img: "/images/placeholder.jpg",
+        img: "/images/what-we-do/emergency-response-planning.webp",
         description:
           "Emergency Response Planning involves developing structured procedures and protocols to effectively address and manage emergencies, ensuring the safety of individuals and minimizing damage to property and assets.",
       },
@@ -101,19 +101,19 @@ const services = [
     details: [
       {
         text: "Armed and unarmed escort options",
-        img: "/images/placeholder.jpg",
+        img: "/images/what-we-do/armed-unarmed-escort-options.webp",
         description:
           "Armed and Unarmed Escort Options provide tailored security solutions to meet the varying needs of individuals and organizations seeking protection during travel or public engagements.",
       },
       {
         text: "Secure transportation vehicles",
-        img: "/images/placeholder.jpg",
+        img: "/images/what-we-do/secure-transportation-vehicles.webp",
         description:
           "Secure Transportation Vehicles are specially designed or modified vehicles that provide enhanced safety and protection for individuals and assets during transit. These vehicles are utilized in various contexts, including personal protection, asset transportation, and high-risk environments.",
       },
       {
         text: "Route planning and risk assessment",
-        img: "/images/placeholder.jpg",
+        img: "/images/what-we-do/route-planning-risk-assessment.webp",
         description:
           "Route Planning and Risk Assessment are crucial components of security management, particularly in scenarios involving transportation, travel, or logistics. These processes help ensure the safe and efficient movement of individuals and assets by identifying potential threats along planned routes and implementing measures to mitigate those risks.",
       },

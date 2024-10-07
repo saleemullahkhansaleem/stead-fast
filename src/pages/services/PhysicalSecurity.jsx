@@ -5,10 +5,10 @@ export default function PhysicalSecurity() {
     <DetailPage
       title="Physical Security"
       description="Our comprehensive physical security services are designed to protect your assets, property, and personnel. We combine cutting-edge technology with highly trained personnel to ensure safety, reliability, and peace of mind for our clients, no matter the size or complexity of the task."
-      imageUrl="/images/security/s5.jpg"
+      imageUrl="/images/security/physical-security.webp"
       sideImages={[
-        "/images/security/placeholder.jpg",
-        "/images/security/placeholder.jpg",
+        "/images/security/physical-security-1.webp",
+        "/images/security/physical-security-2.webp",
       ]}
     >
       <h2 className="text-4xl font-bold mb-6 text-primary">

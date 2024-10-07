@@ -5,10 +5,10 @@ export default function BulletProofVehicles() {
     <DetailPage
       title="Bullet Proof Vehicles"
       description="Our bulletproof vehicles offer unparalleled protection, ensuring safe transportation in high-risk environments. Equipped with state-of-the-art security features, these vehicles provide a secure and reliable solution for VIPs, executives, and sensitive cargo in potentially dangerous situations."
-      imageUrl="/images/security/placeholder.jpg"
+      imageUrl="/images/security/bullet-proof-1.webp"
       sideImages={[
-        "/images/security/placeholder.jpg",
-        "/images/security/placeholder.jpg",
+        "/images/security/bullet-proof-2.webp",
+        "/images/security/bullet-proof-3.webp",
       ]}
     >
       <h2 className="text-4xl font-bold mb-6 text-primary">
