@@ -28,19 +28,21 @@ export default function AboutPage() {
             <div className="bg-background p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               <h6 className="text-primary text-xl font-bold">VISION :</h6>
               <p className="text-foregroundMuted">
-                Protecting Lives, Securing Futures. At Stead Fast Security, our
-                vision is to become the leading private security provider in
+                Protecting Lives-Securing Futures. <br />
+                 At Stead Fast Security, our
+                vision is to become the leading private security provider throughout
                 Pakistan, delivering top-notch services that ensure the safety
-                and security of our clients, their assets, and the community. We
+                and security of our clients, their assets, as a whole community. We
                 strive to set the standard for excellence in the security
                 industry, fostering trust and peace of mind through our
-                unwavering commitment to exceptional service.
+                unwavering commitment to exceptional services.
               </p>
             </div>
             <div className="bg-background p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               <h6 className="text-primary text-xl font-bold">MISSION :</h6>
               <p className="text-foregroundMuted">
-                Delivering Excellence in Security. Our mission is to provide
+                Delivering Excellence in Security. <br />
+                 Our mission is to provide
                 expert security solutions tailored to meet the unique needs of
                 our clients, fostering trust and peace of mind through our
                 unwavering commitment to excellence.
@@ -97,15 +99,15 @@ function CeoMessage({}) {
             At Stead Fast Security, our commitment to providing top-tier
             security solutions is unwavering. As we navigate an increasingly
             complex security landscape, our mission remains clear: to protect
-            what matters most to you. We understand that in todays world, safety
+            what matters most to you. We understand that in today’s world, safety
             and security are paramount, and we are dedicated to delivering
             tailored services that meet your unique needs.
           </p>
           <p className="text-foregroundMuted leading-relaxed mt-4">
             Our team of experienced professionals employs cutting-edge
             technology and comprehensive strategies to ensure the highest level
-            of protection for individuals, assets, and events. From armed and
-            unarmed escorts to secure transportation and risk assessments, we
+            of protection for individuals, assets, and events. From Armed / Unarmed 
+            escorts to secure transportation and risk assessments, we
             offer a wide range of services designed to safeguard your interests.
           </p>
           <p className="text-foregroundMuted leading-relaxed mt-4">
@@ -161,7 +163,7 @@ function DirectorMessage({}) {
             premises. We would like to help you avert these threats.
           </p>
           <p className="text-foregroundMuted leading-relaxed mt-4">
-            At SSC, we understand that security staff is often the first point
+            We understand that security staff is often the first point
             of contact that people have when they come to premises, an event,
             venue, or Business Centre. With that in mind, we try to ensure that
             everyone gets a warm welcome from a friendly and knowledgeable
