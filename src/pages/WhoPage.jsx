@@ -10,11 +10,8 @@ export default function AboutPage() {
 
       <Container className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 py-8">
         <CircleImage
-          imageUrl="/images/security/placeholder.jpg"
-          sideImages={[
-            "/images/security/placeholder.jpg",
-            "/images/security/placeholder.jpg",
-          ]}
+          imageUrl="/images/security/about.webp"
+          sideImages={["/images/security/s6.webp", "/images/security/s7.webp"]}
         />
         <div className={`flex flex-col gap-8 justify-center `}>
           <h2 className="text-4xl font-bold mb-6 text-primary">
