@@ -65,6 +65,15 @@ export default function MainSection() {
         reverse
       >
         <p>
+          A Security Escort service typically involves providing physical
+          security personnel to accompany individuals or valuable assets to
+          ensure their protection. <br />
+          <br />
+          The purpose of a security escort service is to provide safety, deter
+          potential threats, and respond to any emergencies that may arise
+          during transit.
+          <br />
+          <br />
           Travel securely with our professional escort services. Our trained
           personnel ensure safe transportation for individuals, groups, and
           valuable assets.
@@ -101,8 +110,16 @@ export default function MainSection() {
         reverse
       >
         <p>
-          Enhance your security skills with our comprehensive training programs.
-          From basic security awareness to advanced tactical training.
+          At Sted Fast Security, we offer comprehensive training programs
+          designed to equip individuals and organizations with the skills
+          necessary to ensure safety and security in a wide range of
+          environments. <br /><br />
+           Our courses are tailored for aspiring security
+          professionals, businesses, and anyone looking to enhance their
+          knowledge of modern security techniques. <br /><br />
+           Enhance your security skills
+          with our comprehensive training programs. From basic security
+          awareness to advanced tactical training.
           <br />
         </p>
       </MainSectionBoxes>

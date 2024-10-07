@@ -91,35 +91,36 @@ function CeoMessage({}) {
         <div className="flex-1 pl-8">
           <div className="mb-4">
             <h6 className="text-primary text-xl font-bold">
-              Col (R) Haneef Shah
+              Muhammad Hanif Shah
             </h6>
             <p className="text-foregroundMuted">CEO</p>
           </div>
 
           <p className="text-foregroundMuted leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
-            tempora quia nemo quam distinctio delectus saepe sint harum omnis
-            natus tempore velit modi voluptates, aspernatur architecto repellat
-            nisi ad totam deserunt ipsa illum blanditiis itaque enim. Maxime
-            exercitationem soluta eius, autem officia consequatur, quo sit,
-            voluptate voluptates ipsa officiis ratione quisquam repellendus quia
-            debitis? Culpa doloribus quisquam et praesentium quia?
+            At Stead Fast Security, our commitment to providing top-tier
+            security solutions is unwavering. As we navigate an increasingly
+            complex security landscape, our mission remains clear: to protect
+            what matters most to you. We understand that in todays world, safety
+            and security are paramount, and we are dedicated to delivering
+            tailored services that meet your unique needs.
           </p>
           <p className="text-foregroundMuted leading-relaxed mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
-            provident, necessitatibus tempore quisquam animi modi, odit eum
-            inventore debitis, magni aliquid repudiandae mollitia? Dolorem
-            fugiat nobis neque sapiente similique ex mollitia minus reiciendis
-            architecto cupiditate, nisi blanditiis temporibus commodi accusamus
-            sequi in labore, odit consequuntur voluptatem perferendis saepe
-            itaque quod! Harum eligendi expedita quisquam. Maiores laborum omnis
-            magni a velit ratione, perferendis placeat harum dolore? Ex
-            molestiae suscipit nulla esse?
+            Our team of experienced professionals employs cutting-edge
+            technology and comprehensive strategies to ensure the highest level
+            of protection for individuals, assets, and events. From armed and
+            unarmed escorts to secure transportation and risk assessments, we
+            offer a wide range of services designed to safeguard your interests.
           </p>
           <p className="text-foregroundMuted leading-relaxed mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-            laudantium nobis quo ipsa similique sint saepe ullam cumque, unde
-            assumenda?
+            What sets Stead Fast Security apart is our unwavering dedication to
+            integrity, reliability, and excellence. We prioritize building
+            strong relationships with our clients, based on trust and
+            transparency. Your safety is not just our responsibility; it’s our
+            passion. As we look to the future, we will continue to innovate and
+            adapt, ensuring that we remain at the forefront of the security
+            industry. Thank you for choosing Stead Fast Security as your trusted
+            partner in safety. Together, we can create a safer environment for
+            everyone.
           </p>
           <p className="text-foregroundMuted leading-relaxed mt-4 font-semibold">
             Thank you for Considering us!
