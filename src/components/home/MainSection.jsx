@@ -17,15 +17,15 @@ export default function MainSection() {
           provide round the clock security for your Premises, Office Buildings,
           Industrial Estates/ Factories, Hospitals, Educational Institutions,
           Embassies, Private Residences, Marriage Halls etc. and festivals
-          organized by various Organizations / forums.
+          organized by various Organizations / Forums.
           <br />
           <br />
-          SSC is a leading security solutions provider committed to safeguarding
+          Stead Fast is a leading security solutions provider committed to safeguarding
           businesses, institutions and communities in ICT, Punjab and KP with a
           focus on professionalism, reliability and cutting edge technology.
           <br />
           <br />
-          SSC offers a wide range of security services, cash management
+          Stead Fast Security offers a wide range of security services, cash management
           solutions and specialized offerings to ensure peace of and protect
           valuable assets.
         </p>
@@ -97,7 +97,7 @@ export default function MainSection() {
           security services
           <br />
           <br />
-          SSC provide reliable protection for individuals and events. Trained
+          Stead Fast Security provide reliable protection for individuals and events. Trained
           professionals ensure safety with discretion and professionalism.
           <br />
           <br />
