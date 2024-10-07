@@ -15,46 +15,40 @@ export default function HighProfileEvents() {
         High Profile Events
       </h2>
       <p className="text-lg text-foregroundMuted leading-relaxed mb-8">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
-        excepturi debitis aliquam fuga vel velit eos magni mollitia nemo atque
-        consectetur dolores veritatis molestiae, sequi possimus ea? Accusamus
-        sed optio odio maxime accusantium, alias at mollitia deleniti officia
-        modi id facilis voluptatem earum dicta illum illo ut enim nam non!
+        "Secure your high-profile events with our expert security solutions.
+        From red-carpet galas to corporate conferences, we protect your guests,
+        assets, and reputation."
       </p>
 
       <div className="space-y-8">
         <div className="bg-background p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <h6 className="text-primary text-xl font-bold">VISION:</h6>
+          <h6 className="text-primary text-xl font-bold"></h6>
           <p className="text-foregroundMuted">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, fuga!
-            Corporis soluta unde incidunt alias ab expedita maiores, illum
-            accusantium nihil animi tempora asperiores recusandae voluptate,
-            dignissimos odit beatae quod quos est libero! Nulla perferendis vero
-            magni, harum adipisci laboriosam nisi debitis dolores cumque
-            praesentium id quas ipsam maxime ut!
+            Stead Fast Security” specialises in providing top-notch security
+            services for high-profile events, ensuring the safety and security
+            of distinguished guests, valuable assets, and your reputation. Our
+            event security solutions include:
           </p>
         </div>
-
-        <div className="bg-background p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <h6 className="text-primary text-xl font-bold">MISSION:</h6>
-          <p className="text-foregroundMuted">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, fuga!
-            Corporis soluta unde incidunt alias ab expedita maiores, illum
-            accusantium nihil animi tempora asperiores recusandae voluptate,
-            dignissimos odit beatae quod quos est libero! Nulla perferendis vero
-            magni, harum adipisci laboriosam nisi debitis dolores cumque
-            praesentium id quas ipsam maxime ut!
-          </p>
-        </div>
-
         <div className="bg-background p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
           <h4 className="text-primary text-2xl font-bold">Key Features:</h4>
           <ul className="list-disc list-inside space-y-2 mt-4 text-foregroundMuted">
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+            <li>Risk assessments and threat analysis</li>
+            <li>Customized security protocols</li>
+            <li>Trained event staff and security personnel</li>
+            <li>Access control and crowd management</li>
+            <li>Surveillance and monitoring systems</li>
+            <li>Emergency response planning</li>
           </ul>
+        </div>
+        <div className="bg-background p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <h6 className="text-primary text-xl font-bold"></h6>
+          <p className="text-foregroundMuted">
+            From VIP protection to event logistics, our experienced team works
+            closely with event organizers to deliver seamless security
+            solutions. We ensure discretion, professionalism, and unparalleled
+            protection for your high-profile events.
+          </p>
         </div>
       </div>
     </DetailPage>

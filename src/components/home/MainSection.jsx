@@ -65,22 +65,9 @@ export default function MainSection() {
         reverse
       >
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          optio, modi, nobis aliquid delectus dolorem voluptates est vel
-          recusandae commodi accusantium voluptatum at atque laudantium nam
-          quos, eum a! Atque!
-          <br />
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          porro eveniet ad, exercitationem modi, odit hic officia illo soluta
-          dignissimos esse unde et tenetur nemo praesentium placeat suscipit
-          itaque reiciendis?
-          <br />
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          blanditiis reiciendis quisquam. Non, quos. Corporis nesciunt possimus
-          dicta iste dolorem facere atque delectus illum repellendus hic velit,
-          earum odit pariatur.
+          Travel securely with our professional escort services. Our trained
+          personnel ensure safe transportation for individuals, groups, and
+          valuable assets.
         </p>
       </MainSectionBoxes>
       <MainSectionBoxes
@@ -101,7 +88,9 @@ export default function MainSection() {
           professionals ensure safety with discretion and professionalism.
           <br />
           <br />
-          Comming soon
+          Secure your high-profile events with our expert security solutions.
+          From red-carpet galas to corporate conferences, we protect your
+          guests, assets, and reputation
         </p>
       </MainSectionBoxes>
       <MainSectionBoxes
@@ -112,22 +101,9 @@ export default function MainSection() {
         reverse
       >
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          voluptatum provident, et, eligendi deleniti voluptates impedit
-          voluptate, dolorem iure nemo ad consequatur! Error incidunt ea, totam
-          quisquam labore enim mollitia.
+          Enhance your security skills with our comprehensive training programs.
+          From basic security awareness to advanced tactical training.
           <br />
-          <br />
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
-          nihil rerum accusantium quas doloremque blanditiis deserunt iste
-          consectetur nam modi, accusamus quos quam laborum beatae ea,
-          reprehenderit earum mollitia aliquid.
-          <br />
-          <br />
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
-          nihil rerum accusantium quas doloremque blanditiis deserunt iste
-          consectetur nam modi, accusamus quos quam laborum beatae ea,
-          reprehenderit earum mollitia aliquid.
         </p>
       </MainSectionBoxes>
     </section>
