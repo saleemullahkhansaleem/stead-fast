@@ -32,10 +32,10 @@ export default function MainSection() {
       </MainSectionBoxes>
       <MainSectionBoxes
         title="System Security"
-        imageUrl="placeholder.jpg"
+        imageUrl="system-home-1.png"
         icon={<MdSecurity className="text-secondary text-5xl" />}
         url="services/burglar-alarm"
-        sideImages={["s8.jpg", "s9.jpg"]}
+        sideImages={["s8.jpg", "s9.jpg",]}
       >
         <p>
           A Burglar Alarm, also known as a Security System or Intrusion
