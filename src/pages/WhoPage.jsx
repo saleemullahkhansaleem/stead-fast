@@ -79,7 +79,7 @@ function CeoMessage({}) {
         {/* Left side: Image */}
         <div className="flex justify-center items-center mx-auto">
           <img
-            src="/images/placeholder.jpg"
+            src="/images/mhs-profile.png"
             alt="CEO"
             className="w-96 object-cover"
           />
@@ -137,7 +137,7 @@ function DirectorMessage({}) {
         {/* Left side: Image */}
         <div className="flex justify-center items-center mx-auto">
           <img
-            src="/images/profile.png"
+            src="/images/ar-profile.png"
             alt="CEO"
             className="w-96 object-cover"
           />
