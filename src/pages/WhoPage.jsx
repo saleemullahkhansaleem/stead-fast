@@ -50,7 +50,7 @@ export default function AboutPage() {
 
             <div className="bg-background p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               <h4 className="text-primary text-2xl font-bold">
-                We are dedicated to:
+                We are dedicated to :
               </h4>
               <ul className="list-disc list-inside space-y-2 mt-4 text-foregroundMuted">
                 <li>Delivering reliable and responsive security services</li>
@@ -79,7 +79,7 @@ function CeoMessage({}) {
         {/* Left side: Image */}
         <div className="flex justify-center items-center mx-auto">
           <img
-            src="/images/placeholder.jpg"
+            src="/images/mhs-profile.png"
             alt="CEO"
             className="w-96 object-cover"
           />
@@ -137,7 +137,7 @@ function DirectorMessage({}) {
         {/* Left side: Image */}
         <div className="flex justify-center items-center mx-auto">
           <img
-            src="/images/profile.png"
+            src="/images/ar-profile.png"
             alt="CEO"
             className="w-96 object-cover"
           />
