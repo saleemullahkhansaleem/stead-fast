@@ -20,14 +20,15 @@ export default function MainSection() {
           organized by various Organizations / Forums.
           <br />
           <br />
-          Stead Fast is a leading security solutions provider committed to safeguarding
-          businesses, institutions and communities in ICT, Punjab and KP with a
-          focus on professionalism, reliability and cutting edge technology.
+          Stead Fast is a leading security solutions provider committed to
+          safeguarding businesses, institutions and communities in ICT, Punjab
+          and KP with a focus on professionalism, reliability and cutting edge
+          technology.
           <br />
           <br />
-          Stead Fast Security offers a wide range of security services, cash management
-          solutions and specialized offerings to ensure peace of and protect
-          valuable assets.
+          Stead Fast Security offers a wide range of security services, cash
+          management solutions and specialized offerings to ensure peace of and
+          protect valuable assets.
         </p>
       </MainSectionBoxes>
       <MainSectionBoxes
@@ -38,21 +39,18 @@ export default function MainSection() {
         sideImages={["s8.webp", "s9.webp"]}
       >
         <p>
-          A Burglar Alarm, also known as a Security System or Intrusion
-          Detection System, is an electronic network that works together to
-          shield your property from unauthorized entry.It typically comprises
-          three key elements:
+          “Protect Your Premises and Assets with Our Advanced Security Systems”
           <br />
           <br />
-          The brain of the system, receiving signals from sensors and triggering
-          alarms upon detecting a breach. <br />
+          Stead Fast System Security Solutions provide comprehensive protection
+          for your commercial, industrial, or residential properties. From
+          burglar alarm systems to access control and video surveillance, we've
+          got you covered.
           <br />
-          These electronic sentinels detect various disturbances, including
-          motion within a designated area, the opening of doors or windows, and
-          the shattering of glass. <br />
-          These act as deterrents and alerts, consisting of loud sirens,
-          flashing lights, or a combination of both. Some systems can also send
-          notifications to smartphones or security companies.
+          <br />
+          Stead Fast System Security encompasses various measures to protect
+          your premises, assets, and people from unauthorized access, theft, or
+          damage.
           <br />
           <br />
         </p>
@@ -97,8 +95,9 @@ export default function MainSection() {
           security services
           <br />
           <br />
-          Stead Fast Security provide reliable protection for individuals and events. Trained
-          professionals ensure safety with discretion and professionalism.
+          Stead Fast Security provide reliable protection for individuals and
+          events. Trained professionals ensure safety with discretion and
+          professionalism.
           <br />
           <br />
           Secure your high-profile events with our expert security solutions.
