@@ -89,7 +89,7 @@ function CeoMessage({}) {
         <div className="flex-1 pl-8">
           <div className="mb-4">
             <h6 className="text-primary text-xl font-bold">
-              Muhammad Hanif Shah
+              Syed Muhammad Hanif Shah
             </h6>
             <p className="text-foregroundMuted">CEO</p>
           </div>
@@ -147,9 +147,9 @@ function DirectorMessage({}) {
         <div className="flex-1 pl-8">
           <div className="mb-4">
             <h6 className="text-primary text-xl font-bold">
-              Col (R) Abdul Rauf
+              Col (R) Abdur Rauf
             </h6>
-            <p className="text-foregroundMuted">Diractor</p>
+            <p className="text-foregroundMuted">Director</p>
           </div>
 
           <p className="text-foregroundMuted leading-relaxed">
