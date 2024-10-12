@@ -162,7 +162,7 @@ export default function WhatPage() {
           ))}
         </div>
       </Container>
-      <Services />
+      {/* <Services /> */}
     </>
   );
 }
