@@ -164,14 +164,14 @@ function MainSectionBoxes({
         </div>
         {sideImages.length === 2 && (
           <>
-            <div className="absolute -right-[10%] bottom-[42%] w-[45%] h-[45%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background">
+            <div className="absolute -right-[10%] bottom-[42%] w-[45%] h-[45%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background hover:z-10">
               <img
                 className="w-full h-full object-cover"
                 src={"images/security/" + sideImages[0]}
                 alt="security photo"
               />
             </div>
-            <div className="absolute -right-[7%] top-[47%] w-[40%] h-[40%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background">
+            <div className="absolute -right-[7%] top-[47%] w-[40%] h-[40%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background hover:z-10">
               <img
                 className="w-full h-full object-cover"
                 src={"images/security/" + sideImages[1]}
@@ -182,21 +182,21 @@ function MainSectionBoxes({
         )}
         {sideImages.length === 3 && (
           <>
-            <div className="absolute -right-[4%] top-0 w-[45%] h-[45%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background">
+            <div className="absolute -right-[4%] top-0 w-[45%] h-[45%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background hover:z-10">
               <img
                 className="w-full h-full object-cover"
                 src={"images/security/" + sideImages[0]}
                 alt="security photo"
               />
             </div>
-            <div className="absolute -right-[8%] top-1/2 w-[40%] h-[40%] -translate-y-1/2 flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background">
+            <div className="absolute -right-[8%] top-1/2 w-[40%] h-[40%] -translate-y-1/2 flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background hover:z-10">
               <img
                 className="w-full h-full object-cover"
                 src={"images/security/" + sideImages[1]}
                 alt="security photo"
               />
             </div>
-            <div className="absolute right-0 bottom-[5%] w-[35%] h-[35%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background">
+            <div className="absolute right-0 bottom-[5%] w-[35%] h-[35%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background hover:z-10">
               <img
                 className="w-full h-full object-cover"
                 src={"images/security/" + sideImages[2]}

@@ -29,14 +29,14 @@ export default function CircleImage({
         </div>
         {sideImages.length === 2 && (
           <>
-            <div className="absolute -left-[10%] bottom-[42%] w-[45%] h-[45%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background">
+            <div className="absolute -left-[10%] bottom-[42%] w-[45%] h-[45%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background hover:z-10">
               <img
                 className="w-full h-full object-cover"
                 src={sideImages[0]}
                 alt="security photo"
               />
             </div>
-            <div className="absolute -left-[7%] top-[47%] w-[40%] h-[40%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background">
+            <div className="absolute -left-[7%] top-[47%] w-[40%] h-[40%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background hover:z-10">
               <img
                 className="w-full h-full object-cover"
                 src={sideImages[1]}
@@ -47,21 +47,21 @@ export default function CircleImage({
         )}
         {sideImages.length === 3 && (
           <>
-            <div className="absolute -left-[4%] top-0 w-[45%] h-[45%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background">
+            <div className="absolute -left-[4%] top-0 w-[45%] h-[45%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background hover:z-10">
               <img
                 className="w-full h-full object-cover"
                 src={sideImages[0]}
                 alt="security photo"
               />
             </div>
-            <div className="absolute -left-[8%] top-1/2 w-[40%] h-[40%] -translate-y-1/2 flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background">
+            <div className="absolute -left-[8%] top-1/2 w-[40%] h-[40%] -translate-y-1/2 flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background hover:z-10">
               <img
                 className="w-full h-full object-cover"
                 src={sideImages[1]}
                 alt="security photo"
               />
             </div>
-            <div className="absolute left-0 bottom-[5%] w-[35%] h-[35%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background">
+            <div className="absolute left-0 bottom-[5%] w-[35%] h-[35%] flex justify-center items-center overflow-hidden rounded-full border-4 border-backround shadow-2xl bg-background hover:z-10">
               <img
                 className="w-full h-full object-cover"
                 src={sideImages[2]}
