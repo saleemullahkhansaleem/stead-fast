@@ -6,32 +6,32 @@ export default function Services() {
     {
       title: "SECURITY SERVICES",
       imageUrl: "/images/services/service-1.png",
-      url: "/",
+      url: "/what-we-do",
     },
     {
       title: "TECHNICAL SECURITY",
       imageUrl: "/images/services/service-2.png",
-      url: "/",
+      url: "/what-we-do",
     },
     {
       title: "BUILDING MANAGEMENT",
       imageUrl: "/images/services/service-3.png",
-      url: "/",
+      url: "/what-we-do",
     },
     {
       title: "TRAINING",
       imageUrl: "/images/services/service-4.png",
-      url: "/",
+      url: "/what-we-do",
     },
     {
       title: "JANITORIAL SERVICES",
       imageUrl: "/images/services/service-5.png",
-      url: "/",
+      url: "/what-we-do",
     },
     {
       title: "CANINE",
       imageUrl: "/images/services/service-1.png",
-      url: "/",
+      url: "/what-we-do",
     },
   ];
   return (
