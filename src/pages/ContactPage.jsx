@@ -19,7 +19,7 @@ export default function ContactPage() {
     },
     {
       title: "Phone",
-      content: "051-2803190-91",
+      content: "051-8739888",
     },
     {
       title: "Email",
