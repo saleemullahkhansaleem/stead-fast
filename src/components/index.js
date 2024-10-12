@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import DetailPage from "./DetailPage";
 import Input from "./Input";
 import BackToTopButton from "./BackToTopButton";
+import CallUsButton from "./CallUsButton";
 import ScrollToTop from "./ScrollToTop";
 import CircleImage from "./CircleImage";
 import Spinner from "./Spinner";
@@ -30,6 +31,7 @@ export {
   DetailPage,
   Input,
   BackToTopButton,
+  CallUsButton,
   ScrollToTop,
   CircleImage,
   Spinner,

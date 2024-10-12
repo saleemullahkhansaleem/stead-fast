@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button, Container, CoverSection, Input } from "../components";
 import api from "../http/api";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 export default function ContactPage() {
   const [loading, setLoading] = useState(false);
@@ -20,10 +21,12 @@ export default function ContactPage() {
     {
       title: "Phone",
       content: "051-8739888",
+      url: "tel:+92518739888",
     },
     {
       title: "Email",
       content: "contact@steadfastsecurity.com.pk",
+      url: "mailto:contact@steadfastsecurity.com.pk",
     },
   ];
 
@@ -126,7 +129,11 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold text-primary">
                   {info.title}
                 </h3>
-                <p className="text-foregroundMuted">{info.content}</p>
+                {info.url ? (
+                  <Link to={info.url}>{info.content}</Link>
+                ) : (
+                  <p className="text-foregroundMuted">{info.content}</p>
+                )}
               </div>
             ))}
           </div>

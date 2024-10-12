@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Container from "./Container";
 import SocialBar from "./SocialBar";
 import BackToTopButton from "./BackToTopButton";
+import CallUsButton from "./CallUsButton";
 
 export default function Footer() {
   const footerNavLinks = [
@@ -102,6 +103,7 @@ export default function Footer() {
           <SocialBar />
         </Container>
       </div>
+      <CallUsButton />
       <BackToTopButton />
     </footer>
   );

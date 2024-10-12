@@ -35,7 +35,7 @@ export default function Header() {
             <NavLink
               key={index}
               className={({ isActive }) =>
-                `px-4 py-2 hover:text-primary ${
+                `px-3 py-2 hover:text-primary ${
                   isActive ? "text-primary" : "text-foreground"
                 }`
               }
