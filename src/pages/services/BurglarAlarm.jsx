@@ -5,8 +5,7 @@ const sections = [
   {
     title: "Components of Burglar Alarm Systems",
     content: {
-      description:
-        "",
+      description: "",
       items: [
         "Sensors (motion, door/window, glass break)",
         "Control panel",
@@ -19,8 +18,7 @@ const sections = [
   {
     title: "Types of Burglar Alarm Systems",
     content: {
-      description:
-        "",
+      description: "",
       items: [
         "Wired systems",
         "Wireless systems",
@@ -32,8 +30,7 @@ const sections = [
   {
     title: "Additional System Security Measures",
     content: {
-      description:
-        "",
+      description: "",
       items: [
         "Access Control Systems (ACS)",
         "Closed-Circuit Television (CCTV)",
@@ -41,8 +38,7 @@ const sections = [
         "Fire Alarm Systems",
         "Intrusion Detection Systems (IDS)",
         "Secure Communication Systems",
-        "Biometric Authentication Systems"
-
+        "Biometric Authentication Systems",
       ],
     },
   },
@@ -59,7 +55,6 @@ const sections = [
       ],
     },
   },
-
 ];
 
 export default function BurglarAlarm() {
