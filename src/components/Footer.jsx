@@ -95,8 +95,16 @@ export default function Footer() {
           <div className="row footer-copyright">
             <div className="col-md-12 text-center">
               <p>
-                © 2024 <span className="footer-highlight">STEAD FAST</span> Pvt.
-                Ltd All rights reserved.
+                Developed by{" "}
+                <Link
+                  target="_blank"
+                  className="text-primary hover:underline"
+                  to={"https://mhstv.vercel.app/"}
+                >
+                  MHS Tech Ventures
+                </Link>{" "}
+                | © 2024 <span className="footer-highlight">STEAD FAST</span>{" "}
+                Pvt. Ltd All rights reserved.
               </p>
             </div>
           </div>
