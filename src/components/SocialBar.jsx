@@ -11,36 +11,36 @@ import {
 
 export default function SocialBar() {
   const socialLinks = [
-    {
-      name: "facebook",
-      url: "http://facebook.com",
-      icon: FaFacebook,
-    },
-    {
-      name: "twitter",
-      url: "http://twitter.com",
-      icon: FaTwitter,
-    },
-    {
-      name: "linkedin",
-      url: "http://linkedin.com",
-      icon: FaLinkedin,
-    },
-    {
-      name: "instagram",
-      url: "http://instagram.com",
-      icon: FaInstagram,
-    },
-    {
-      name: "youtube",
-      url: "http://youtube.com",
-      icon: FaYoutube,
-    },
-    {
-      name: "whatsapp",
-      url: "http://whatsapp.com",
-      icon: FaWhatsapp,
-    },
+    // {
+    //   name: "facebook",
+    //   url: "http://facebook.com",
+    //   icon: FaFacebook,
+    // },
+    // {
+    //   name: "twitter",
+    //   url: "http://twitter.com",
+    //   icon: FaTwitter,
+    // },
+    // {
+    //   name: "linkedin",
+    //   url: "http://linkedin.com",
+    //   icon: FaLinkedin,
+    // },
+    // {
+    //   name: "instagram",
+    //   url: "http://instagram.com",
+    //   icon: FaInstagram,
+    // },
+    // {
+    //   name: "youtube",
+    //   url: "http://youtube.com",
+    //   icon: FaYoutube,
+    // },
+    // {
+    //   name: "whatsapp",
+    //   url: "http://whatsapp.com",
+    //   icon: FaWhatsapp,
+    // },
   ];
   return (
     <div className="text-white flex justify-between items-center gap-2">
