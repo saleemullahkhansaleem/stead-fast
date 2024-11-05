@@ -11,6 +11,7 @@ export default function Header() {
     { name: "WHY STEAD FAST", url: "/why-stand-fast" },
     { name: "HEDONISTIC APPROACH", url: "/hedonistic-approach" },
     { name: "WHAT WE DO", url: "/what-we-do" },
+    { name: "COMPANY PROFILE", url: "company-profile" },
     { name: "CONTACT US", url: "/contact-us" },
     { name: "NEWS", url: "/news" },
     { name: "CAREER", url: "/career" },
