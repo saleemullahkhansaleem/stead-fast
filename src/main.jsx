@@ -24,6 +24,7 @@ import {
   WhoPage,
   WhyPage,
 } from "./pages";
+import CompanyProfile from "./pages/CompanyProfile.jsx";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "what-we-do",
         element: <WhatPage />,
+      },
+      {
+        path: "company-profile",
+        element: <CompanyProfile />,
       },
       {
         path: "contact-us",
