@@ -4,9 +4,22 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function CompanyProfile() {
   const images = [
-    "/images/security/special-events-1.webp",
-    "/images/security/special-events-2.webp",
-    "/images/security/special-events-3.webp",
+    "/images/company_profile/1.webp",
+    "/images/company_profile/2.webp",
+    "/images/company_profile/3.webp",
+    "/images/company_profile/4.webp",
+    "/images/company_profile/5.webp",
+    "/images/company_profile/6.webp",
+    "/images/company_profile/7.webp",
+    "/images/company_profile/8.webp",
+    "/images/company_profile/9.webp",
+    "/images/company_profile/10.webp",
+    "/images/company_profile/11.webp",
+    "/images/company_profile/12.webp",
+    "/images/company_profile/13.webp",
+    "/images/company_profile/14.webp",
+    "/images/company_profile/16.webp",
+
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -28,7 +41,7 @@ export default function CompanyProfile() {
     <>
       <CoverSection
         title="Company Profile"
-        description="At Stead Fast Security, we specialize in providing comprehensive security solutions tailored for high-profile events and exclusive gatherings. With years of experience in handling security for prestigious events, our team is equipped to address every security need—from safeguarding VIP guests to managing large crowds with utmost discretion."
+        description="At Stead Fast Security, We specialize in providing comprehensive security solutions tailored for high-profile events and exclusive gatherings. With years of experience in handling security for prestigious events, our team is equipped to address every security need from safeguarding VIP guests to managing large crowds with utmost discretion."
       />
 
       <Container className="py-12 px-4">
@@ -39,7 +52,7 @@ export default function CompanyProfile() {
             key={index}
             src={image}
             alt={`Company Profile ${index + 1}`}
-            className={`absolute w-full object-cover transition-opacity duration-1000 ease-in-out transform ${
+            className={`absolute h-full object-contain transition-opacity duration-1000 ease-in-out transform ${
               index === currentImageIndex
                 ? "opacity-100 animate-flip"
                 : "opacity-0"
