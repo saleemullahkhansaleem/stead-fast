@@ -31,7 +31,7 @@ export default function Header() {
 
         <NavbarBrand />
 
-        <nav className="xl:flex items-center h-full hidden">
+        <nav className="2xl:flex items-center h-full hidden">
           {navLinks.map((link, index) => (
             <NavLink
               key={index}
@@ -48,7 +48,7 @@ export default function Header() {
         </nav>
 
         <button
-          className="p-2 block xl:hidden"
+          className="p-2 block 2xl:hidden"
           onClick={() => setMenueToggle(true)}
         >
           <FaBars size={24} />
@@ -57,7 +57,7 @@ export default function Header() {
       <div
         className={`${
           menueToggle ? "flex" : "hidden"
-        } fixed top-0 left-0 w-full h-screen z-20 xl:hidden`}
+        } fixed top-0 left-0 w-full h-screen z-20 2xl:hidden`}
       >
         <div
           className="flex-1 bg-black/40 backdrop-blur-sm"
