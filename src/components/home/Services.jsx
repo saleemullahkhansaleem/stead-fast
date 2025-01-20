@@ -21,7 +21,7 @@ export default function Services() {
     {
       title: "TRAINING",
       imageUrl: "/images/services/service-4.png",
-      url: "/what-we-do",
+      url: "/services/training-courses",
     },
     {
       title: "JANITORIAL SERVICES",
