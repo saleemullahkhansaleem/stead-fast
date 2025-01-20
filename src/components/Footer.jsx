@@ -13,7 +13,7 @@ export default function Footer() {
       { name: "Security Services", url: "/what-we-do" },
     ],
     [
-      { name: "Latest News", url: "/news" },
+      // { name: "Latest News", url: "/news" },
       { name: "Jobs", url: "/career" },
       { name: "Contact Us", url: "/contact-us" },
     ],
@@ -99,7 +99,7 @@ export default function Footer() {
                 <Link
                   target="_blank"
                   className="text-primary hover:underline"
-                  to={"https://mhstv.vercel.app/"}
+                  to={"https://mhstechventures.com/"}
                 >
                   MHS Tech Ventures
                 </Link>{" "}

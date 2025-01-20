@@ -13,7 +13,7 @@ export default function Header() {
     { name: "WHAT WE DO", url: "/what-we-do" },
     { name: "COMPANY PROFILE", url: "company-profile" },
     { name: "CONTACT US", url: "/contact-us" },
-    { name: "NEWS", url: "/news" },
+    // { name: "NEWS", url: "/news" },
     { name: "CAREER", url: "/career" },
   ];
 

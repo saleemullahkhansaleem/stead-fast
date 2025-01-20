@@ -49,7 +49,7 @@ export default function Home() {
       <AboutSection />
       <MainSection />
       <Services />
-      <LogoCarousel />
+      {/* <LogoCarousel /> */}
       <EmergencyNumbers />
     </>
   );
