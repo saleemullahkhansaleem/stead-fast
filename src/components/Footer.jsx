@@ -13,22 +13,22 @@ export default function Footer() {
       { name: "Security Services", url: "/what-we-do" },
     ],
     [
-      // { name: "Latest News", url: "/news" },
+      { name: "Latest News", url: "/news" },
       { name: "Jobs", url: "/career" },
       { name: "Contact Us", url: "/contact-us" },
     ],
   ];
 
   return (
-    <footer className="bg-foregroundMuted text-backgroundMuted">
+    <footer className="bg-foregroundMuted text-backgroundMuted pb-14 md:pb-0">
       <Container className="grid grid-cols-1 lg:grid-cols-3 gap-4 py-12">
         <div className="p-4 xl:px-12">
           <h4 className="text-2xl text-background font-bold pb-4">
-            STEAD FAST Security
+            STEAD FAST SECURITY
           </h4>
           <p>
-            Stead Fast Security Company (Private) established on 28th January,
-            2008 is a leading security solutions provider committed to
+            Stead Fast Security Company (Private) Limmited established on 28th
+            January, 2008 is a leading security solutions provider committed to
             safeguarding businesses, institutions, and communities in ICT,
             Punjab and KP.
           </p>
@@ -103,7 +103,10 @@ export default function Footer() {
                 >
                   MHS Tech Ventures
                 </Link>{" "}
-                | © 2024 <span className="footer-highlight">STEAD FAST</span>{" "}
+                | © 2024{" "}
+                <span className="footer-highlight">
+                  Stead Fast Security Company
+                </span>{" "}
                 Pvt. Ltd All rights reserved.
               </p>
             </div>
