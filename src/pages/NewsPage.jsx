@@ -119,7 +119,7 @@ export default function NewsPage() {
                     </div>
                   </div>
                   <div className="p-6 flex flex-col justify-between flex-grow ">
-                    <p className="text-xs text-background mb-4 flex gap-2">
+                    {/* <p className="text-xs text-background mb-4 flex gap-2">
                       <span className="bg-secondary px-3 py-1 rounded-full">
                         {article?.published_date || "--"}
                       </span>{" "}
@@ -129,7 +129,7 @@ export default function NewsPage() {
                       <span className="bg-primary px-3 py-1 rounded-full">
                         {article?.category || "--"}
                       </span>{" "}
-                    </p>
+                    </p> */}
                     <h3 className="text-xl font-semibold mb-4">
                       {article.title}
                     </h3>

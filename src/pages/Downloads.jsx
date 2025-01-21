@@ -21,12 +21,6 @@ const downloads = [
     downloadLink:
       "/files/the-ict-private-security-companies-ordinance-2001.pdf",
   },
-  // {
-  //   id: 4,
-  //   title: "The Khyber Pakhtunkhwa Laws (Amendment) Act, 2011",
-  //   preview: "/files/the-khyber-pakhtunkhwa-laws-amendment-act-2011.pdf",
-  //   downloadLink: "/files/the-khyber-pakhtunkhwa-laws-amendment-act-2011.pdf",
-  // },
   {
     id: 5,
     title: "The Khyber Pakhtunkhwa Private Security Companies Rules, 2003",
@@ -52,15 +46,6 @@ const downloads = [
     downloadLink:
       "/files/the-punjab-private-security-companies-regulation-and-control-amendment-act-2004.pdf",
   },
-  // {
-  //   id: 8,
-  //   title:
-  //     "The Punjab Private Security Companies Regulation and Control Ordinance, 2003",
-  //   preview:
-  //     "/files/the-punjab-private-security-companies-regulation-and-control-ordinance-2003.pdf",
-  //   downloadLink:
-  //     "/files/the-punjab-private-security-companies-regulation-and-control-ordinance-2003.pdf",
-  // },
   {
     id: 9,
     title:
@@ -98,14 +83,21 @@ export default function Downloads() {
                 <h2 className="text-lg font-semibold text-gray-700 mb-20">
                   {item.title}
                 </h2>
-
+                {/* 
                 <Button
-                  href={item.downloadLink}
+                  
                   download
-                  className="absolute bottom-4 right-4"
+                  className=""
                 >
                   Download
-                </Button>
+                </Button> */}
+                <a
+                  download
+                  href={item.downloadLink}
+                  className="px-4 py-3 md:px-6 md:py-4 bg-primary text-sm md:text-base rounded-full text-background absolute bottom-4 right-4"
+                >
+                  Download
+                </a>
               </div>
             </div>
           ))}
