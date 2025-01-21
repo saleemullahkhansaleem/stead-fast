@@ -168,7 +168,7 @@ export default function NewsPage() {
                   className="mx-auto h-80  object-cover"
                 />
                 <div className="">
-                  <p className="text-sm text-background flex gap-2 mb-2">
+                  {/* <p className="text-sm text-background flex gap-2 mb-2">
                     <span className="bg-secondary px-3 py-1 rounded-full">
                       Publish date: {modalData?.published_date || "--"}
                     </span>{" "}
@@ -178,7 +178,7 @@ export default function NewsPage() {
                     <span className="bg-primary px-3 py-1 rounded-full">
                       Category: {modalData?.category || "--"}
                     </span>{" "}
-                  </p>
+                  </p> */}
                   <p className="text-foregroundMuted mb-4">
                     {modalData?.content}
                   </p>

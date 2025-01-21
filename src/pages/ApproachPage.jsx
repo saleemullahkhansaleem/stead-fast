@@ -4,19 +4,19 @@ import { FaSearchPlus } from "react-icons/fa";
 
 const approachContent = [
   {
-    title: "Health, Safety & Environment Policy",
+    title: "HEALTH, SAFETY & ENVIRONMENT POLICY",
     imageUrl: "/images/approach/health-safety.webp",
   },
   {
-    title: "INTERNATIONAL CODE OF CONDUCT (ICOC) Charter",
+    title: "INTERNATIONAL CODE OF CONDUCT (ICOC) CHARTER",
     imageUrl: "/images/approach/code-of-conduct.webp",
   },
   {
-    title: "VOLUNTARY PRINCIPLES ON SECURITY & HUMAN RIGHTS (VPSHR) Manifesto",
+    title: "VOLUNTARY PRINCIPLES ON SECURITY & HUMAN RIGHTS (VPSHR) MANIFESTO",
     imageUrl: "/images/approach/human-rights.webp",
   },
   {
-    title: "Personal Protective Equipment",
+    title: "PERSONAL PROTECTIVE EQUIPMENT",
     imageUrl: "/images/approach/ppe.webp",
   },
   {
@@ -24,7 +24,7 @@ const approachContent = [
     imageUrl: "/images/approach/corporate-social.webp",
   },
   {
-    title: "Training & Courses",
+    title: "TRAINING & COURSES",
     imageUrl: "/images/approach/training.webp",
   },
 ];
