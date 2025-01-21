@@ -22,7 +22,7 @@ export default function MainSection() {
           <br />
           Stead Fast is a leading security solutions provider committed to
           safeguarding businesses, institutions and communities in ICT, Punjab
-          and KP with a focus on professionalism, reliability and cutting edge
+          and KPK with a focus on professionalism, reliability and cutting edge
           technology.
           <br />
           <br />

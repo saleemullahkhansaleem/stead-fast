@@ -43,7 +43,7 @@ export default function Footer() {
             Stead Fast Security Company (Private) Limmited established on 28th
             January, 2008 is a leading security solutions provider committed to
             safeguarding businesses, institutions, and communities in ICT,
-            Punjab and KP.
+            Punjab and KPK.
           </p>
         </div>
         <div className="flex flex-col gap-1 p-4">
