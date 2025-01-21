@@ -28,8 +28,8 @@ export default function Footer() {
       name: "Balochistan Home Department",
       url: "https://homedept.balochistan.gob.pk/",
     },
-    { name: "GB Home Department", url: "" },
-    { name: "AJ&K Home Department", url: "" },
+    { name: "GB Home Department", url: "https://gilgitbaltistan.gov.pk/" },
+    { name: "AJ&K Home Department", url: "https://ajk.gov.pk/" },
   ];
 
   return (
@@ -123,7 +123,15 @@ export default function Footer() {
                 Developed by{" "}
                 <Link
                   target="_blank"
-                  className="text-primary hover:underline"
+                  className="text-background hover:underline"
+                  to={"https://mhstechventures.com/"}
+                >
+                  Mr Saleem
+                </Link>{" "}
+                in{" "}
+                <Link
+                  target="_blank"
+                  className="text-background hover:underline"
                   to={"https://mhstechventures.com/"}
                 >
                   MHS Tech Ventures
