@@ -83,14 +83,6 @@ export default function Downloads() {
                 <h2 className="text-lg font-semibold text-gray-700 mb-20">
                   {item.title}
                 </h2>
-                {/* 
-                <Button
-                  
-                  download
-                  className=""
-                >
-                  Download
-                </Button> */}
                 <a
                   download
                   href={item.downloadLink}
