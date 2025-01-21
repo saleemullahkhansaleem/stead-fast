@@ -124,7 +124,7 @@ export default function Footer() {
                 <Link
                   target="_blank"
                   className="text-background hover:underline"
-                  to={"https://mhstechventures.com/"}
+                  to={"https://mrsaleem.vercel.app/"}
                 >
                   Mr Saleem
                 </Link>{" "}
