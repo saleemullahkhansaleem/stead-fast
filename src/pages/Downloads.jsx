@@ -69,7 +69,7 @@ export default function Downloads() {
           {downloads.map((item) => (
             <div
               key={item.id}
-              className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 relative"
+              className="bg-background shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 relative"
             >
               <div className="relative h-56">
                 <iframe
@@ -80,7 +80,7 @@ export default function Downloads() {
               </div>
 
               <div className="p-4">
-                <h2 className="text-lg font-semibold text-gray-700 mb-20">
+                <h2 className="text-lg font-semibold text-foreground mb-20">
                   {item.title}
                 </h2>
                 <a

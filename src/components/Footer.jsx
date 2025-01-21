@@ -35,7 +35,7 @@ export default function Footer() {
   return (
     <footer className="bg-foregroundMuted text-backgroundMuted pb-14 md:pb-0 text-justify">
       <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-12">
-        <div className="p-4 xl:px-12">
+        <div className="py-4 xl:px-8">
           <h4 className="text-xl text-background font-bold pb-4">
             STEAD FAST SECURITY
           </h4>
