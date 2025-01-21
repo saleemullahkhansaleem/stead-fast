@@ -30,16 +30,14 @@ export default function Services() {
     },
   ];
   return (
-    <section className="bg-secondary py-16">
-      <Container className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-x-2 gap-y-8 md:gap-y-16">
+    <section className="bg-secondary py-16 px-4">
+      <Container className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-2 gap-y-8 md:gap-y-16">
         {services.map((service, index) => (
           <Link
             title={service.title}
             key={index}
             to={service.url}
-            className={`flex flex-col justify-center items-center gap-4 ${
-              index === 3 || index === 4 ? "md:col-span-1" : "md:col-span-1"
-            }`}
+            className={`flex flex-col justify-start items-center gap-4`}
           >
             <img src={service.imageUrl} alt="Service icon" className="w-36" />
             <p className="text-background text-center">{service.title}</p>
