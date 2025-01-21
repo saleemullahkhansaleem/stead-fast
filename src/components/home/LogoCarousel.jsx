@@ -4,14 +4,14 @@ import "slick-carousel/slick/slick-theme.css";
 import Container from "../Container";
 
 const logos = [
-  "images/clients/caput.png",
-  "images/clients/ws.svg",
-  "images/clients/deed.png",
-  "images/clients/ggr.png",
-  "images/clients/glt.png",
-  "images/clients/mhs.png",
-  "images/clients/cg.png",
-  "images/clients/fscf.png",
+  { src: "images/clients/caput.png", title: "CAPUT International" },
+  { src: "images/clients/ws.svg", title: "Win Source International" },
+  { src: "images/clients/deed.png", title: "Deed" },
+  { src: "images/clients/ggr.png", title: "Go For Green Revolution" },
+  { src: "images/clients/glt.png", title: "Global Links Technologies" },
+  { src: "images/clients/mhs.png", title: "MHS Tech Ventures" },
+  { src: "images/clients/cg.png", title: "Creative Garage" },
+  { src: "images/clients/fscf.png", title: "FSCF Technologies" },
 ];
 
 const LogoCarousel = () => {
@@ -19,7 +19,7 @@ const LogoCarousel = () => {
     dots: false,
     infinite: true,
     speed: 1000,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     autoplay: true,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -55,10 +55,14 @@ const LogoCarousel = () => {
         {logos.map((logo, index) => (
           <div key={index} className="p-2">
             <img
-              src={logo}
-              alt={`logo-${index}`}
+              src={logo.src}
+              alt={logo.title}
               className="object-contain h-24 mx-auto"
             />
+            <hr />
+            <p className="p-4 text-center font-bold text-xs md:text-base">
+              {logo.title}
+            </p>
           </div>
         ))}
       </Slider>

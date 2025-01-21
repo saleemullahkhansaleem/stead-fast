@@ -19,7 +19,7 @@ export default function Footer() {
 
   const importantLinks = [
     { name: "Ministry of Interior", url: "https://www.interior.gov.pk/" },
-    { name: "ICT DC Office", url: "https://ictadministration.gov.pk/" },
+    { name: "ICT Administration", url: "https://ictadministration.gov.pk/" },
     { name: "Punjab Home Department", url: "https://www.home.gop.pk/" },
     { name: "Directorate of Monitoring Punjab", url: "http://dm-hd.gop.pk/#" },
     { name: "KP Home Department", url: "https://hd.kp.gov.pk/" },
