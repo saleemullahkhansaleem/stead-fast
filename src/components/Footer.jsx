@@ -22,7 +22,7 @@ export default function Footer() {
     { name: "ICT Administration", url: "https://ictadministration.gov.pk/" },
     { name: "Punjab Home Department", url: "https://www.home.gop.pk/" },
     { name: "Directorate of Monitoring Punjab", url: "http://dm-hd.gop.pk/#" },
-    { name: "KP Home Department", url: "https://hd.kp.gov.pk/" },
+    { name: "KPK Home Department", url: "https://hd.kp.gov.pk/" },
     { name: "Sindh Home Department", url: "https://home.sindh.gov.pk/" },
     {
       name: "Balochistan Home Department",
