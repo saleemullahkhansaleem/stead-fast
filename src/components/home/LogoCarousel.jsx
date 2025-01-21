@@ -4,20 +4,22 @@ import "slick-carousel/slick/slick-theme.css";
 import Container from "../Container";
 
 const logos = [
-  "images/clients/hbl.png",
-  "images/clients/mcb.png",
-  "images/clients/pakfoods.png",
-  "images/clients/pycl.png",
-  "images/clients/soneri.png",
-  "images/clients/suzuki.png",
-  "images/clients/ubl.png",
+  "images/clients/caput.png",
+  "images/clients/ws.svg",
+  "images/clients/deed.png",
+  "images/clients/ggr.png",
+  "images/clients/glt.png",
+  "images/clients/mhs.png",
+  "images/clients/cg.png",
+  "images/clients/fscf.png",
 ];
 
 const LogoCarousel = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 100,
+    speed: 1000,
+    autoplaySpeed: 1000,
     autoplay: true,
     slidesToShow: 5,
     slidesToScroll: 1,

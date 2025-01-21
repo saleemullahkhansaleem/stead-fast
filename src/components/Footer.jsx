@@ -3,27 +3,40 @@ import Container from "./Container";
 import SocialBar from "./SocialBar";
 import BackToTopButton from "./BackToTopButton";
 import CallUsButton from "./CallUsButton";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Footer() {
   const footerNavLinks = [
-    [
-      { name: "Home", url: "/" },
-      { name: "About Us", url: "/about-us" },
-      { name: "Why Choose Us", url: "/why-stand-fast" },
-      { name: "Security Services", url: "/what-we-do" },
-    ],
-    [
-      { name: "Latest News", url: "/news" },
-      { name: "Jobs", url: "/career" },
-      { name: "Contact Us", url: "/contact-us" },
-    ],
+    { name: "Home", url: "/" },
+    { name: "About Us", url: "/about-us" },
+    { name: "Why Choose Us", url: "/why-stand-fast" },
+    { name: "Security Services", url: "/what-we-do" },
+    { name: "Latest News", url: "/news" },
+    { name: "Jobs", url: "/career" },
+    { name: "Downloads", url: "/downloads" },
+    { name: "Contact Us", url: "/contact-us" },
+  ];
+
+  const importantLinks = [
+    { name: "Ministry of Interior", url: "https://www.interior.gov.pk/" },
+    { name: "ICT DC Office", url: "https://ictadministration.gov.pk/" },
+    { name: "Punjab Home Department", url: "https://www.home.gop.pk/" },
+    { name: "Directorate of Monitoring Punjab", url: "http://dm-hd.gop.pk/#" },
+    { name: "KP Home Department", url: "https://hd.kp.gov.pk/" },
+    { name: "Sindh Home Department", url: "https://home.sindh.gov.pk/" },
+    {
+      name: "Balochistan Home Department",
+      url: "https://homedept.balochistan.gob.pk/",
+    },
+    { name: "GB Home Department", url: "" },
+    { name: "AJ&K Home Department", url: "" },
   ];
 
   return (
-    <footer className="bg-foregroundMuted text-backgroundMuted pb-14 md:pb-0">
-      <Container className="grid grid-cols-1 lg:grid-cols-3 gap-4 py-12">
+    <footer className="bg-foregroundMuted text-backgroundMuted pb-14 md:pb-0 text-justify">
+      <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-12">
         <div className="p-4 xl:px-12">
-          <h4 className="text-2xl text-background font-bold pb-4">
+          <h4 className="text-xl text-background font-bold pb-4">
             STEAD FAST SECURITY
           </h4>
           <p>
@@ -33,27 +46,39 @@ export default function Footer() {
             Punjab and KP.
           </p>
         </div>
-        <div className="p-4">
-          <h4 className="text-2xl text-background font-bold pb-4">Menu</h4>
-          <div className="grid grid-cols-2">
-            {footerNavLinks.map((column, colIndex) => (
-              <div className="flex flex-col gap-2" key={colIndex}>
-                {column.map((link, index) => (
-                  <Link
-                    key={index}
-                    to={link.url}
-                    title={link.name}
-                    className="text-lg hover:text-background"
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-              </div>
-            ))}
-          </div>
+        <div className="flex flex-col gap-1 p-4">
+          <h4 className="text-xl text-background font-bold pb-4">Menu</h4>
+          {footerNavLinks.map((link) => (
+            <Link
+              key={link.name}
+              to={link.url}
+              title={link.name}
+              className="hover:text-background hover:translate-x-2 transition-transform duration-300 flex items-center gap-2"
+            >
+              <FaArrowRightLong />
+              {link.name}
+            </Link>
+          ))}
+        </div>
+        <div className="flex flex-col gap-1 py-4">
+          <h4 className="text-xl text-background font-bold pb-4">
+            Important Links
+          </h4>
+          {importantLinks.map((link) => (
+            <Link
+              key={link.name}
+              to={link.url}
+              title={link.name}
+              target="_blank"
+              className="hover:text-background hover:translate-x-2 transition-transform duration-300 flex items-center gap-2"
+            >
+              <FaArrowRightLong />
+              {link.name}
+            </Link>
+          ))}
         </div>
         <div className="p-4">
-          <h4 className="text-2xl text-background font-bold pb-4">Contact</h4>
+          <h4 className="text-xl text-background font-bold pb-4">Contact</h4>
           <p>Office No: 5 Al-Malik Centre (Third Floor)</p>
           <p> 70 West Jinnah Avenue</p>
           <p> Blue Area Islamabad</p>
@@ -62,13 +87,13 @@ export default function Footer() {
             <Link
               title="contact@steadfastsecurity.com.pk"
               to="mailto:contact@steadfastsecurity.com.pk"
-              className="text-lg hover:text-background"
+              className="hover:text-background"
             >
               contact@steadfastsecurity.com.pk
             </Link>
           </p>
           <br />
-          <p className="text-lg flex gap-2">
+          <p className="flex gap-2">
             <span>Phone:</span>{" "}
             <span>
               <Link

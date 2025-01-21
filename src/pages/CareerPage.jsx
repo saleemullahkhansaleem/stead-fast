@@ -82,7 +82,7 @@ export default function CareerPage() {
       <Container className="px-4 my-12 text-center">
         <h2 className="text-4xl font-bold mb-6">Why Work With Us?</h2>
         <p className="text-lg text-foregroundMuted leading-relaxed mb-8">
-          We are a team of passionate innovators committed to providing a
+          We are a team of passionate innovators committed to provide a
           supportive and rewarding work environment. Join us and enjoy a career
           that offers growth, stability, and security.
         </p>

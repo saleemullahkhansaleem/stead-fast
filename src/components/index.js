@@ -12,6 +12,7 @@ import CallUsButton from "./CallUsButton";
 import ScrollToTop from "./ScrollToTop";
 import CircleImage from "./CircleImage";
 import Spinner from "./Spinner";
+import TruncateParagraph from "./TruncateParagraph";
 
 // Home components
 
@@ -35,6 +36,7 @@ export {
   ScrollToTop,
   CircleImage,
   Spinner,
+  TruncateParagraph,
 
   //home components
   MainSection,

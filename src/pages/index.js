@@ -8,6 +8,7 @@ import NewsPage from "./NewsPage";
 import CareerPage from "./CareerPage";
 import CareerApplyPage from "./CareerApplyPage";
 import Organogram from "./Organogram";
+import Downloads from "./Downloads";
 import NotFound from "./NotFound";
 
 // Services pages
@@ -30,6 +31,7 @@ export {
   CareerPage,
   CareerApplyPage,
   Organogram,
+  Downloads,
   NotFound,
 
   // Services pages

@@ -108,7 +108,7 @@ export default function NewsPage() {
               {news.map((article, index) => (
                 <div
                   key={index}
-                  className="group bg-background rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform transform hover:scale-105 hover:shadow-xl cursor-pointer relative"
+                  className="group bg-background rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform transform hover:scale-[1.01] hover:shadow-xl cursor-pointer relative"
                   onClick={() => openModal(article)}
                 >
                   <div className="relative p-6">
@@ -133,7 +133,19 @@ export default function NewsPage() {
                     <h3 className="text-xl font-semibold mb-4">
                       {article.title}
                     </h3>
-                    <p className="text-foregroundMuted">{article?.content}</p>
+                    <p className="text-foregroundMuted">
+                      {article?.content?.length > 200 ? (
+                        <>
+                          {article.content.slice(0, 200)}...
+                          <span className="text-primary hover:underline">
+                            {" "}
+                            See More
+                          </span>
+                        </>
+                      ) : (
+                        article?.content
+                      )}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -141,11 +153,20 @@ export default function NewsPage() {
           </Container>
           {/* Modal Section */}
           {modalData && (
-            <div className="fixed inset-0 flex items-center justify-center z-50 bg-black/50 backdrop-blur-sm">
-              <div className="bg-background rounded-lg shadow-lg p-4 relative max-h-screen">
-                <h3 className="text-xl font-semibold mb-4">
+            <div className="fixed inset-0 flex items-center justify-center z-50">
+              <div
+                className="absolute inset-0 bg-black/50 backdrop-blur-sm z-0"
+                onClick={closeModal}
+              ></div>
+              <div className="bg-background rounded-lg shadow-lg p-4 max-w-3xl relative max-h-screen overflow-auto">
+                <h3 className="text-xl font-semibold my-4">
                   {modalData.title}
                 </h3>
+                <img
+                  src={modalData.imageUrl}
+                  alt={modalData.title}
+                  className="mx-auto h-80  object-cover"
+                />
                 <div className="">
                   <p className="text-sm text-background flex gap-2 mb-2">
                     <span className="bg-secondary px-3 py-1 rounded-full">
@@ -168,13 +189,6 @@ export default function NewsPage() {
                 >
                   &times;
                 </button>
-                <div className="relative max-h-[calc(90vh-50px)] overflow-y-auto">
-                  <img
-                    src={modalData.imageUrl}
-                    alt={modalData.title}
-                    className="w-full h-auto"
-                  />
-                </div>
               </div>
             </div>
           )}

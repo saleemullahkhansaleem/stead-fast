@@ -23,11 +23,11 @@ export default function Services() {
       imageUrl: "/images/services/service-4.png",
       url: "/services/training-courses",
     },
-    {
-      title: "JANITORIAL SERVICES",
-      imageUrl: "/images/services/service-5.png",
-      url: "/what-we-do",
-    },
+    // {
+    //   title: "JANITORIAL SERVICES",
+    //   imageUrl: "/images/services/service-5.png",
+    //   url: "/what-we-do",
+    // },
     {
       title: "CANINE",
       imageUrl: "/images/services/service-1.png",
@@ -36,13 +36,15 @@ export default function Services() {
   ];
   return (
     <section className="bg-secondary py-16">
-      <Container className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-16">
+      <Container className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-x-2 gap-y-8 md:gap-y-16">
         {services.map((service, index) => (
           <Link
             title={service.title}
             key={index}
             to={service.url}
-            className="flex flex-col justify-center items-center gap-4"
+            className={`flex flex-col justify-center items-center gap-4 ${
+              index === 3 || index === 4 ? "md:col-span-3" : "md:col-span-2"
+            }`}
           >
             <img src={service.imageUrl} alt="Service icon" className="w-36" />
             <p className="text-background text-xl text-center">

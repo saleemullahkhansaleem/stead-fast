@@ -14,7 +14,7 @@ export default function DetailPage({
   return (
     <>
       <CoverSection title={title} description={description} />
-      <Container className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 py-8">
+      <Container className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 py-8 text-justify">
         <CircleImage imageUrl={imageUrl} sideImages={sideImages} />
         <div className={`flex flex-col gap-8 justify-center `}>
           {children}

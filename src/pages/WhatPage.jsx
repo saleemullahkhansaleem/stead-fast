@@ -129,7 +129,7 @@ export default function WhatPage() {
         description="Explore our wide range of security services, meticulously tailored to meet the unique needs of our clients. From site surveillance and risk assessment to personalized security strategies, we ensure comprehensive protection for your business and assets."
       />
 
-      <Container className="py-12 px-4">
+      <Container className="py-12 px-4 text-justify">
         <h2 className="text-4xl font-bold mb-6 text-primary">Our Services</h2>
         <p className="text-lg text-foregroundMuted leading-relaxed mb-8">
           At Stead Fast Security, we offer a comprehensive range of security

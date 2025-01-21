@@ -11,6 +11,7 @@ import {
   CareerApplyPage,
   CareerPage,
   ContactPage,
+  Downloads,
   HighProfileEvents,
   Home,
   NewsPage,
@@ -74,6 +75,10 @@ const router = createBrowserRouter([
       {
         path: "organogram",
         element: <Organogram />,
+      },
+      {
+        path: "downloads",
+        element: <Downloads />,
       },
       {
         path: "services/",

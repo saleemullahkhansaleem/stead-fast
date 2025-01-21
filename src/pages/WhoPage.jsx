@@ -8,7 +8,7 @@ export default function AboutPage() {
         description="Discover who we are and what drives us to deliver exceptional security services. At Stead Fast Security, we are committed to safeguarding your assets and ensuring a safe environment through our expert team, cutting-edge technology, and a passion for excellence."
       />
 
-      <Container className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 py-8">
+      <Container className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 py-8 text-justify">
         <CircleImage
           imageUrl="/images/security/about.webp"
           sideImages={["/images/security/s6.webp", "/images/security/s7.webp"]}
@@ -74,7 +74,7 @@ export default function AboutPage() {
 
 function CeoMessage({}) {
   return (
-    <Container className="px-4 py-8">
+    <Container className="px-4 py-8 text-justify">
       <div className="bg-background p-6 rounded-lg shadow hover:shadow-xl transition-shadow duration-300 flex flex-wrap flex-col lg:flex-row gap-4">
         {/* Left side: Image */}
         <div className="flex justify-center items-center mx-auto">
@@ -95,12 +95,12 @@ function CeoMessage({}) {
           </div>
 
           <p className="text-foregroundMuted leading-relaxed">
-            At Stead Fast Security, our commitment to providing top-tier
-            security solutions is unwavering. As we navigate an increasingly
-            complex security landscape, our mission remains clear: to protect
-            what matters most to you. We understand that in today’s world,
-            safety and security are paramount, and we are dedicated to
-            delivering tailored services that meet your unique needs.
+            At Stead Fast Security, our commitment to provide top-tier security
+            solutions is unwavering. As we navigate an increasingly complex
+            security landscape, our mission remains clear: to protect what
+            matters most to you. We understand that in today’s world, safety and
+            security are paramount, and we are dedicated to delivering tailored
+            services that meet your unique needs.
           </p>
           <p className="text-foregroundMuted leading-relaxed mt-4">
             Our team of experienced professionals employs cutting-edge
@@ -132,7 +132,7 @@ function CeoMessage({}) {
 
 function DirectorMessage({}) {
   return (
-    <Container className="px-4 py-8">
+    <Container className="px-4 py-8 text-justify">
       <div className="bg-background p-6 rounded-lg shadow hover:shadow-xl transition-shadow duration-300 flex flex-wrap flex-col lg:flex-row gap-4">
         {/* Left side: Image */}
         <div className="flex justify-center items-center mx-auto">
@@ -163,8 +163,8 @@ function DirectorMessage({}) {
           </p>
           <p className="text-foregroundMuted leading-relaxed mt-4">
             We understand that security staff is often the first point of
-            contact that people have when they come to premises, an event,
-            venue, or Business Centre. With that in mind, we try to ensure that
+            contact that people have when they come to premises, an Event,
+            Venue, or Business Centre. With that in mind, we try to ensure that
             everyone gets a warm welcome from a friendly and knowledgeable
             member of our security staff every time. Our professionals work very
             hard to create and maintain a fearless environment at your workplace

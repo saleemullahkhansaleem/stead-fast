@@ -44,7 +44,7 @@ export default function ApproachPage() {
     <>
       <CoverSection
         title="Hedonistic Approach"
-        description="AGS Security Services is committed to maintaining high standards of health, safety, and corporate responsibility through various policies and training programs."
+        description="Stead Fast Security Services is committed to maintain high standards of health, safety, and corporate responsibility through various policies and training programs."
       />
       <Container className="py-16 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -55,12 +55,6 @@ export default function ApproachPage() {
               onClick={() => openModal(item)}
             >
               <div className="relative p-6">
-                {/* <img
-                  src={item.imageUrl}
-                  alt={item.title}
-                  className="w-full aspect-[1/1] object-cover rounded-full mx-auto transition-opacity duration-300 shadow-lg border-4 border-secondary"
-                /> */}
-
                 <CircleImage imageUrl={item.imageUrl} />
 
                 <div className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -68,7 +62,9 @@ export default function ApproachPage() {
                 </div>
               </div>
               <div className="p-6 flex flex-col justify-between flex-grow text-center">
-                <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
+                <h3 className="text-xl font-semibold mb-4 uppercase">
+                  {item.title}
+                </h3>
                 <p className="text-foregroundMuted">
                   Click to learn more about {item.title}
                 </p>

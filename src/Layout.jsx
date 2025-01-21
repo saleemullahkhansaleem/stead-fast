@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function Layout() {
   return (
-    <main className="font-archivo bg-muted">
+    <main className="font-archivo bg-muted text-justify">
       <ToastContainer
         position="top-center"
         autoClose={5000}
