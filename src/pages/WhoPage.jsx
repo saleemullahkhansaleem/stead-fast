@@ -84,8 +84,8 @@ export default function AboutPage() {
         <p className="text-lg text-foregroundMuted leading-relaxed mb-6 text-center">
           Our operational model covers mainly the following aspects:
         </p>
-        <div className="bg-background p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <ul className="list-disc list-inside space-y-4 text-foregroundMuted">
+        <div className="bg-background max-w-3xl mx-auto p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <ul className="list-disc list-inside space-y- text-foregroundMuted">
             <li>
               Scope of work within the company and at each individual site
             </li>
@@ -103,7 +103,7 @@ export default function AboutPage() {
           </ul>
         </div>
 
-        <p className="text-lg text-foregroundMuted leading-relaxed mt-8">
+        <p className="text-lg text-foregroundMuted leading-relaxed mt-8 max-w-5xl mx-auto">
           In order to comply with our clients’ service level agreements, the
           company always appoints a site manager and competent supervisors
           responsible for all tasks and duties to be performed on-site to meet
@@ -119,7 +119,7 @@ export default function AboutPage() {
 function CeoMessage({}) {
   return (
     <Container className="px-4 py-8 text-justify">
-      <div className="bg-background p-6 rounded-lg shadow hover:shadow-xl transition-shadow duration-300 flex flex-wrap flex-col lg:flex-row gap-4">
+      <div className="bg-background p-6 md:p-12 rounded-lg shadow hover:shadow-xl transition-shadow duration-300 flex flex-wrap flex-col lg:flex-row gap-4">
         {/* Left side: Image */}
         <div className="flex justify-center items-center mx-auto">
           <img
@@ -135,7 +135,7 @@ function CeoMessage({}) {
             <h6 className="text-primary text-xl font-bold">
               Syed Muhammad Hanif Shah
             </h6>
-            <p className="text-foregroundMuted">CEO</p>
+            <p className="text-foregroundMuted">CEO / Director</p>
           </div>
 
           <p className="text-foregroundMuted leading-relaxed">
@@ -177,7 +177,7 @@ function CeoMessage({}) {
 function DirectorMessage({}) {
   return (
     <Container className="px-4 py-8 text-justify">
-      <div className="bg-background p-6 rounded-lg shadow hover:shadow-xl transition-shadow duration-300 flex flex-wrap flex-col lg:flex-row gap-4">
+      <div className="bg-background p-6 md:p-12 rounded-lg shadow hover:shadow-xl transition-shadow duration-300 flex flex-wrap flex-col lg:flex-row gap-4">
         {/* Left side: Image */}
         <div className="flex justify-center items-center mx-auto">
           <img
