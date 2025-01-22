@@ -9,13 +9,12 @@ const emergencyNumbers = [
   { name: "Fire Brigade", number: "16" },
   { name: "ISPR Helpline", number: "1135" },
   { name: "Motorway Police", number: "130" },
+  { name: "NACTA Helpline", number: "1717" },
   { name: "PIA Inquiry", number: "114" },
   { name: "Police Helpline", number: "15" },
   { name: "Rescue Services", number: "1122" },
   { name: "SUI Gas Complaint", number: "1199" },
-  { name: "NACTA Helpline", number: "1717" }, 
 ];
-
 
 const EmergencyNumbers = () => {
   // Split the array into chunks of 4

@@ -20,15 +20,14 @@ export default function Header() {
   return (
     <header className="bg-background p-2 shadow sticky top-0 z-10">
       <Container className="flex justify-between items-center">
-
         <NavbarBrand />
 
-        <nav className="2xl:flex items-center h-full hidden">
+        <nav className="2xl:flex items-center gap-5 h-full hidden">
           {navLinks.map((link, index) => (
             <NavLink
               key={index}
               className={({ isActive }) =>
-                `px-3 py-2 hover:text-primary text-sm ${
+                `hover:text-primary text-sm ${
                   isActive ? "text-primary" : "text-foreground"
                 }`
               }
