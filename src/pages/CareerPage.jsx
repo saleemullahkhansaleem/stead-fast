@@ -21,29 +21,6 @@ export const benefits = [
   },
 ];
 
-const jobListings = [
-  {
-    title: "Senior React Developer",
-    location: "Remote",
-    type: "Full-Time",
-    description:
-      "We are looking for a Senior React Developer to join our dynamic team and build cutting-edge web applications using modern technologies.",
-  },
-  {
-    title: "UI/UX Designer",
-    location: "New York, NY",
-    type: "Full-Time",
-    description:
-      "Seeking a creative UI/UX Designer to craft intuitive and visually appealing user interfaces for our applications.",
-  },
-  {
-    title: "Backend Engineer",
-    location: "San Francisco, CA",
-    type: "Full-Time",
-    description:
-      "Join us as a Backend Engineer to design and develop highly scalable backend services and APIs.",
-  },
-];
 export default function CareerPage() {
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -120,7 +97,7 @@ export default function CareerPage() {
               jobs.map((job, index) => (
                 <div
                   key={index}
-                  className="bg-muted p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                  className="bg-muted p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 max-w-3xl mx-auto"
                 >
                   <h3 className="text-2xl font-bold text-primary mb-2">
                     {job.title}

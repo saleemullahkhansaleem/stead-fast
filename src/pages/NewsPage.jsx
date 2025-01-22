@@ -104,7 +104,7 @@ export default function NewsPage() {
       ) : (
         <>
           <Container className="py-16 px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {news.map((article, index) => (
                 <div
                   key={index}
@@ -130,10 +130,10 @@ export default function NewsPage() {
                         {article?.category || "--"}
                       </span>{" "}
                     </p> */}
-                    <h3 className="text-xl font-semibold mb-4">
+                    <h3 className="font-semibold mb-4">
                       {article.title}
                     </h3>
-                    <p className="text-foregroundMuted">
+                    <p className="text-foregroundMuted text-sm">
                       {article?.content?.length > 200 ? (
                         <>
                           {article.content.slice(0, 200)}...
@@ -159,14 +159,14 @@ export default function NewsPage() {
                 onClick={closeModal}
               ></div>
               <div className="bg-background rounded-lg shadow-lg p-4 max-w-3xl relative max-h-screen overflow-auto">
-                <h3 className="text-xl font-semibold my-4">
-                  {modalData.title}
-                </h3>
                 <img
                   src={modalData.imageUrl}
                   alt={modalData.title}
                   className="mx-auto h-80  object-cover"
                 />
+                <h3 className="text-xl font-semibold my-3">
+                  {modalData.title}
+                </h3>
                 <div className="">
                   {/* <p className="text-sm text-background flex gap-2 mb-2">
                     <span className="bg-secondary px-3 py-1 rounded-full">
