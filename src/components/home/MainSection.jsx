@@ -12,7 +12,7 @@ export default function MainSection() {
         url="services/physical-security"
         reverse
       >
-        <p>
+        <p className="text-xl">
           Static Guarding and access control is one of our expert fields. We can
           provide round the clock security for your Premises, Office Buildings,
           Industrial Estates/ Factories, Hospitals, Educational Institutions,
@@ -20,10 +20,10 @@ export default function MainSection() {
           organized by various Organizations / Forums.
           <br />
           <br />
-          Stead Fast is a leading security solutions provider committed to
-          safeguarding businesses, institutions and communities in ICT, Punjab
-          and KPK with a focus on professionalism, reliability and cutting edge
-          technology.
+          Stead Fast Security is a leading security solutions provider committed
+          to safeguarding businesses, institutions and communities in ICT,
+          Punjab and KPK with a focus on professionalism, reliability and
+          cutting edge technology.
           <br />
           <br />
           Stead Fast Security offers a wide range of security services, cash
@@ -38,7 +38,7 @@ export default function MainSection() {
         url="services/burglar-alarm"
         sideImages={["s8.webp", "s9.webp"]}
       >
-        <p>
+        <p className="text-xl">
           “Protect Your Premises and Assets with Our Advanced Security Systems”
           <br />
           <br />
@@ -62,7 +62,7 @@ export default function MainSection() {
         url="services/security-escort"
         reverse
       >
-        <p>
+        <p className="text-xl">
           A Security Escort service typically involves providing physical
           security personnel to accompany individuals or valuable assets to
           ensure their protection. <br />
@@ -88,7 +88,7 @@ export default function MainSection() {
           "special-events-4.webp",
         ]}
       >
-        <p>
+        <p className="text-xl">
           Providing security to High Profile Special Events through Manned
           Security, Access Control, Electronic Checking and Rapid Response in
           case of any Security Breach is another area of our expertise in the
@@ -112,8 +112,8 @@ export default function MainSection() {
         url="services/training-courses"
         reverse
       >
-        <p>
-          At Sted Fast Security, we offer comprehensive training programs
+        <p className="text-xl">
+          At Stead Fast Security, we offer comprehensive training programs
           designed to equip individuals and organizations with the skills
           necessary to ensure safety and security in a wide range of
           environments. <br />

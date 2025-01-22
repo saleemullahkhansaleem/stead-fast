@@ -60,7 +60,7 @@ const LogoCarousel = () => {
               className="object-contain h-24 mx-auto"
             />
             <hr />
-            <p className="p-4 text-center font-bold text-xs md:text-base">
+            <p className="p-4 text-center font-bold text-xs md:text-base uppercase">
               {logo.title}
             </p>
           </div>

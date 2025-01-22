@@ -40,8 +40,8 @@ export default function Footer() {
             STEAD FAST SECURITY
           </h4>
           <p>
-            Stead Fast Security Company (Private) Limmited established on 28th
-            January, 2008 is a leading security solutions provider committed to
+            Stead Fast Security Company (Pvt.) Ltd. established on 28th January,
+            2008 is a leading security solutions provider committed to
             safeguarding businesses, institutions, and communities in ICT,
             Punjab and KPK.
           </p>
@@ -79,9 +79,9 @@ export default function Footer() {
         </div>
         <div className="p-4">
           <h4 className="text-xl text-background font-bold pb-4">Contact</h4>
-          <p>Office No: 5 Al-Malik Centre (Third Floor)</p>
-          <p> 70 West Jinnah Avenue</p>
-          <p> Blue Area Islamabad</p>
+          <p>Office No: 5, Al-Malik Centre (Third Floor),</p>
+          <p> 70-West, Jinnah Avenue,</p>
+          <p> Blue Area, Islamabad.</p>
           <br />
           <p>
             <Link
@@ -140,7 +140,7 @@ export default function Footer() {
                 <span className="footer-highlight">
                   Stead Fast Security Company
                 </span>{" "}
-                Pvt. Ltd All rights reserved.
+                (Pvt.) Ltd. All rights reserved.
               </p>
             </div>
           </div>

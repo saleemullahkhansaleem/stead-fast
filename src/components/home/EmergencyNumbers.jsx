@@ -1,20 +1,36 @@
 import React from "react";
 import Container from "../Container";
 
+// const emergencyNumbers = [
+//   { name: "Police Helpline", number: "15" },
+//   { name: "Terrorism Helpline", number: "1717" },
+//   { name: "Electricity Complaint", number: "119" },
+//   { name: "Fire Brigade", number: "16" },
+//   { name: "ISPR Helpline", number: "1135" },
+//   { name: "SUI Gas Complaint", number: "1199" },
+//   { name: "Rescue Services", number: "1122" },
+//   { name: "Motorway Police", number: "130" },
+//   { name: "PIA Inquiry", number: "114" },
+//   { name: "Edhi Ambulance", number: "115" },
+//   { name: "Cyber Rescue", number: "9911" },
+//   { name: "Bomb Disposal Squad", number: "109" },
+// ];
+
 const emergencyNumbers = [
-  { name: "Police Helpline", number: "15" },
-  { name: "Terrorism Helpline", number: "1717" },
+  { name: "Bomb Disposal Squad", number: "109" },
+  { name: "Cyber Rescue", number: "9911" },
+  { name: "Edhi Ambulance", number: "115" },
   { name: "Electricity Complaint", number: "119" },
   { name: "Fire Brigade", number: "16" },
   { name: "ISPR Helpline", number: "1135" },
-  { name: "SUI Gas Complaint", number: "1199" },
-  { name: "Rescue Services", number: "1122" },
   { name: "Motorway Police", number: "130" },
   { name: "PIA Inquiry", number: "114" },
-  { name: "Edhi Ambulance", number: "115" },
-  { name: "Cyber Rescue", number: "9911" },
-  { name: "Bomb Disposal Squad", number: "109" },
+  { name: "Police Helpline", number: "15" },
+  { name: "Rescue Services", number: "1122" },
+  { name: "SUI Gas Complaint", number: "1199" },
+  { name: "NACTA Helpline", number: "1717" }, 
 ];
+
 
 const EmergencyNumbers = () => {
   // Split the array into chunks of 4

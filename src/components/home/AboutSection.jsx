@@ -12,8 +12,8 @@ export default function AboutSection() {
           Highest Standards Of Security Services
         </h3>
         <p className="text-lg text-gray-700 leading-relaxed mb-4">
-          Stead Fast Security Company (Private) Limited was established in 2008
-          with a vision to provide exceptional security services throughout Pakistan.
+          Stead Fast Security Company (Pvt.) Ltd. was established in 2008 with a
+          vision to provide exceptional security services throughout Pakistan.
           Our leadership team comprises experienced security professionals
           committed to delivering top-notch solutions.
         </p>{" "}

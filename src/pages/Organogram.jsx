@@ -5,7 +5,7 @@ export default function Organogram() {
     <>
       <CoverSection
         title="ORGANOGRAM"
-        description="The organizational structure of Stead Fast Security Company (Private) Limited showcases a clear hierarchy designed to ensure efficient decision-making, seamless communication, and effective management of security services. Our structure allows us to maintain operational excellence and provide superior security solutions tailored to meet our clients' needs."
+        description="The organizational structure of Stead Fast Security Company (Pvt.) Ltd. showcases a clear hierarchy designed to ensure efficient decision-making, seamless communication, and effective management of security services. Our structure allows us to maintain operational excellence and provide superior security solutions tailored to meet our clients' needs."
       />
 
       <Container className="px-4 py-8">

@@ -62,7 +62,7 @@ export default function Downloads() {
     <>
       <CoverSection
         title="Downloads"
-        description="Stead Fast Security Company is dedicated to ensuring the highest levels of safety and compliance. Explore our collection of essential policies, procedures, and regulations to learn more about how we maintain excellence in private security."
+        description="Stead Fast Security is dedicated to ensuring the highest levels of safety and compliance. Explore our collection of essential policies, procedures, and regulations to learn more about how we maintain excellence in private security."
       />
       <Container className="py-16 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

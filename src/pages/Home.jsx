@@ -33,10 +33,10 @@ export default function Home() {
       label: "Bullet Proof Vehicles",
       url: "/services/bullet-proof-vehicles",
     },
-    {
-      label: "Organogram",
-      url: "/organogram",
-    },
+    // {
+    //   label: "Organogram",
+    //   url: "/organogram",
+    // },
   ];
 
   return (
