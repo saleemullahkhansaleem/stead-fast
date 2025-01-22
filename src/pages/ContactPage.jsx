@@ -16,7 +16,7 @@ export default function ContactPage() {
     {
       title: "Our Office",
       content:
-        "Office No: 5 Al-Malik Centre (Third Floor) 70 West Jinnah Avenue Blue Area Islamabad",
+        "Office No: 5, Al-Malik Centre (Third Floor), 70-West, Jinnah Avenue, Blue Area, Islamabad.",
     },
     {
       title: "Phone",
@@ -124,7 +124,7 @@ export default function ContactPage() {
             {contactInfo.map((info, index) => (
               <div
                 key={index}
-                className="bg-background p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+                className="bg-background p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-[1.01]"
               >
                 <h3 className="text-xl font-semibold text-primary">
                   {info.title}

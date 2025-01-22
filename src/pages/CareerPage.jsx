@@ -90,7 +90,7 @@ export default function CareerPage() {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className={`"bg-background p-6 shadow-lg w-full max-w-96 m-auto aspect-square flex flex-col gap-2 items-center justify-center rounded-full border-4 border-secondary transition-transform transform hover:scale-105 hover:shadow-xl ${
+              className={`"bg-background p-6 shadow-lg w-full max-w-96 m-auto aspect-square flex flex-col gap-2 items-center justify-center rounded-full border-4 border-secondary transition-transform transform hover:scale-[1.01] hover:shadow-xl ${
                 index === 0 && "md:col-span-2 xl:col-span-1"
               }`}
             >

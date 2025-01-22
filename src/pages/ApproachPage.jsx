@@ -51,7 +51,7 @@ export default function ApproachPage() {
           {approachContent.map((item, index) => (
             <div
               key={index}
-              className="group bg-background rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform transform hover:scale-105 hover:shadow-xl cursor-pointer relative"
+              className="group bg-background rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform transform hover:scale-[1.01] hover:shadow-xl cursor-pointer relative"
               onClick={() => openModal(item)}
             >
               <div className="relative p-6">

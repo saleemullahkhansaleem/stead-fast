@@ -161,7 +161,7 @@ export default function CareerApplyPage() {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="bg-background p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+                className="bg-background p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-[1.01]"
               >
                 <h3 className="text-xl font-semibold text-primary">
                   {benefit.title}
