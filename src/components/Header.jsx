@@ -20,14 +20,6 @@ export default function Header() {
   return (
     <header className="bg-background p-2 shadow sticky top-0 z-10">
       <Container className="flex justify-between items-center">
-        {/* <Link href="/" className="flex items-center gap-4">
-          <img
-            src="images/logo.png"
-            alt="SteadFast Logo"
-            title="Home"
-            className="h-12 md:h-16"
-          />
-        </Link> */}
 
         <NavbarBrand />
 
@@ -36,7 +28,7 @@ export default function Header() {
             <NavLink
               key={index}
               className={({ isActive }) =>
-                `px-3 py-2 hover:text-primary ${
+                `px-3 py-2 hover:text-primary text-sm ${
                   isActive ? "text-primary" : "text-foreground"
                 }`
               }
