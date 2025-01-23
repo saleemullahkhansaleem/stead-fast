@@ -23,13 +23,13 @@ export default function Footer() {
     { name: "Punjab Home Department", url: "https://www.home.gop.pk/" },
     { name: "Directorate of Monitoring Punjab", url: "http://dm-hd.gop.pk/#" },
     { name: "KPK Home Department", url: "https://hd.kp.gov.pk/" },
+    { name: "AJ&K Government Portal", url: "https://ajk.gov.pk/" },
+    { name: "GB Government Portal", url: "https://gilgitbaltistan.gov.pk/" },
     { name: "Sindh Home Department", url: "https://home.sindh.gov.pk/" },
     {
       name: "Balochistan Home Department",
       url: "https://homedept.balochistan.gob.pk/",
     },
-    { name: "GB Home Department", url: "https://gilgitbaltistan.gov.pk/" },
-    { name: "AJ&K Home Department", url: "https://ajk.gov.pk/" },
   ];
 
   return (
