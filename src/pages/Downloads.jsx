@@ -55,6 +55,24 @@ const downloads = [
     downloadLink:
       "/files/the-punjab-private-security-companies-regulation-and-control-ordinance-2002.pdf",
   },
+  {
+    id: 10,
+    title:
+      "The Sindh Private Security Companies (Regulation and Control) Ordinance, 2001",
+    preview:
+      "/files/the-sindh-private-security-agencies-ordinance-2001.pdf",
+    downloadLink:
+      "/files/the-sindh-private-security-agencies-ordinance-2001.pdf",
+  },
+  {
+    id: 11,
+    title:
+      "The Balochistan Private Security Companies Ordinance, 2001",
+    preview:
+      "/files/the-balochistan-private-security-agencies-ordinance-2001.pdf",
+    downloadLink:
+      "/files/the-balochistan-private-security-agencies-ordinance-2001.pdf",
+  },
 ];
 
 export default function Downloads() {
