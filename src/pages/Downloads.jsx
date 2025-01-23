@@ -65,7 +65,7 @@ const downloads = [
       "/files/the-sindh-private-security-agencies-ordinance-2001.pdf",
   },
   {
-    id: 10,
+    id: 11,
     title:
       "The Balochistan Private Security Companies Ordinance, 2001",
     preview:
