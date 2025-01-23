@@ -26,7 +26,7 @@ export default function Home() {
       url: "/services/training-courses",
     },
     {
-      label: "System Security",
+      label: "Security Alarms",
       url: "/services/burglar-alarm",
     },
     {

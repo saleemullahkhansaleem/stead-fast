@@ -1,4 +1,4 @@
-import { MdSecurity } from "react-icons/md";
+
 import { Container, CoverSection, DetailPage, Services } from "../components";
 import { useState } from "react";
 
