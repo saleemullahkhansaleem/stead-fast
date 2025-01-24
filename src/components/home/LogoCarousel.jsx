@@ -5,13 +5,13 @@ import Container from "../Container";
 
 const logos = [
   { src: "images/clients/caput.png", title: "CAPUT International" },
-  { src: "images/clients/ws.svg", title: "Win Source International" },
-  { src: "images/clients/deed.png", title: "Deed" },
-  { src: "images/clients/ggr.png", title: "Go For Green Revolution" },
-  { src: "images/clients/glt.png", title: "Global Links Technologies" },
-  { src: "images/clients/mhs.png", title: "MHS Tech Ventures" },
   { src: "images/clients/cg.png", title: "Creative Garage" },
+  { src: "images/clients/deed.png", title: "Deed" },
   { src: "images/clients/fscf.png", title: "FSCF Technologies" },
+  { src: "images/clients/glt.png", title: "Global Links Technologies" },
+  { src: "images/clients/ggr.png", title: "Go For Green Revolution" },
+  { src: "images/clients/mhs.png", title: "MHS Tech Ventures" },
+  { src: "images/clients/ws.svg", title: "Win Source International" },
 ];
 
 const LogoCarousel = () => {
