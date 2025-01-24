@@ -26,8 +26,8 @@ export default function Home() {
       url: "/services/training-courses",
     },
     {
-      label: "Security Alarms",
-      url: "/services/burglar-alarm",
+      label: "Security Sysytem",
+      url: "/services/security-system",
     },
     {
       label: "Bullet Proof Vehicles",
