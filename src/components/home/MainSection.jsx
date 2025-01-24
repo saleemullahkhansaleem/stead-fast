@@ -32,7 +32,7 @@ export default function MainSection() {
         </p>
       </MainSectionBoxes>
       <MainSectionBoxes
-        title="Security System"
+        title="Security Systems"
         imageUrl="security-system.webp"
         icon={<MdSecurity className="text-secondary text-5xl" />}
         url="services/security-system"

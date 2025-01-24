@@ -149,12 +149,12 @@ const sections = [
 export default function SecuritySystem() {
   return (
     <DetailPage
-      title="Security System"
+      title="Security Systems"
       description="Our integrated security solutions offer comprehensive protection with advanced video monitoring (CCTV, mobile, BWV, drones), burglar alarm systems, and access control (biometrics, cards, remote gates). These systems include real-time alerts, remote monitoring, and customizable settings to safeguard your property and ensure peace of mind. Trust us to deliver cutting-edge technology, vehicle tracking, and professional guarding services with 24/7 support."
       imageUrl="/images/security_system/3.webp"
       sideImages={["/images/security_system/2.webp", "/images/security_system/1.webp"]}
     >
-      <h2 className="text-4xl font-bold mb-6 text-primary">Security System</h2>
+      <h2 className="text-4xl font-bold mb-6 text-primary">Security Systems</h2>
       <p className="text-lg text-foregroundMuted leading-relaxed mb-8">
       We provide advanced Video Monitoring (CCTV, mobile, BWV, drones), Access Control (biometrics, cards, remote gates), and comprehensive Alarm Systems (security and safety). Our Vehicle Tracking System (VTS) ensures GPS/GIS-based tracking for vehicles, cargo, and vessels.
 

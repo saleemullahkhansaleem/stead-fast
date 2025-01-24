@@ -14,7 +14,7 @@ export default function Services() {
       url: "/services/burglar-alarm",
     },
     {
-      title: "SECURITY SYSTEM",
+      title: "SECURITY SYSTEMS",
       imageUrl: "/images/services/service-3.png",
       url: "/services/security-system",
     },
