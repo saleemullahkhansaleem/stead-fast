@@ -26,7 +26,7 @@ export default function Home() {
       url: "/services/training-courses",
     },
     {
-      label: "Security Sysytem",
+      label: "Security System",
       url: "/services/security-system",
     },
     {
