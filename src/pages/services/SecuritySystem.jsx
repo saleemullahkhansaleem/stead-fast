@@ -7,15 +7,12 @@ const sections = [
     content: {
       description: "",
       items: [
-        "ANPR",
-        "Body Worn Video (BWV)",
+        "Body Worn Video Camera (BWVC)",
         "CCTV Monitoring",
         "CCTV PTZ Control",
-        "Drone / UAV",
+        "Drone / Unmanned Aerial Vehicle(UAV)",
         "Face Recognition",
-        "Mobile (DVR)",
-        "Radar",
-        "Transport and MDVR Surveillance",
+        "Mobile Digital Video Recording (MDVR) For Transport",
       ],
     },
   },
@@ -24,6 +21,7 @@ const sections = [
     content: {
       description: "",
       items: [
+        "Automatic Number Plate Recognition (ANPR)",
         "Biometrics",
         "Doors and Locks",
         "Door Security Management",
@@ -42,7 +40,6 @@ const sections = [
     content: {
       description: "",
       items: [
-        "Access Control Systems (ACS)",
         "Closed-Circuit Television (CCTV)",
         "Video Surveillance Systems",
         "Fire Alarm Systems",
@@ -57,8 +54,7 @@ const sections = [
     content: {
       description: "",
       items: [
-        "Addressable Control Panels",
-        "Explosion Counteracting Sytem",
+
         "Flameable Gas Detector",
         "Gate Intrusion Detection/Prevention",
         "Glass Breakage Detector",
@@ -67,8 +63,6 @@ const sections = [
         "Passive IR (PIR) Detectors",
         "Perimeter Intrusion Detection/Prevention",
         "Security Bollard Intrusion Detection/Prevention",
-        "Siesmic Vibration and Tilt Detector",
-        "Siesmic Vibration Detector",
         "Siesmic Vibration,Tilt and Gas Detector",
         "Shock Sensors",
         "Ultrasonic Sensors",
@@ -82,10 +76,9 @@ const sections = [
       description: "",
       items: [
         "Emergency Alarm System",
-        "Fire Detction (Linear Smoke Detectors/Point Type Detectors",
-        "Fumes etc.",
-        "Heat",
-        "Humidity",
+        "Fire Detction (Linear Smoke Detectors/Point Type Detectors Fumes etc.)",
+        "Heat Sensors",
+        "Humidity Sensors",
         "Infrared Detectors Pyroelectric and Bolometer Types",
         "Passenger Traffic Detector",
         "Public Address System",
@@ -100,14 +93,14 @@ const sections = [
     content: {
       description: "",
       items: [
-        "AIS",
+        "Automatic Identification System (AIS)",
         "Automatic Dependent Surveillance Broadcast (ADS-B)",
         "GIS Database and Addresses",
         "GPS Tracker",
-        "Drone / UAV",
+        "Drone / Unmanned Aerial Vehicle (UAV)",
         "Map Layer",
         "Route Deviation Alarm",
-        "Vehicle Safety,GPS and Telemetric",
+        "Vehicle Safety, GPS and Telemetric",
       ],
     },
   },
@@ -118,7 +111,6 @@ const sections = [
       items: [
         "Emergency Exits",
         "Escape Door Terminal",
-        "Fobs etc.",
         "Key Holding",
         "Keys and Locks",
       ],
@@ -132,7 +124,6 @@ const sections = [
         "Building Automation",
         "Capacity Control By People Counting",
         "Digital Signage and Advertising Management",
-        "Fuel",
         "Generators",
         "Heating Ventilation and Air Conditioning (HVAC)",
         "Illumination & Lighting",
