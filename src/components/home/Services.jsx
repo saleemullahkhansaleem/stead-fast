@@ -9,9 +9,9 @@ export default function Services() {
       url: "/what-we-do",
     },
     {
-      title: "TECHNICAL SECURITY",
+      title: "Burglar Alarm System",
       imageUrl: "/images/services/service-2.png",
-      url: "/what-we-do",
+      url: "/services/burglar-alarm",
     },
     {
       title: "BUILDING MANAGEMENT",
