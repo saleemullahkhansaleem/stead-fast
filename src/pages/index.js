@@ -19,6 +19,7 @@ import SecurityEscort from "./services/SecurityEscort";
 import TrainingCourses from "./services/TrainingCourses";
 import BulletProofVehicles from "./services/BulletProofVehicles";
 import BurglarAlarm from "./services/BurglarAlarm";
+import SecuritySystem from "./services/SecuritySystem";
 
 export {
   Home,
@@ -42,4 +43,5 @@ export {
   TrainingCourses,
   BulletProofVehicles,
   BurglarAlarm,
+  SecuritySystem,
 };

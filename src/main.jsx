@@ -19,6 +19,7 @@ import {
   Organogram,
   PhysicalSecurity,
   SecurityEscort,
+  SecuritySystem,
   ServicesLayout,
   TrainingCourses,
   WhatPage,
@@ -107,6 +108,10 @@ const router = createBrowserRouter([
           {
             path: "burglar-alarm",
             element: <BurglarAlarm />,
+          },
+          {
+            path: "security-system",
+            element: <SecuritySystem/>,
           },
         ],
       },
