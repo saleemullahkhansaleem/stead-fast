@@ -8,6 +8,7 @@ import {
   ApproachPage,
   BulletProofVehicles,
   BurglarAlarm,
+  Canine,
   CareerApplyPage,
   CareerPage,
   ContactPage,
@@ -111,7 +112,11 @@ const router = createBrowserRouter([
           },
           {
             path: "security-system",
-            element: <SecuritySystem/>,
+            element: <SecuritySystem />,
+          },
+          {
+            path: "canine",
+            element: <Canine />,
           },
         ],
       },

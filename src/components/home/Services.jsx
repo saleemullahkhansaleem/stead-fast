@@ -9,7 +9,7 @@ export default function Services() {
       url: "/what-we-do",
     },
     {
-      title: "BURGLAR ALARM SYSTEM",
+      title: "BURGLAR ALARM",
       imageUrl: "/images/services/service-2.png",
       url: "/services/burglar-alarm",
     },
@@ -25,8 +25,8 @@ export default function Services() {
     },
     {
       title: "CANINE",
-      imageUrl: "/images/services/service-1.png",
-      url: "/what-we-do",
+      imageUrl: "/images/services/service-5.png",
+      url: "/services/canine",
     },
   ];
   return (

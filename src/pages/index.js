@@ -20,6 +20,7 @@ import TrainingCourses from "./services/TrainingCourses";
 import BulletProofVehicles from "./services/BulletProofVehicles";
 import BurglarAlarm from "./services/BurglarAlarm";
 import SecuritySystem from "./services/SecuritySystem";
+import Canine from "./services/Canine";
 
 export {
   Home,
@@ -44,4 +45,5 @@ export {
   BulletProofVehicles,
   BurglarAlarm,
   SecuritySystem,
+  Canine,
 };
