@@ -5,7 +5,7 @@ export default function Services() {
   const services = [
     {
       title: "SECURITY SERVICES",
-      imageUrl: "/images/services/service.svg",
+      imageUrl: "/images/services/service-6.png",
       url: "/what-we-do",
     },
     {
