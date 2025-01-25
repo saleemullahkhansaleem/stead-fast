@@ -9,14 +9,14 @@ export default function Services() {
       url: "/what-we-do",
     },
     {
-      title: "BURGLAR ALARM",
-      imageUrl: "/images/services/service-2.png",
-      url: "/services/burglar-alarm",
-    },
-    {
       title: "SECURITY SYSTEMS",
       imageUrl: "/images/services/service-3.png",
       url: "/services/security-system",
+    },
+    {
+      title: "BURGLAR ALARM",
+      imageUrl: "/images/services/service-2.png",
+      url: "/services/burglar-alarm",
     },
     {
       title: "TRAINING",
